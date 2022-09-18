@@ -928,9 +928,9 @@ td.table-footer {
 }
 
 .tab__title-w-1 {
-  background-color: #71a6dc;
-  border-radius: 3px;
-  min-width: 205px;
+  border-radius: 0.1875rem;
+  min-width: 200px;
+  width: 100%;
   color: #ffffff;
   border: 0.0625rem solid #ffffff;
   text-decoration: none;
@@ -990,10 +990,10 @@ td.table-footer {
 
 .tab__link-w-1 {
   display: block;
-  background-color: #71a6dc;
   padding: 25px 35px;
   border-radius: 0.1875rem;
-  min-width: 205px;
+  min-width: 200px;
+  width: 100%;
   color: #ffffff;
   border: 0.0625rem solid #ffffff;
   text-decoration: none;
@@ -2554,7 +2554,7 @@ td.table-footer {
   height: 1.25rem;
   line-height: 1.25rem;
   background-color: #ffffff;
-  border: 0.0625rem solid #71a6dc;
+  border: 0.0625rem solid #eef0f2;
 }
 
 .head-slider {
@@ -3444,19 +3444,19 @@ td.table-footer {
 
 .profile-header__number {
   font-weight: 900;
-  color: #71a6dc;
+  color: #e7362e;
   grid-row: 2/4 span;
 }
 
-@supports (font-size: clamp( 4.375rem , 3.25rem  +  3vw , 6.25rem )) {
+@supports (font-size: clamp( 3.75rem , 2.25rem  +  4vw , 6.25rem )) {
   .profile-header__number {
-    font-size: clamp( 4.375rem , 3.25rem  +  3vw , 6.25rem );
+    font-size: clamp( 3.75rem , 2.25rem  +  4vw , 6.25rem );
   }
 }
 
-@supports not (font-size: clamp( 4.375rem , 3.25rem  +  3vw , 6.25rem )) {
+@supports not (font-size: clamp( 3.75rem , 2.25rem  +  4vw , 6.25rem )) {
   .profile-header__number {
-    font-size: calc(4.375rem + 1.875 * (100vw - 37.5rem) / 62.5);
+    font-size: calc(3.75rem + 2.5 * (100vw - 37.5rem) / 62.5);
   }
 }
 
@@ -4270,53 +4270,42 @@ td.table-footer {
 
 .person-stats-chart__bg-logo {
   position: absolute;
+  right: 0.625rem;
 }
 
-@supports (top: clamp( 12.5rem , 0.2638071116rem  +  19.7361928884vw , 20rem )) {
+@supports (top: clamp( 12.5rem , -1.7755583698rem  +  23.0255583698vw , 21.25rem )) {
   .person-stats-chart__bg-logo {
-    top: clamp( 12.5rem , 0.2638071116rem  +  19.7361928884vw , 20rem );
+    top: clamp( 12.5rem , -1.7755583698rem  +  23.0255583698vw , 21.25rem );
   }
 }
 
-@supports not (top: clamp( 12.5rem , 0.2638071116rem  +  19.7361928884vw , 20rem )) {
+@supports not (top: clamp( 12.5rem , -1.7755583698rem  +  23.0255583698vw , 21.25rem )) {
   .person-stats-chart__bg-logo {
-    top: calc(12.5rem + 7.5 * (100vw - 61.99875rem) / 38.00125);
+    top: calc(12.5rem + 8.75 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
-@supports (right: clamp( 6.25rem , 0.1319035558rem  +  9.8680964442vw , 10rem )) {
+@supports (width: clamp( 32.5rem , -6.2479441466rem  +  62.4979441466vw , 56.25rem )) {
   .person-stats-chart__bg-logo {
-    right: clamp( 6.25rem , 0.1319035558rem  +  9.8680964442vw , 10rem );
+    width: clamp( 32.5rem , -6.2479441466rem  +  62.4979441466vw , 56.25rem );
   }
 }
 
-@supports not (right: clamp( 6.25rem , 0.1319035558rem  +  9.8680964442vw , 10rem )) {
+@supports not (width: clamp( 32.5rem , -6.2479441466rem  +  62.4979441466vw , 56.25rem )) {
   .person-stats-chart__bg-logo {
-    right: calc(6.25rem + 3.75 * (100vw - 61.99875rem) / 38.00125);
+    width: calc(32.5rem + 23.75 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
-@supports (width: clamp( 21rem , -0.4133375547rem  +  34.5383375547vw , 34.125rem )) {
+@supports (height: clamp( 7.4rem , -1.4304525345rem  +  14.2429525345vw , 12.8125rem )) {
   .person-stats-chart__bg-logo {
-    width: clamp( 21rem , -0.4133375547rem  +  34.5383375547vw , 34.125rem );
+    height: clamp( 7.4rem , -1.4304525345rem  +  14.2429525345vw , 12.8125rem );
   }
 }
 
-@supports not (width: clamp( 21rem , -0.4133375547rem  +  34.5383375547vw , 34.125rem )) {
+@supports not (height: clamp( 7.4rem , -1.4304525345rem  +  14.2429525345vw , 12.8125rem )) {
   .person-stats-chart__bg-logo {
-    width: calc(21rem + 13.125 * (100vw - 61.99875rem) / 38.00125);
-  }
-}
-
-@supports (height: clamp( 10rem , -0.196827407rem  +  16.446827407vw , 16.25rem )) {
-  .person-stats-chart__bg-logo {
-    height: clamp( 10rem , -0.196827407rem  +  16.446827407vw , 16.25rem );
-  }
-}
-
-@supports not (height: clamp( 10rem , -0.196827407rem  +  16.446827407vw , 16.25rem )) {
-  .person-stats-chart__bg-logo {
-    height: calc(10rem + 6.25 * (100vw - 61.99875rem) / 38.00125);
+    height: calc(7.4rem + 5.4125 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
@@ -6331,7 +6320,7 @@ td.table-footer {
 }
 
 .sidebar-banner-slider__item {
-  border: 0.0625rem solid #71a6dc;
+  border: 0.0625rem solid #eef0f2;
   border-radius: 0.1875rem;
 }
 
@@ -11543,8 +11532,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .profile-header__bg-logo {
     width: 100%;
-    top: -30px;
   }
+
+@supports (top: clamp( -3.75rem , -1.0227272727rem  +  -6.0606060606vw , -2.5rem )) {
+    .profile-header__bg-logo {
+      top: clamp( -3.75rem , -1.0227272727rem  +  -6.0606060606vw , -2.5rem );
+    }
+}
+
+@supports not (top: clamp( -3.75rem , -1.0227272727rem  +  -6.0606060606vw , -2.5rem )) {
+    .profile-header__bg-logo {
+      top: calc(-2.5rem + -1.25 * (100vw - 24.375rem) / 20.625);
+    }
+}
 
   .profile-header__item {
     -ms-grid-columns: 1fr;
@@ -11617,9 +11617,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .profile-header__number {
     position: absolute;
-    top: 0;
-    left: 0;
+    right: 0;
   }
+
+@supports (top: clamp( 2.5rem , -1.875rem  +  19.4444444444vw , 6.875rem )) {
+    .profile-header__number {
+      top: clamp( 2.5rem , -1.875rem  +  19.4444444444vw , 6.875rem );
+    }
+}
+
+@supports not (top: clamp( 2.5rem , -1.875rem  +  19.4444444444vw , 6.875rem )) {
+    .profile-header__number {
+      top: calc(2.5rem + 4.375 * (100vw - 22.5rem) / 22.5);
+    }
+}
 
   .profile-header__subtitle {
     color: #eef0f2;
@@ -11672,9 +11683,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .profile-header__image {
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: none;
   }
 
   .profile-body {
@@ -12270,7 +12279,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .tab__title-w-1:hover {
     background-color: #3a3a3a;
-    color: #ffffff;
+    color: #f9d110;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -12286,7 +12295,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .tab__link-w-1:hover {
     background-color: #3a3a3a;
-    color: #ffffff;
+    color: #f9d110;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
