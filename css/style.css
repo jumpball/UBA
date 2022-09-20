@@ -1041,6 +1041,16 @@ td.table-footer {
   transition: all 0.3s ease 0s;
 }
 
+.publication-selector__title-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .publication-selector__btn {
   margin-top: 1.25rem;
   display: -webkit-inline-box;
@@ -1359,6 +1369,118 @@ td.table-footer {
 
 .pub-menu-slider__item {
   width: auto;
+}
+
+.pub-menu-slider__navigation {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.pub-menu-slider__nav-prev {
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+@supports (margin-right: clamp( 1.25rem , 4.4133629267rem  +  -5.1023011378vw , 2.5rem )) {
+  .pub-menu-slider__nav-prev {
+    margin-right: clamp( 1.25rem , 4.4133629267rem  +  -5.1023011378vw , 2.5rem );
+  }
+}
+
+@supports not (margin-right: clamp( 1.25rem , 4.4133629267rem  +  -5.1023011378vw , 2.5rem )) {
+  .pub-menu-slider__nav-prev {
+    margin-right: calc(2.5rem + -1.25 * (100vw - 37.5rem) / 24.49875);
+  }
+}
+
+@supports (margin-top: clamp( 0.0000000625rem , -1.9133627685rem  +  5.1023008827vw , 1.25rem )) {
+  .pub-menu-slider__nav-prev {
+    margin-top: clamp( 0.0000000625rem , -1.9133627685rem  +  5.1023008827vw , 1.25rem );
+  }
+}
+
+@supports not (margin-top: clamp( 0.0000000625rem , -1.9133627685rem  +  5.1023008827vw , 1.25rem )) {
+  .pub-menu-slider__nav-prev {
+    margin-top: calc(0.0000000625rem + 1.2499999375 * (100vw - 37.5rem) / 24.49875);
+  }
+}
+
+@supports (width: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-prev {
+    width: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem );
+  }
+}
+
+@supports not (width: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-prev {
+    width: calc(1.875rem + 1.25 * (100vw - 28.125rem) / 33.87375);
+  }
+}
+
+@supports (height: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-prev {
+    height: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem );
+  }
+}
+
+@supports not (height: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-prev {
+    height: calc(1.875rem + 1.25 * (100vw - 28.125rem) / 33.87375);
+  }
+}
+
+.pub-menu-slider__nav-next {
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+@supports (margin-top: clamp( 0.0000000625rem , -1.9133627685rem  +  5.1023008827vw , 1.25rem )) {
+  .pub-menu-slider__nav-next {
+    margin-top: clamp( 0.0000000625rem , -1.9133627685rem  +  5.1023008827vw , 1.25rem );
+  }
+}
+
+@supports not (margin-top: clamp( 0.0000000625rem , -1.9133627685rem  +  5.1023008827vw , 1.25rem )) {
+  .pub-menu-slider__nav-next {
+    margin-top: calc(0.0000000625rem + 1.2499999375 * (100vw - 37.5rem) / 24.49875);
+  }
+}
+
+@supports (width: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-next {
+    width: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem );
+  }
+}
+
+@supports not (width: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-next {
+    width: calc(1.875rem + 1.25 * (100vw - 28.125rem) / 33.87375);
+  }
+}
+
+@supports (height: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-next {
+    height: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem );
+  }
+}
+
+@supports not (height: clamp( 1.875rem , 0.8371388243rem  +  3.6901730691vw , 3.125rem )) {
+  .pub-menu-slider__nav-next {
+    height: calc(1.875rem + 1.25 * (100vw - 28.125rem) / 33.87375);
+  }
 }
 
 .pub-menu-slider .swiper-pagination {
@@ -1897,6 +2019,52 @@ td.table-footer {
   height: 30px;
 }
 
+.team-roster__section {
+  position: relative;
+}
+
+.team-roster__partner {
+  position: absolute;
+  right: 1.5625rem;
+  top: 0;
+}
+
+@supports (top: clamp( -1.25rem , -0.4025423729rem  +  -0.8474576271vw , -0.625rem )) {
+  .team-roster__partner {
+    top: clamp( -1.25rem , -0.4025423729rem  +  -0.8474576271vw , -0.625rem );
+  }
+}
+
+@supports not (top: clamp( -1.25rem , -0.4025423729rem  +  -0.8474576271vw , -0.625rem )) {
+  .team-roster__partner {
+    top: calc(-0.625rem + -0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (width: clamp( 6.25rem , 3.125rem  +  15.625vw , 18.75rem )) {
+  .team-roster__partner {
+    width: clamp( 6.25rem , 3.125rem  +  15.625vw , 18.75rem );
+  }
+}
+
+@supports not (width: clamp( 6.25rem , 3.125rem  +  15.625vw , 18.75rem )) {
+  .team-roster__partner {
+    width: calc(6.25rem + 12.5 * (100vw - 20rem) / 80);
+  }
+}
+
+@supports (height: clamp( 1.425rem , 0.7140625rem  +  3.5546875vw , 4.26875rem )) {
+  .team-roster__partner {
+    height: clamp( 1.425rem , 0.7140625rem  +  3.5546875vw , 4.26875rem );
+  }
+}
+
+@supports not (height: clamp( 1.425rem , 0.7140625rem  +  3.5546875vw , 4.26875rem )) {
+  .team-roster__partner {
+    height: calc(1.425rem + 2.84375 * (100vw - 20rem) / 80);
+  }
+}
+
 .team-roster__tab-body {
   display: block;
 }
@@ -1941,12 +2109,20 @@ td.table-footer {
 .team-slider__nav-prev {
   width: 50px;
   height: 50px;
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   cursor: pointer;
 }
 
 .team-slider__nav-next {
   width: 50px;
   height: 50px;
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   cursor: pointer;
 }
 
@@ -3953,7 +4129,7 @@ td.table-footer {
 }
 
 .no-webp .timeline__logo-1::before{
-  background-image: url("../img/logo/1.png"); }
+  background-image: url("../img/UBA/uba_team-logo/1.png"); }
 
 .timeline__logo-1::before {
   content: "";
@@ -3980,9 +4156,11 @@ td.table-footer {
   content: "";
 }
 
+.no-webp .timeline__logo-5::before{
+  background-image: url("../img/UBA/UBA-1.png"); }
+
 .timeline__logo-5::before {
   content: "";
-  background-image: url("../img/logo/VTB-color.svg");
 }
 
 .no-webp .timeline__logo-6::before{
@@ -12309,6 +12487,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     transition: all 0.3s ease 0s;
   }
 
+  .pub-menu-slider__nav-prev:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .pub-menu-slider__nav-next:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+
   .player-card__body:hover {
     -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
@@ -12320,15 +12518,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .team-slider__nav-prev:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
     -webkit-transform: scale(2);
         -ms-transform: scale(2);
             transform: scale(2);
+    opacity: 1;
   }
 
   .team-slider__nav-next:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
     -webkit-transform: scale(2);
         -ms-transform: scale(2);
             transform: scale(2);
+    opacity: 1;
   }
 
   .video-tabs__title-1:hover {
@@ -12514,13 +12720,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
-.webp .timeline__logo-1::before{ background-image: url(../img/logo/1.webp); }
+.webp .timeline__logo-1::before{ background-image: url(../img/UBA/uba_team-logo/1.webp); }
 
 .webp .timeline__logo-2::before{ background-image: url(../img/logo/3.webp); }
 
 .webp .timeline__logo-3::before{ background-image: url(../img/logo/11.webp); }
 
 .webp .timeline__logo-4::before{ background-image: url(../img/logo/2.webp); }
+
+.webp .timeline__logo-5::before{ background-image: url(../img/UBA/UBA-1.webp); }
 
 .webp .timeline__logo-6::before{ background-image: url("../img/logo/tournaments/2017 FIBA EB.png"); }
 
