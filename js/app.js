@@ -20050,7 +20050,11 @@ PERFORMANCE OF THIS SOFTWARE.
             observeParents: true,
             observeSlideChildren: true,
             freeMode: true,
-            loop: true,
+            autoplay: {
+                delay: 7e3,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
             mousewheel: {
                 invert: false
             },
@@ -20069,16 +20073,20 @@ PERFORMANCE OF THIS SOFTWARE.
                     spaceBetween: 20,
                     autoHeight: true
                 },
-                620: {
+                609.98: {
                     slidesPerView: 2,
                     spaceBetween: 20
                 },
-                910: {
+                879.98: {
                     slidesPerView: 3,
                     spaceBetween: 20
                 },
-                1210: {
+                1169.98: {
                     slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                1459.98: {
+                    slidesPerView: 5,
                     spaceBetween: 20
                 }
             }
