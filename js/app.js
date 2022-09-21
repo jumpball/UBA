@@ -19716,11 +19716,12 @@ PERFORMANCE OF THIS SOFTWARE.
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
-                clickable: true
+                clickable: true,
+                dynamicBullets: true
             },
             navigation: {
-                prevEl: ".team-slider__nav-prev",
-                nextEl: ".team-slider__nav-next"
+                prevEl: ".calendar-slider__nav-prev",
+                nextEl: ".calendar-slider__nav-next"
             },
             breakpoints: {
                 320: {
