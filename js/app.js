@@ -20092,6 +20092,50 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
+        new Swiper(".team-slider-1", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            freeMode: true,
+            loop: true,
+            mousewheel: {
+                invert: true
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".team-slider__nav-prev-1",
+                nextEl: ".team-slider__nav-next-1"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    autoHeight: true
+                },
+                609.98: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                879.98: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1169.98: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                1459.98: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                }
+            }
+        });
         function onEntry(entry) {
             entry.forEach((change => {
                 if (change.isIntersecting) change.target.classList.add("element-show"); else change.target.classList.remove("element-show");

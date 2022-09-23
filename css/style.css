@@ -393,6 +393,63 @@ ul.page__breadcrumb li a:hover {
   }
 }
 
+.date-title-h3b {
+  display: inline-block;
+  margin: 0px 0px 6px 0px;
+  font-weight: 900;
+  color: #3a3a3a;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
+
+@supports (font-size: clamp( 1.75rem , 1.1760204082rem  +  1.5306122449vw , 2.125rem )) {
+  .date-title-h3b {
+    font-size: clamp( 1.75rem , 1.1760204082rem  +  1.5306122449vw , 2.125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.75rem , 1.1760204082rem  +  1.5306122449vw , 2.125rem )) {
+  .date-title-h3b {
+    font-size: calc(1.75rem + 0.375 * (100vw - 37.5rem) / 24.5);
+  }
+}
+
+@supports (line-height: clamp( 2.375rem , 1.8010204082rem  +  1.5306122449vw , 2.75rem )) {
+  .date-title-h3b {
+    line-height: clamp( 2.375rem , 1.8010204082rem  +  1.5306122449vw , 2.75rem );
+  }
+}
+
+@supports not (line-height: clamp( 2.375rem , 1.8010204082rem  +  1.5306122449vw , 2.75rem )) {
+  .date-title-h3b {
+    line-height: calc(2.375rem + 0.375 * (100vw - 37.5rem) / 24.5);
+  }
+}
+
+@supports (padding-top: clamp( 0.5rem , -0.6479591837rem  +  3.0612244898vw , 1.25rem )) {
+  .date-title-h3b {
+    padding-top: clamp( 0.5rem , -0.6479591837rem  +  3.0612244898vw , 1.25rem );
+  }
+}
+
+@supports not (padding-top: clamp( 0.5rem , -0.6479591837rem  +  3.0612244898vw , 1.25rem )) {
+  .date-title-h3b {
+    padding-top: calc(0.5rem + 0.75 * (100vw - 37.5rem) / 24.5);
+  }
+}
+
+@supports (padding-botom: clamp( 0.875rem , 0.3010204082rem  +  1.5306122449vw , 1.25rem )) {
+  .date-title-h3b {
+    padding-botom: clamp( 0.875rem , 0.3010204082rem  +  1.5306122449vw , 1.25rem );
+  }
+}
+
+@supports not (padding-botom: clamp( 0.875rem , 0.3010204082rem  +  1.5306122449vw , 1.25rem )) {
+  .date-title-h3b {
+    padding-botom: calc(0.875rem + 0.375 * (100vw - 37.5rem) / 24.5);
+  }
+}
+
 .publication-title-h1b {
   font-weight: 900;
   color: #3a3a3a;
@@ -1130,32 +1187,32 @@ td.table-footer {
 
 .tab__img-1::before {
   content: "";
-  background-image: url("../img/icon/menu-stats-gold.svg");
+  background-image: url("../img/icon/menu-stats.svg");
 }
 
 .tab__img-2::before {
   content: "";
-  background-image: url("../img/icon/menu-ball-gold.svg");
+  background-image: url("../img/icon/menu-ball.svg");
 }
 
 .tab__img-3::before {
   content: "";
-  background-image: url("../img/icon/menu-calendar-gold.svg");
+  background-image: url("../img/icon/menu-calendar.svg");
 }
 
 .tab__img-4::before {
   content: "";
-  background-image: url("../img/icon/menu-photo-gold.svg");
+  background-image: url("../img/icon/menu-photo.svg");
 }
 
 .tab__img-5::before {
   content: "";
-  background-image: url("../img/icon/menu-desc-gold.svg");
+  background-image: url("../img/icon/menu-desc.svg");
 }
 
 .tab__img-6::before {
   content: "";
-  background-image: url("../img/icon/menu-star-circle-gold.svg");
+  background-image: url("../img/icon/menu-star-circle.svg");
 }
 
 .tab__body {
@@ -2273,6 +2330,95 @@ td.table-footer {
   cursor: pointer;
 }
 
+.team-slider__navigation-1 {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+  z-index: 2;
+}
+
+@supports (top: clamp( 0.625rem , 0.4025423729rem  +  0.8474576271vw , 1.25rem )) {
+  .team-slider__navigation-1 {
+    top: clamp( 0.625rem , 0.4025423729rem  +  0.8474576271vw , 1.25rem );
+  }
+}
+
+@supports not (top: clamp( 0.625rem , 0.4025423729rem  +  0.8474576271vw , 1.25rem )) {
+  .team-slider__navigation-1 {
+    top: calc(0.625rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+.team-slider__nav-prev-1 {
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+@supports (width: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-prev-1 {
+    width: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem );
+  }
+}
+
+@supports not (width: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-prev-1 {
+    width: calc(1.875rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (height: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-prev-1 {
+    height: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem );
+  }
+}
+
+@supports not (height: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-prev-1 {
+    height: calc(1.875rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+.team-slider__nav-next-1 {
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+@supports (width: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-next-1 {
+    width: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem );
+  }
+}
+
+@supports not (width: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-next-1 {
+    width: calc(1.875rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (height: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-next-1 {
+    height: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem );
+  }
+}
+
+@supports not (height: clamp( 1.875rem , 1.6525423729rem  +  0.8474576271vw , 2.5rem )) {
+  .team-slider__nav-next-1 {
+    height: calc(1.875rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
 .team-box {
   width: 100%;
   height: 30rem;
@@ -2868,25 +3014,31 @@ td.table-footer {
 }
 
 .calendar-slider__navigation {
-  width: 100%;
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: -1.875rem;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   z-index: 2;
 }
 
+@supports (gap: clamp( 1.25rem , 0.1086956522rem  +  4.347826087vw , 1.875rem )) {
+  .calendar-slider__navigation {
+    gap: clamp( 1.25rem , 0.1086956522rem  +  4.347826087vw , 1.875rem );
+  }
+}
+
+@supports not (gap: clamp( 1.25rem , 0.1086956522rem  +  4.347826087vw , 1.875rem )) {
+  .calendar-slider__navigation {
+    gap: calc(1.25rem + 0.625 * (100vw - 26.25rem) / 14.375);
+  }
+}
+
 .calendar-slider__nav-prev {
-  width: 50px;
-  height: 50px;
   opacity: 0.3;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -2894,14 +3046,60 @@ td.table-footer {
   cursor: pointer;
 }
 
+@supports (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-prev {
+    width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-prev {
+    width: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-prev {
+    height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-prev {
+    height: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
 .calendar-slider__nav-next {
-  width: 50px;
-  height: 50px;
   opacity: 0.3;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   cursor: pointer;
+}
+
+@supports (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-next {
+    width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-next {
+    width: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-next {
+    height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar-slider__nav-next {
+    height: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
 }
 
 .calendar-slider .swiper-pagination {
@@ -6264,7 +6462,7 @@ td.table-footer {
   position: relative;
   background-color: #ffffff;
   cursor: pointer;
-  color: #71a6dc;
+  color: #3a3a3a;
   text-align: left;
 }
 
@@ -6295,7 +6493,7 @@ td.table-footer {
   width: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 10px solid #71a6dc;
+  border-top: 10px solid #3a3a3a;
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   transition: -webkit-transform 0.5s ease 0s;
   -o-transition: transform 0.5s ease 0s;
@@ -6759,6 +6957,97 @@ td.table-footer {
   }
 }
 
+.team-profile__spollers {
+  display: -ms-grid;
+  display: grid;
+}
+
+.team-profile__spollers-item {
+  font-size: 1.125rem;
+  height: auto;
+}
+
+.team-profile__spollers-title {
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  position: relative;
+  color: #e7362e;
+}
+
+._spoller-init .team-profile__spollers-title {
+  cursor: pointer;
+  border: 1px solid #e7362e;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.1875rem;
+  margin-bottom: 0.625rem;
+}
+
+._spoller-init .team-profile__spollers-title::after {
+  content: "";
+  position: absolute;
+  top: 0.9375rem;
+  height: 0;
+  width: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #e7362e;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+._spoller-init .team-profile__spollers-title::after {
+  right: 0.75rem;
+}
+
+._spoller-init .team-profile__spollers-title._spoller-active::before {
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+._spoller-init .team-profile__spollers-title._spoller-active::after {
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.team-profile__nav {
+  margin: 0px 0px 40px 0px;
+}
+
+.team-profile__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+@supports (gap: clamp( 0.625rem , -0.1086502843rem  +  2.6086502843vw , 2.5rem )) {
+  .team-profile__form {
+    gap: clamp( 0.625rem , -0.1086502843rem  +  2.6086502843vw , 2.5rem );
+  }
+}
+
+@supports not (gap: clamp( 0.625rem , -0.1086502843rem  +  2.6086502843vw , 2.5rem )) {
+  .team-profile__form {
+    gap: calc(0.625rem + 1.875 * (100vw - 28.12375rem) / 71.87625);
+  }
+}
+
 .team-profile__tabs {
   position: relative;
 }
@@ -6778,35 +7067,20 @@ td.table-footer {
           justify-content: space-between;
 }
 
-@supports (top: clamp( -8.75rem , -4.6348566308rem  +  -6.6374618346vw , -6.875rem )) {
+@supports (top: clamp( -9.375rem , -8.5054347826rem  +  -0.8695652174vw , -8.75rem )) {
   .team-profile__tabs-navigation {
-    top: clamp( -8.75rem , -4.6348566308rem  +  -6.6374618346vw , -6.875rem );
+    top: clamp( -9.375rem , -8.5054347826rem  +  -0.8695652174vw , -8.75rem );
   }
 }
 
-@supports not (top: clamp( -8.75rem , -4.6348566308rem  +  -6.6374618346vw , -6.875rem )) {
+@supports not (top: clamp( -9.375rem , -8.5054347826rem  +  -0.8695652174vw , -8.75rem )) {
   .team-profile__tabs-navigation {
-    top: calc(-6.875rem + -1.875 * (100vw - 33.75rem) / 28.24875);
+    top: calc(-8.75rem + -0.625 * (100vw - 28.125rem) / 71.875);
   }
-}
-
-.team-profile__tabs-navigation-1 {
-  position: absolute;
-  top: -9.375rem;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.875rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .team-profile__tabs-title {
+  opacity: 0.2;
   border-radius: 0.1875rem;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -6842,14 +7116,88 @@ td.table-footer {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   opacity: 1;
+  background-color: transparent;
 }
 
 .team-profile__tabs-body {
   padding-top: 1.25rem;
+  margin: 0px 0px 30px 0px;
+}
+
+.team-profile__tabs-1 {
+  position: relative;
+}
+
+.team-profile__tabs-navigation-1 {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@supports (top: clamp( -9.375rem , -7.562065033rem  +  -2.924147611vw , -8.75rem )) {
+  .team-profile__tabs-navigation-1 {
+    top: clamp( -9.375rem , -7.562065033rem  +  -2.924147611vw , -8.75rem );
+  }
+}
+
+@supports not (top: clamp( -9.375rem , -7.562065033rem  +  -2.924147611vw , -8.75rem )) {
+  .team-profile__tabs-navigation-1 {
+    top: calc(-8.75rem + -0.625 * (100vw - 40.625rem) / 21.37375);
+  }
+}
+
+.team-profile__tabs-title-1 {
+  z-index: 3;
+  opacity: 0.3;
+  border-radius: 0.1875rem;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+@supports (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .team-profile__tabs-title-1 {
+    height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .team-profile__tabs-title-1 {
+    height: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .team-profile__tabs-title-1 {
+    width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .team-profile__tabs-title-1 {
+    width: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+.team-profile__tabs-title-1._tab-active {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 1;
+  background-color: transparent;
 }
 
 .team-profile__tabs-body-1 {
-  padding-top: 1.25rem;
+  padding-top: 1.875rem;
 }
 
 .team-profile__roster-cards {
@@ -6861,6 +7209,268 @@ td.table-footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 20px;
+}
+
+.calendar__header {
+  position: relative;
+}
+
+.calendar__tournament-logo {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@supports (width: clamp( 16.25rem , 12.5rem  +  18.75vw , 31.25rem )) {
+  .calendar__tournament-logo {
+    width: clamp( 16.25rem , 12.5rem  +  18.75vw , 31.25rem );
+  }
+}
+
+@supports not (width: clamp( 16.25rem , 12.5rem  +  18.75vw , 31.25rem )) {
+  .calendar__tournament-logo {
+    width: calc(16.25rem + 15 * (100vw - 20rem) / 80);
+  }
+}
+
+@supports (height: clamp( 3.75rem , 2.884375rem  +  4.328125vw , 7.2125rem )) {
+  .calendar__tournament-logo {
+    height: clamp( 3.75rem , 2.884375rem  +  4.328125vw , 7.2125rem );
+  }
+}
+
+@supports not (height: clamp( 3.75rem , 2.884375rem  +  4.328125vw , 7.2125rem )) {
+  .calendar__tournament-logo {
+    height: calc(3.75rem + 3.4625 * (100vw - 20rem) / 80);
+  }
+}
+
+.calendar__spollers {
+  display: -ms-grid;
+  display: grid;
+}
+
+.calendar__spollers-item {
+  font-size: 1.125rem;
+  height: auto;
+}
+
+.calendar__spollers-title {
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  position: relative;
+  color: #e7362e;
+}
+
+._spoller-init .calendar__spollers-title {
+  cursor: pointer;
+  border: 1px solid #e7362e;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.1875rem;
+  margin-bottom: 0.625rem;
+}
+
+._spoller-init .calendar__spollers-title::after {
+  content: "";
+  position: absolute;
+  top: 0.9375rem;
+  height: 0;
+  width: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #e7362e;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+._spoller-init .calendar__spollers-title::after {
+  right: 0.75rem;
+}
+
+._spoller-init .calendar__spollers-title._spoller-active::before {
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+._spoller-init .calendar__spollers-title._spoller-active::after {
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.calendar__nav {
+  margin: 0px 0px 40px 0px;
+}
+
+.calendar__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@supports (gap: clamp( 1.25rem , -0.7893654814rem  +  3.2893654814vw , 2.5rem )) {
+  .calendar__form {
+    gap: clamp( 1.25rem , -0.7893654814rem  +  3.2893654814vw , 2.5rem );
+  }
+}
+
+@supports not (gap: clamp( 1.25rem , -0.7893654814rem  +  3.2893654814vw , 2.5rem )) {
+  .calendar__form {
+    gap: calc(1.25rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.calendar__tabs {
+  position: relative;
+}
+
+.calendar__tabs-navigation {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@supports (top: clamp( -8.75rem , -4.6348566308rem  +  -6.6374618346vw , -6.875rem )) {
+  .calendar__tabs-navigation {
+    top: clamp( -8.75rem , -4.6348566308rem  +  -6.6374618346vw , -6.875rem );
+  }
+}
+
+@supports not (top: clamp( -8.75rem , -4.6348566308rem  +  -6.6374618346vw , -6.875rem )) {
+  .calendar__tabs-navigation {
+    top: calc(-6.875rem + -1.875 * (100vw - 33.75rem) / 28.24875);
+  }
+}
+
+.calendar__tabs-title {
+  opacity: 0.3;
+  border-radius: 0.1875rem;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+@supports (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar__tabs-title {
+    height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (height: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar__tabs-title {
+    height: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar__tabs-title {
+    width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem );
+  }
+}
+
+@supports not (width: clamp( 2.5rem , 2.2775423729rem  +  0.8474576271vw , 3.125rem )) {
+  .calendar__tabs-title {
+    width: calc(2.5rem + 0.625 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+.calendar__tabs-title._tab-active {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.calendar__tabs-body {
+  padding-top: 1.25rem;
+  margin: 0px 0px 30px 0px;
+}
+
+.calendar__full-shedule {
+  overflow: hidden;
+  margin: 0px 0px 40px 0px;
+}
+
+.calendar__one-day-shedule {
+  position: relative;
+  margin: 20px 0px 0px 0px;
+}
+
+.calendar__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+@supports (margin-top: clamp( 0.25rem , -0.5153061224rem  +  2.0408163265vw , 0.75rem )) {
+  .calendar__date-icon {
+    margin-top: clamp( 0.25rem , -0.5153061224rem  +  2.0408163265vw , 0.75rem );
+  }
+}
+
+@supports not (margin-top: clamp( 0.25rem , -0.5153061224rem  +  2.0408163265vw , 0.75rem )) {
+  .calendar__date-icon {
+    margin-top: calc(0.25rem + 0.5 * (100vw - 37.5rem) / 24.5);
+  }
+}
+
+@supports (width: clamp( 1.5rem , 1.3665254237rem  +  0.5084745763vw , 1.875rem )) {
+  .calendar__date-icon {
+    width: clamp( 1.5rem , 1.3665254237rem  +  0.5084745763vw , 1.875rem );
+  }
+}
+
+@supports not (width: clamp( 1.5rem , 1.3665254237rem  +  0.5084745763vw , 1.875rem )) {
+  .calendar__date-icon {
+    width: calc(1.5rem + 0.375 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+@supports (height: clamp( 1.5rem , 1.3665254237rem  +  0.5084745763vw , 1.875rem )) {
+  .calendar__date-icon {
+    height: clamp( 1.5rem , 1.3665254237rem  +  0.5084745763vw , 1.875rem );
+  }
+}
+
+@supports not (height: clamp( 1.5rem , 1.3665254237rem  +  0.5084745763vw , 1.875rem )) {
+  .calendar__date-icon {
+    height: calc(1.5rem + 0.375 * (100vw - 26.25rem) / 73.75);
+  }
+}
+
+.tournament__publications {
+  margin: 40px 0px 40px 0px;
 }
 
 .header {
@@ -9446,8 +10056,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (min-width: 28.12375rem) {
+  .team-profile__spollers-title {
+    display: none;
+  }
+}
+
 @media (min-width: 55rem) {
   .team-profile__players-slider {
+    display: none;
+  }
+}
+
+@media (min-width: 56.24875rem) {
+  .calendar__spollers-title {
     display: none;
   }
 }
@@ -9725,15 +10347,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (gap: clamp( 0.0000000625rem , -0.9178641526rem  +  3.4966255813vw , 1.25rem )) {
+@supports (gap: clamp( 0.1875rem , -0.5926846218rem  +  2.9721318927vw , 1.25rem )) {
     .tab__nav {
-      gap: clamp( 0.0000000625rem , -0.9178641526rem  +  3.4966255813vw , 1.25rem );
+      gap: clamp( 0.1875rem , -0.5926846218rem  +  2.9721318927vw , 1.25rem );
     }
 }
 
-@supports not (gap: clamp( 0.0000000625rem , -0.9178641526rem  +  3.4966255813vw , 1.25rem )) {
+@supports not (gap: clamp( 0.1875rem , -0.5926846218rem  +  2.9721318927vw , 1.25rem )) {
     .tab__nav {
-      gap: calc(0.0000000625rem + 1.2499999375 * (100vw - 26.25rem) / 35.74875);
+      gap: calc(0.1875rem + 1.0625 * (100vw - 26.25rem) / 35.74875);
     }
 }
 
@@ -11150,6 +11772,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 56.25rem) {
+  .calendar__form {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.625rem;
+  }
+
+  .calendar__tabs-navigation {
+    top: 0.9375rem;
+  }
+
+  .calendar__tabs-body {
+    padding-top: 4.375rem;
+  }
+}
+
 @media (max-width: 55rem) {
   .profile-header__title {
     grid-column: 1/2 span;
@@ -12305,6 +12943,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     bottom: -80px;
   }
 
+  .calendar-slider__navigation {
+    left: 0;
+  }
+
+@supports (top: clamp( 0.625rem , 1.6847826087rem  +  -2.6086956522vw , 1rem )) {
+    .calendar-slider__navigation {
+      top: clamp( 0.625rem , 1.6847826087rem  +  -2.6086956522vw , 1rem );
+    }
+}
+
+@supports not (top: clamp( 0.625rem , 1.6847826087rem  +  -2.6086956522vw , 1rem )) {
+    .calendar-slider__navigation {
+      top: calc(1rem + -0.375 * (100vw - 26.25rem) / 14.375);
+    }
+}
+
   .person-stats__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -12313,8 +12967,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     gap: 0.625rem;
   }
 
+  .team-profile__tabs-body-1 {
+    padding-top: 4.375rem;
+  }
+}
+
+@media (max-width: 40.62375rem) {
   .team-profile__tabs-navigation-1 {
-    top: -6.875rem;
+    top: 0.9375rem;
   }
 }
 
@@ -12564,25 +13224,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
       font-size: calc(1.0625rem + 0.4375 * (100vw - 25.625rem) / 8.125);
     }
 }
-
-  .team-profile__tabs-navigation {
-    top: 0.9375rem;
-  }
-
-  .team-profile__tabs-body {
-    padding-top: 4.375rem;
-  }
-
-  .team-profile-nav__form {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 7.5rem 1fr;
-    grid-template-columns: 7.5rem 1fr;
-    -webkit-column-gap: 0.625rem;
-       -moz-column-gap: 0.625rem;
-            column-gap: 0.625rem;
-  }
 }
 
 @media (max-width: 32.5rem) {
@@ -12652,6 +13293,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .person-stats-chart__stats-ft::after {
     display: none;
+  }
+
+  .team-profile__form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .team-profile__tabs-navigation {
+    top: 0.9375rem;
+  }
+
+  .team-profile__tabs-body {
+    padding-top: 4.375rem;
   }
 }
 
@@ -12891,16 +13545,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 25rem) {
-  .calendar-slider__navigation {
-    top: 60%;
-  }
-
-  .team-profile__tabs-navigation-1 {
-    top: 0.9375rem;
-  }
-
-  .team-profile__tabs-body-1 {
-    padding-top: 4.375rem;
+  .calendar__form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -13022,6 +13669,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: scale(2);
         -ms-transform: scale(2);
             transform: scale(2);
+    opacity: 1;
+  }
+
+  .team-slider__nav-prev-1:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 1;
+  }
+
+  .team-slider__nav-next-1:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
     opacity: 1;
   }
 

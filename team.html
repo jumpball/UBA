@@ -7,8 +7,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220922011702">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220922011702">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220924021544">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220924021544">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -120,12 +120,53 @@
 				<div class="section__container">
 					<div class="team-profile__header">
 						<h2 class="section-title-h2b publication-selector__title element-animation">БК Московский</h2>
-						<div class="team-profile__header-nav">
+						<div data-spollers="450,max" class="team-profile__spollers">
+							<div class="team-profile__spollers-item">
+								<button type="button" data-spoller class="team-profile__spollers-title">навигация</button>
+								<div class="team-profile__spollers-body">
+									<div class="team-profile__nav">
+										<form action="#" class="team-profile__form">
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-season-4">выбрать
+													сезон</label>
+												<select data-label data-scroll data-show name="form[]" id="select-season-4" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">
+														2022/2023</option>
+													<option class="person-stats__item" value="2">2021/2022</option>
+													<option class="person-stats__item" value="3">2020/2021</option>
+													<option class="person-stats__item" value="4">2019/2020</option>
+													<option class="person-stats__item" value="5">2018/2019</option>
+												</select>
+											</div>
+
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-team-2">выбрать
+													команду</label>
+												<select data-label data-scroll data-show name="form[]" id="select-team-2" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">все
+														команды</option>
+													<option class="person-stats__item" value="2">БК Московский</option>
+													<option class="person-stats__item" value="3">Take Shot Black</option>
+													<option class="person-stats__item" value="4">Росток</option>
+													<option class="person-stats__item" value="5">Take Shot White</option>
+													<option class="person-stats__item" value="6">AMS</option>
+												</select>
+											</div>
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="team-profile__header-nav">
 							<form action="#" class="team-profile-nav__form">
 								<div class="team-profile-nav__box">
 									<label class="team-profile-nav__label" for="select-season-2">выбрать
 										сезон</label>
-									<select data-label data-scroll data-show name="form[]" id="select-season-2" class="team-profile-nav__list">
+									<select data-label data-scroll data-show name="form[]" id="select-season-2"
+										class="team-profile-nav__list">
 										<option class="team-profile-nav__item" value="1" selected="selected">
 											2022/2023</option>
 										<option class="team-profile-nav__item" value="2">2021/2022</option>
@@ -137,7 +178,8 @@
 								<div class="team-profile-nav__box">
 									<label class="team-profile-nav__label" for="select-team-2">выбрать
 										команду</label>
-									<select data-label data-scroll data-show name="form[]" id="select-team-2" class="team-profile-nav__list">
+									<select data-label data-scroll data-show name="form[]" id="select-team-2"
+										class="team-profile-nav__list">
 										<option class="team-profile-nav__item" value="1" selected="selected">БК Московский
 										</option>
 										<option class="team-profile-nav__item" value="2">Take Shot Black</option>
@@ -148,15 +190,15 @@
 
 
 							</form>
-						</div>
+						</div> -->
 
 						<div data-tabs class="tabs team-profile__tabs">
 							<nav data-tabs-titles class="team-profile__tabs-navigation">
 								<button type="button" class="team-profile__tabs-title _tab-active -ibg">
-									<img src="img/icon/icon-cards-gold.svg" alt="">
+									<img src="img/icon/icon-cards-red.svg" alt="">
 								</button>
 								<button type="button" class="team-profile__tabs-title -ibg">
-									<img src="img/icon/icon-table-gold.svg" alt="">
+									<img src="img/icon/icon-table-red.svg" alt="">
 								</button>
 							</nav>
 							<div data-tabs-body class="team-profile__tabs-content">
@@ -1970,16 +2012,16 @@
 											</div>
 										</div>
 									</div>
-									<div data-tabs class="tabs team-profile__tabs">
+									<div data-tabs class="tabs team-profile__tabs-1">
 										<nav data-tabs-titles class="team-profile__tabs-navigation-1">
-											<button type="button" class="team-profile__tabs-title _tab-active -ibg">
-												<img src="img/icon/icon-cards-gold.svg" alt="">
+											<button type="button" class="team-profile__tabs-title-1 _tab-active -ibg">
+												<img src="img/icon/icon-cards-white.svg" alt="">
 											</button>
-											<button type="button" class="team-profile__tabs-title -ibg">
-												<img src="img/icon/icon-table-gold.svg" alt="">
+											<button type="button" class="team-profile__tabs-title-1 -ibg">
+												<img src="img/icon/icon-table-white.svg" alt="">
 											</button>
 										</nav>
-										<div data-tabs-body class="team-profile__tabs-content">
+										<div data-tabs-body class="team-profile__tabs-content-1">
 											<div class="team-profile__tabs-body-1">
 												<div class="team-profile__roster-cards">
 
@@ -2191,10 +2233,10 @@
 														<div class="calendar-slider__pagination swiper-pagination"></div>
 														<div class="calendar-slider__navigation">
 															<div class="calendar-slider__nav-prev -ibg">
-																<img src="img/icon/prev2.svg" alt="стрелка назад">
+																<img src="img/icon/prev-w.svg" alt="стрелка назад">
 															</div>
 															<div class="calendar-slider__nav-next -ibg">
-																<img src="img/icon/next2.svg" alt="стрелка вперед">
+																<img src="img/icon/next-w.svg" alt="стрелка вперед">
 															</div>
 														</div>
 													</div>
@@ -2994,9 +3036,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20220922011702"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220922011702"></script>
-	<script src="js/app.min.js?_v=20220922011702"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20220924021544"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220924021544"></script>
+	<script src="js/app.min.js?_v=20220924021544"></script>
 </body>
 
 </html>
