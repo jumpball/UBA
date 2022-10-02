@@ -402,51 +402,51 @@ ul.page__breadcrumb li a:hover {
   text-transform: uppercase;
 }
 
-@supports (font-size: clamp( 1.75rem , 1.1760204082rem  +  1.5306122449vw , 2.125rem )) {
+@supports (font-size: clamp( 1.75rem , 1.175991122rem  +  1.5306903413vw , 2.125rem )) {
   .date-title-h3b {
-    font-size: clamp( 1.75rem , 1.1760204082rem  +  1.5306122449vw , 2.125rem );
+    font-size: clamp( 1.75rem , 1.175991122rem  +  1.5306903413vw , 2.125rem );
   }
 }
 
-@supports not (font-size: clamp( 1.75rem , 1.1760204082rem  +  1.5306122449vw , 2.125rem )) {
+@supports not (font-size: clamp( 1.75rem , 1.175991122rem  +  1.5306903413vw , 2.125rem )) {
   .date-title-h3b {
-    font-size: calc(1.75rem + 0.375 * (100vw - 37.5rem) / 24.5);
+    font-size: calc(1.75rem + 0.375 * (100vw - 37.5rem) / 24.49875);
   }
 }
 
-@supports (line-height: clamp( 2.375rem , 1.8010204082rem  +  1.5306122449vw , 2.75rem )) {
+@supports (line-height: clamp( 2.375rem , 1.800991122rem  +  1.5306903413vw , 2.75rem )) {
   .date-title-h3b {
-    line-height: clamp( 2.375rem , 1.8010204082rem  +  1.5306122449vw , 2.75rem );
+    line-height: clamp( 2.375rem , 1.800991122rem  +  1.5306903413vw , 2.75rem );
   }
 }
 
-@supports not (line-height: clamp( 2.375rem , 1.8010204082rem  +  1.5306122449vw , 2.75rem )) {
+@supports not (line-height: clamp( 2.375rem , 1.800991122rem  +  1.5306903413vw , 2.75rem )) {
   .date-title-h3b {
-    line-height: calc(2.375rem + 0.375 * (100vw - 37.5rem) / 24.5);
+    line-height: calc(2.375rem + 0.375 * (100vw - 37.5rem) / 24.49875);
   }
 }
 
-@supports (padding-top: clamp( 0.5rem , -0.6479591837rem  +  3.0612244898vw , 1.25rem )) {
+@supports (padding-top: clamp( 0.5rem , -0.648017756rem  +  3.0613806827vw , 1.25rem )) {
   .date-title-h3b {
-    padding-top: clamp( 0.5rem , -0.6479591837rem  +  3.0612244898vw , 1.25rem );
+    padding-top: clamp( 0.5rem , -0.648017756rem  +  3.0613806827vw , 1.25rem );
   }
 }
 
-@supports not (padding-top: clamp( 0.5rem , -0.6479591837rem  +  3.0612244898vw , 1.25rem )) {
+@supports not (padding-top: clamp( 0.5rem , -0.648017756rem  +  3.0613806827vw , 1.25rem )) {
   .date-title-h3b {
-    padding-top: calc(0.5rem + 0.75 * (100vw - 37.5rem) / 24.5);
+    padding-top: calc(0.5rem + 0.75 * (100vw - 37.5rem) / 24.49875);
   }
 }
 
-@supports (padding-botom: clamp( 0.875rem , 0.3010204082rem  +  1.5306122449vw , 1.25rem )) {
+@supports (padding-botom: clamp( 0.875rem , 0.300991122rem  +  1.5306903413vw , 1.25rem )) {
   .date-title-h3b {
-    padding-botom: clamp( 0.875rem , 0.3010204082rem  +  1.5306122449vw , 1.25rem );
+    padding-botom: clamp( 0.875rem , 0.300991122rem  +  1.5306903413vw , 1.25rem );
   }
 }
 
-@supports not (padding-botom: clamp( 0.875rem , 0.3010204082rem  +  1.5306122449vw , 1.25rem )) {
+@supports not (padding-botom: clamp( 0.875rem , 0.300991122rem  +  1.5306903413vw , 1.25rem )) {
   .date-title-h3b {
-    padding-botom: calc(0.875rem + 0.375 * (100vw - 37.5rem) / 24.5);
+    padding-botom: calc(0.875rem + 0.375 * (100vw - 37.5rem) / 24.49875);
   }
 }
 
@@ -457,27 +457,50 @@ ul.page__breadcrumb li a:hover {
   padding: 0px 0px 10px 0px;
 }
 
-@supports (font-size: clamp( 1.5625rem , 0.0289117327rem  +  2.4710882673vw , 2.5rem )) {
+@supports (font-size: clamp( 1.5625rem , 0.032975889rem  +  2.467024111vw , 2.5rem )) {
   .publication-title-h1b {
-    font-size: clamp( 1.5625rem , 0.0289117327rem  +  2.4710882673vw , 2.5rem );
+    font-size: clamp( 1.5625rem , 0.032975889rem  +  2.467024111vw , 2.5rem );
   }
 }
 
-@supports not (font-size: clamp( 1.5625rem , 0.0289117327rem  +  2.4710882673vw , 2.5rem )) {
+@supports not (font-size: clamp( 1.5625rem , 0.032975889rem  +  2.467024111vw , 2.5rem )) {
   .publication-title-h1b {
-    font-size: calc(1.5625rem + 0.9375 * (100vw - 62.06125rem) / 37.93875);
+    font-size: calc(1.5625rem + 0.9375 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
-@supports (line-height: clamp( 2.25rem , 0.2052156436rem  +  3.2947843564vw , 3.5rem )) {
+@supports (line-height: clamp( 2.25rem , 0.2106345186rem  +  3.2893654814vw , 3.5rem )) {
   .publication-title-h1b {
-    line-height: clamp( 2.25rem , 0.2052156436rem  +  3.2947843564vw , 3.5rem );
+    line-height: clamp( 2.25rem , 0.2106345186rem  +  3.2893654814vw , 3.5rem );
   }
 }
 
-@supports not (line-height: clamp( 2.25rem , 0.2052156436rem  +  3.2947843564vw , 3.5rem )) {
+@supports not (line-height: clamp( 2.25rem , 0.2106345186rem  +  3.2893654814vw , 3.5rem )) {
   .publication-title-h1b {
-    line-height: calc(2.25rem + 1.25 * (100vw - 62.06125rem) / 37.93875);
+    line-height: calc(2.25rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.content__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@supports (gap: clamp( 1.875rem , 0.957135739rem  +  3.4966257561vw , 3.125rem )) {
+  .content__list {
+    gap: clamp( 1.875rem , 0.957135739rem  +  3.4966257561vw , 3.125rem );
+  }
+}
+
+@supports not (gap: clamp( 1.875rem , 0.957135739rem  +  3.4966257561vw , 3.125rem )) {
+  .content__list {
+    gap: calc(1.875rem + 1.25 * (100vw - 26.25rem) / 35.74875);
   }
 }
 
@@ -2339,7 +2362,7 @@ td.table-footer {
   position: absolute;
   text-align: center;
   padding: 0.3125rem;
-  color: #71a6dc;
+  color: #3a3a3a;
 }
 
 .player-card-1__info-left {
@@ -10217,6 +10240,448 @@ td.table-footer {
   }
 }
 
+.game-progress__tabs-navigation {
+  margin: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-progress__tabs-title {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 100%;
+  color: #ffffff;
+  border-bottom: 0.3125rem solid transparent;
+  border-radius: 0.1875rem;
+  padding: 20px 20px 15px 20px;
+}
+
+.game-progress__tabs-title._tab-active {
+  color: #f9d110;
+  background-color: #3a3a3a;
+  border-bottom: 0.3125rem solid #f9d110;
+}
+
+.game-progress__block-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+@supports (gap: clamp( 0.625rem , -0.3946827407rem  +  1.6446827407vw , 1.25rem )) {
+  .game-progress__block-1 {
+    gap: clamp( 0.625rem , -0.3946827407rem  +  1.6446827407vw , 1.25rem );
+  }
+}
+
+@supports not (gap: clamp( 0.625rem , -0.3946827407rem  +  1.6446827407vw , 1.25rem )) {
+  .game-progress__block-1 {
+    gap: calc(0.625rem + 0.625 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__row-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10.625rem 1fr;
+  grid-template-columns: 1fr 10.625rem 1fr;
+}
+
+@supports (gap: clamp( 0.625rem , -0.3946827407rem  +  1.6446827407vw , 1.25rem )) {
+  .game-progress__row-1 {
+    gap: clamp( 0.625rem , -0.3946827407rem  +  1.6446827407vw , 1.25rem );
+  }
+}
+
+@supports not (gap: clamp( 0.625rem , -0.3946827407rem  +  1.6446827407vw , 1.25rem )) {
+  .game-progress__row-1 {
+    gap: calc(0.625rem + 0.625 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__box-right-1,
+.game-progress__box-right-2,
+.game-progress__box-right-3,
+.game-progress__box-right-4 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/span 1;
+}
+
+.game-progress__item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.game-progress__item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+
+.game-progress__item-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+}
+
+.game-progress__item-left {
+  color: #3a3a3a;
+  background-color: #ffffff;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0.0625rem solid #3a3a3a;
+  border-radius: 0.1875rem;
+}
+
+.game-progress__item-right {
+  color: #3a3a3a;
+  background-color: #ffffff;
+  border: 0.0625rem solid #3a3a3a;
+  border-radius: 0.1875rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game-progress__item-photo {
+  height: 11.25rem;
+}
+
+@supports (min-width: clamp( 7.5rem , 4.4409517779rem  +  4.9340482221vw , 9.375rem )) {
+  .game-progress__item-photo {
+    min-width: clamp( 7.5rem , 4.4409517779rem  +  4.9340482221vw , 9.375rem );
+  }
+}
+
+@supports not (min-width: clamp( 7.5rem , 4.4409517779rem  +  4.9340482221vw , 9.375rem )) {
+  .game-progress__item-photo {
+    min-width: calc(7.5rem + 1.875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__item-logo {
+  height: 11.25rem;
+}
+
+@supports (min-width: clamp( 7.5rem , 4.4409517779rem  +  4.9340482221vw , 9.375rem )) {
+  .game-progress__item-logo {
+    min-width: clamp( 7.5rem , 4.4409517779rem  +  4.9340482221vw , 9.375rem );
+  }
+}
+
+@supports not (min-width: clamp( 7.5rem , 4.4409517779rem  +  4.9340482221vw , 9.375rem )) {
+  .game-progress__item-logo {
+    min-width: calc(7.5rem + 1.875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__item-logo img {
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+}
+
+@supports (padding-top: clamp( 0.9375rem , 4.2268654814rem  +  -3.2893654814vw , 2.1875rem )) {
+  .game-progress__item-logo img {
+    padding-top: clamp( 0.9375rem , 4.2268654814rem  +  -3.2893654814vw , 2.1875rem );
+  }
+}
+
+@supports not (padding-top: clamp( 0.9375rem , 4.2268654814rem  +  -3.2893654814vw , 2.1875rem )) {
+  .game-progress__item-logo img {
+    padding-top: calc(2.1875rem + -1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (padding-bottom: clamp( 0.9375rem , 4.2268654814rem  +  -3.2893654814vw , 2.1875rem )) {
+  .game-progress__item-logo img {
+    padding-bottom: clamp( 0.9375rem , 4.2268654814rem  +  -3.2893654814vw , 2.1875rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 0.9375rem , 4.2268654814rem  +  -3.2893654814vw , 2.1875rem )) {
+  .game-progress__item-logo img {
+    padding-bottom: calc(2.1875rem + -1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__item-mini-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@supports (height: clamp( 3.125rem , 0.487706044rem  +  5.4945054945vw , 3.75rem )) {
+  .game-progress__item-mini-logo {
+    height: clamp( 3.125rem , 0.487706044rem  +  5.4945054945vw , 3.75rem );
+  }
+}
+
+@supports not (height: clamp( 3.125rem , 0.487706044rem  +  5.4945054945vw , 3.75rem )) {
+  .game-progress__item-mini-logo {
+    height: calc(3.125rem + 0.625 * (100vw - 47.99875rem) / 11.375);
+  }
+}
+
+@supports (width: clamp( 3.125rem , 0.487706044rem  +  5.4945054945vw , 3.75rem )) {
+  .game-progress__item-mini-logo {
+    width: clamp( 3.125rem , 0.487706044rem  +  5.4945054945vw , 3.75rem );
+  }
+}
+
+@supports not (width: clamp( 3.125rem , 0.487706044rem  +  5.4945054945vw , 3.75rem )) {
+  .game-progress__item-mini-logo {
+    width: calc(3.125rem + 0.625 * (100vw - 47.99875rem) / 11.375);
+  }
+}
+
+.game-progress__item-mini-logo img {
+  padding: 0.3125rem;
+}
+
+.game-progress__item-mini-logo-left {
+  left: 0;
+}
+
+.game-progress__item-mini-logo-right {
+  right: 0;
+}
+
+.game-progress__item-content {
+  width: 100%;
+  padding: 6px 8px 6px 8px;
+}
+
+.game-progress__item-title {
+  font-weight: 900;
+  color: #e7362e;
+}
+
+@supports (font-size: clamp( 1.5rem , 0.6842538074rem  +  1.3157461926vw , 2rem )) {
+  .game-progress__item-title {
+    font-size: clamp( 1.5rem , 0.6842538074rem  +  1.3157461926vw , 2rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.6842538074rem  +  1.3157461926vw , 2rem )) {
+  .game-progress__item-title {
+    font-size: calc(1.5rem + 0.5 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (line-height: clamp( 1.5rem , 0.6842538074rem  +  1.3157461926vw , 2rem )) {
+  .game-progress__item-title {
+    line-height: clamp( 1.5rem , 0.6842538074rem  +  1.3157461926vw , 2rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.5rem , 0.6842538074rem  +  1.3157461926vw , 2rem )) {
+  .game-progress__item-title {
+    line-height: calc(1.5rem + 0.5 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__item-title span {
+  color: #146eb4;
+}
+
+.game-progress__item-info {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  line-height: 1.25rem;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6710634519rem  +  0.3289365481vw , 1rem )) {
+  .game-progress__item-info {
+    font-size: clamp( 0.875rem , 0.6710634519rem  +  0.3289365481vw , 1rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6710634519rem  +  0.3289365481vw , 1rem )) {
+  .game-progress__item-info {
+    font-size: calc(0.875rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__item-info span {
+  font-weight: 700;
+  display: inline-block;
+  margin: 0px 4px 0px 0px;
+}
+
+.game-progress__item-event {
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  border-radius: 0.1875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 11.25rem;
+}
+
+.game-progress__item-event-score {
+  color: #ffffff;
+  background-color: #3a3a3a;
+  border: 0.0625rem solid #f9d110;
+}
+
+.game-progress__item-event-time {
+  color: #3a3a3a;
+  background-color: #ffffff;
+  border: 0.0625rem solid #3a3a3a;
+}
+
+.game-progress__item-event-info {
+  background-color: #f9d110;
+  border: 0.0625rem solid #3a3a3a;
+}
+
+.game-progress__item-event-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-progress__event-period {
+  text-transform: uppercase;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.5rem  +  0.5vw , 1rem )) {
+  .game-progress__event-period {
+    font-size: clamp( 0.875rem , 0.5rem  +  0.5vw , 1rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.5rem  +  0.5vw , 1rem )) {
+  .game-progress__event-period {
+    font-size: calc(0.875rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+@supports (line-height: clamp( 1.375rem , 1rem  +  0.5vw , 1.5rem )) {
+  .game-progress__event-period {
+    line-height: clamp( 1.375rem , 1rem  +  0.5vw , 1.5rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.375rem , 1rem  +  0.5vw , 1.5rem )) {
+  .game-progress__event-period {
+    line-height: calc(1.375rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+.game-progress__event-time {
+  font-weight: 900;
+  letter-spacing: 0.0625rem;
+}
+
+@supports (font-size: clamp( 1.25rem , 0.875rem  +  0.5vw , 1.375rem )) {
+  .game-progress__event-time {
+    font-size: clamp( 1.25rem , 0.875rem  +  0.5vw , 1.375rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.25rem , 0.875rem  +  0.5vw , 1.375rem )) {
+  .game-progress__event-time {
+    font-size: calc(1.25rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+@supports (line-height: clamp( 1.875rem , 1.5rem  +  0.5vw , 2rem )) {
+  .game-progress__event-time {
+    line-height: clamp( 1.875rem , 1.5rem  +  0.5vw , 2rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.875rem , 1.5rem  +  0.5vw , 2rem )) {
+  .game-progress__event-time {
+    line-height: calc(1.875rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+.game-progress__event-score {
+  font-weight: 900;
+  color: #f9d110;
+}
+
+@supports (font-size: clamp( 1.75rem , 1rem  +  1vw , 2rem )) {
+  .game-progress__event-score {
+    font-size: clamp( 1.75rem , 1rem  +  1vw , 2rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.75rem , 1rem  +  1vw , 2rem )) {
+  .game-progress__event-score {
+    font-size: calc(1.75rem + 0.25 * (100vw - 75rem) / 25);
+  }
+}
+
+@supports (line-height: clamp( 2.625rem , 1.875rem  +  1vw , 2.875rem )) {
+  .game-progress__event-score {
+    line-height: clamp( 2.625rem , 1.875rem  +  1vw , 2.875rem );
+  }
+}
+
+@supports not (line-height: clamp( 2.625rem , 1.875rem  +  1vw , 2.875rem )) {
+  .game-progress__event-score {
+    line-height: calc(2.625rem + 0.25 * (100vw - 75rem) / 25);
+  }
+}
+
+.game-progress__event-border {
+  width: 60%;
+  height: 0.3125rem;
+  background-color: #e7362e;
+  border-radius: 0.1875rem;
+}
+
+.game-progress__event-label {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 8px 0px 0px 0px;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  line-height: 1.125rem;
+  font-size: 0.75rem;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -12836,6 +13301,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (min-width: 59.37375rem) {
+  .game-progress__item-mini-logo {
+    display: none;
+  }
+}
+
 @media (min-width: 61.99875em) {
   .tab__img::before {
     display: none;
@@ -13036,6 +13507,37 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .game-profile-header__row-1 {
     padding: 0px 30px 0px 30px;
   }
+}
+
+@media (max-width: 74.99875rem) {
+  .game-progress__row-1 {
+    -ms-grid-columns: 1fr 9.375rem 1fr;
+    grid-template-columns: 1fr 9.375rem 1fr;
+  }
+
+@supports (font-size: clamp( 1.5rem , 0.3077163462rem  +  1.9230769231vw , 1.75rem )) {
+    .game-progress__event-score {
+      font-size: clamp( 1.5rem , 0.3077163462rem  +  1.9230769231vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.3077163462rem  +  1.9230769231vw , 1.75rem )) {
+    .game-progress__event-score {
+      font-size: calc(1.5rem + 0.25 * (100vw - 61.99875rem) / 13);
+    }
+}
+
+@supports (line-height: clamp( 2.375rem , 1.1827163462rem  +  1.9230769231vw , 2.625rem )) {
+    .game-progress__event-score {
+      line-height: clamp( 2.375rem , 1.1827163462rem  +  1.9230769231vw , 2.625rem );
+    }
+}
+
+@supports not (line-height: clamp( 2.375rem , 1.1827163462rem  +  1.9230769231vw , 2.625rem )) {
+    .game-progress__event-score {
+      line-height: calc(2.375rem + 0.25 * (100vw - 61.99875rem) / 13);
+    }
+}
 }
 
 @media (max-width: 72.5rem) {
@@ -14392,6 +14894,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     grid-template-columns: 1fr 1fr;
   }
 
+  .game-progress__block-1 {
+    gap: 0.625rem;
+  }
+
+  .game-progress__row-1 {
+    -ms-grid-columns: 1fr 8.125rem 1fr;
+    grid-template-columns: 1fr 8.125rem 1fr;
+  }
+
   .header__body {
     height: 5rem;
     display: -webkit-box;
@@ -14693,6 +15204,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .footer__icons-link {
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 59.37375rem) {
+  .game-progress__item-photo {
+    display: none;
+  }
+
+  .game-progress__item-logo {
+    display: none;
   }
 }
 
@@ -16047,6 +16568,85 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .team-card__location {
     text-align: start;
   }
+
+  .game-progress__row-1 {
+    -ms-grid-columns: 8.75rem 1fr;
+    grid-template-columns: 8.75rem 1fr;
+  }
+
+  .game-progress__box-right-1,
+  .game-progress__box-right-2,
+  .game-progress__box-right-3,
+  .game-progress__box-right-4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 0.625rem;
+  }
+
+  .game-progress__item-2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/span 1;
+  }
+
+  .game-progress__item-left {
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .game-progress__item-photo {
+    display: block;
+    height: 10rem;
+  }
+
+  .game-progress__item-logo {
+    display: block;
+    height: 10rem;
+  }
+
+  .game-progress__item-logo img {
+    padding-top: 1.5625rem;
+    padding-bottom: 1.5625rem;
+  }
+
+  .game-progress__item-mini-logo {
+    display: none;
+  }
+
+  .game-progress__item-content {
+    padding: 6px 6px 6px 8px;
+  }
+
+  .game-progress__item-event {
+    height: 10rem;
+  }
+}
+
+@media (max-width: 47.5rem) {
+  .game-progress__tabs-title {
+    font-size: 1.125rem;
+  }
+
+  .game-progress__tabs-title span {
+    display: none;
+  }
 }
 
 @media (max-width: 45rem) {
@@ -16607,6 +17207,53 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 41.24875rem) {
+  .game-progress__row-1 {
+    -ms-grid-columns: 7.5rem 1fr;
+    grid-template-columns: 7.5rem 1fr;
+  }
+
+  .game-progress__event-period {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  .game-progress__event-time {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+@supports (font-size: clamp( 1.125rem , 0.5893095238rem  +  1.9047619048vw , 1.375rem )) {
+    .game-progress__event-score {
+      font-size: clamp( 1.125rem , 0.5893095238rem  +  1.9047619048vw , 1.375rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.5893095238rem  +  1.9047619048vw , 1.375rem )) {
+    .game-progress__event-score {
+      font-size: calc(1.125rem + 0.25 * (100vw - 28.12375rem) / 13.125);
+    }
+}
+
+@supports (line-height: clamp( 1.625rem , 1.0893095238rem  +  1.9047619048vw , 1.875rem )) {
+    .game-progress__event-score {
+      line-height: clamp( 1.625rem , 1.0893095238rem  +  1.9047619048vw , 1.875rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.625rem , 1.0893095238rem  +  1.9047619048vw , 1.875rem )) {
+    .game-progress__event-score {
+      line-height: calc(1.625rem + 0.25 * (100vw - 28.12375rem) / 13.125);
+    }
+}
+
+  .game-progress__event-label {
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+    margin: 6px 0px 0px 0px;
+  }
+}
+
 @media (max-width: 40.625rem) {
   .calendar-slider__btn {
     bottom: -80px;
@@ -16860,6 +17507,48 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 34.37375rem) {
+  .game-progress__item-photo {
+    display: none;
+  }
+
+  .game-progress__item-logo {
+    display: none;
+  }
+
+  .game-progress__item-mini-logo {
+    display: block;
+  }
+
+  .game-progress__item-mini-logo-left {
+    left: calc(100% - 50px);
+  }
+
+@supports (font-size: clamp( 1.125rem , 0.51565625rem  +  2.5vw , 1.375rem )) {
+    .game-progress__item-title {
+      font-size: clamp( 1.125rem , 0.51565625rem  +  2.5vw , 1.375rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.51565625rem  +  2.5vw , 1.375rem )) {
+    .game-progress__item-title {
+      font-size: calc(1.125rem + 0.25 * (100vw - 24.37375rem) / 10);
+    }
+}
+
+@supports (line-height: clamp( 1.125rem , 0.51565625rem  +  2.5vw , 1.375rem )) {
+    .game-progress__item-title {
+      line-height: clamp( 1.125rem , 0.51565625rem  +  2.5vw , 1.375rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.125rem , 0.51565625rem  +  2.5vw , 1.375rem )) {
+    .game-progress__item-title {
+      line-height: calc(1.125rem + 0.25 * (100vw - 24.37375rem) / 10);
+    }
+}
+}
+
 @media (max-width: 33.75rem) {
   .video-tabs__navigation-box {
     height: 8.375rem;
@@ -16952,6 +17641,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .game-profile-header__content {
     padding-top: 20px;
   }
+}
+
+@media (max-width: 31.24875rem) {
+@supports (line-height: clamp( 1rem , 0.5568409091rem  +  1.8181818182vw , 1.125rem )) {
+    .game-progress__item-info {
+      line-height: clamp( 1rem , 0.5568409091rem  +  1.8181818182vw , 1.125rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.5568409091rem  +  1.8181818182vw , 1.125rem )) {
+    .game-progress__item-info {
+      line-height: calc(1rem + 0.125 * (100vw - 24.37375rem) / 6.875);
+    }
+}
+
+@supports (font-size: clamp( 0.625rem , -0.2613181818rem  +  3.6363636364vw , 0.875rem )) {
+    .game-progress__item-info {
+      font-size: clamp( 0.625rem , -0.2613181818rem  +  3.6363636364vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.625rem , -0.2613181818rem  +  3.6363636364vw , 0.875rem )) {
+    .game-progress__item-info {
+      font-size: calc(0.625rem + 0.25 * (100vw - 24.37375rem) / 6.875);
+    }
+}
 }
 
 @media (max-width: 30rem) {
@@ -17146,6 +17861,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .teams__form {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 28.12375rem) {
+  .game-progress__row-1 {
+    -ms-grid-columns: 6.25rem 1fr;
+    grid-template-columns: 6.25rem 1fr;
+  }
+
+  .game-progress__item-event {
+    height: 9.375rem;
   }
 }
 
@@ -17396,9 +18122,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 24.37375rem) {
+  .game-progress__item-mini-logo {
+    display: none;
+  }
+}
+
 @media (max-width: 23.75rem) {
   .teams-compare__col-center {
     font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 22.49875rem) {
+  .game-progress__row-1 {
+    -ms-grid-columns: 5.5rem 1fr;
+    grid-template-columns: 5.5rem 1fr;
+  }
+
+  .game-progress__event-period {
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+  }
+
+  .game-progress__event-time {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .game-progress__event-score {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+
+  .game-progress__event-label {
+    font-size: 0.5rem;
+    line-height: 1rem;
   }
 }
 
