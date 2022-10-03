@@ -1,0 +1,50 @@
+<svg width="1705" height="960" viewBox="0 0 1705 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_620_1082)">
+<rect width="960" height="860" transform="translate(0 960) rotate(-90)" fill="white"/>
+<path d="M7.5 952.5L7.5 7.5H852.5L852.5 952.5H7.5Z" stroke="#FDCF01" stroke-width="15"/>
+<g clip-path="url(#clip1_620_1082)">
+<circle cx="186" cy="480" r="392.5" transform="rotate(-90 186 480)" stroke="#FDCF01" stroke-width="15"/>
+</g>
+<circle cx="352" cy="480" r="112.5" transform="rotate(-90 352 480)" stroke="#FDCF01" stroke-width="15"/>
+<rect x="7.5" y="632.5" width="305" height="345" transform="rotate(-90 7.5 632.5)" stroke="#FDCF01" stroke-width="15"/>
+<circle cx="352" cy="480" r="112.5" transform="rotate(-90 352 480)" stroke="#FDCF01" stroke-width="15" stroke-dasharray="30 30"/>
+<g clip-path="url(#clip2_620_1082)">
+<rect x="2.5" y="872.5" width="785" height="193" transform="rotate(-90 2.5 872.5)" stroke="#FDCF01" stroke-width="15"/>
+</g>
+<circle cx="853" cy="480" r="112.5" transform="rotate(-90 853 480)" stroke="#FDCF01" stroke-width="15"/>
+</g>
+<g clip-path="url(#clip3_620_1082)">
+<rect width="960" height="860" transform="matrix(0 -1 -1 0 1705 960)" fill="white"/>
+<path d="M1697.5 952.5V7.5H852.5L852.5 952.5H1697.5Z" stroke="#FDCF01" stroke-width="15"/>
+<g clip-path="url(#clip4_620_1082)">
+<circle r="392.5" transform="matrix(0 -1 -1 0 1519 480)" stroke="#FDCF01" stroke-width="15"/>
+</g>
+<circle r="112.5" transform="matrix(0 -1 -1 0 1353 480)" stroke="#FDCF01" stroke-width="15"/>
+<rect x="-7.5" y="-7.5" width="305" height="345" transform="matrix(0 -1 -1 0 1690 625)" stroke="#FDCF01" stroke-width="15"/>
+<circle r="112.5" transform="matrix(0 -1 -1 0 1353 480)" stroke="#FDCF01" stroke-width="15" stroke-dasharray="30 30"/>
+<g clip-path="url(#clip5_620_1082)">
+<rect x="-7.5" y="-7.5" width="785" height="193" transform="matrix(0 -1 -1 0 1695 865)" stroke="#FDCF01" stroke-width="15"/>
+</g>
+<circle r="112.5" transform="matrix(0 -1 -1 0 852 480)" stroke="#FDCF01" stroke-width="15"/>
+</g>
+<defs>
+<clipPath id="clip0_620_1082">
+<rect width="960" height="860" fill="white" transform="translate(0 960) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip1_620_1082">
+<rect width="806" height="402" fill="white" transform="translate(186 883) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip2_620_1082">
+<rect width="800" height="186" fill="white" transform="translate(0 880) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip3_620_1082">
+<rect width="960" height="860" fill="white" transform="matrix(0 -1 -1 0 1705 960)"/>
+</clipPath>
+<clipPath id="clip4_620_1082">
+<rect width="806" height="402" fill="white" transform="matrix(0 -1 -1 0 1519 883)"/>
+</clipPath>
+<clipPath id="clip5_620_1082">
+<rect width="800" height="186" fill="white" transform="matrix(0 -1 -1 0 1705 880)"/>
+</clipPath>
+</defs>
+</svg>
