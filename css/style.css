@@ -1439,6 +1439,16 @@ td.table-footer {
           justify-content: center;
 }
 
+.publication-selector__title-block-2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .publication-selector__btn {
   margin-top: 1.25rem;
   display: -webkit-inline-box;
