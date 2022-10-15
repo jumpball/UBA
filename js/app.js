@@ -19676,26 +19676,51 @@ PERFORMANCE OF THIS SOFTWARE.
                 });
             };
         }));
-        let boxs = document.querySelectorAll(".publication-selector__item");
-        let menu = document.querySelector(".publication-selector__menu");
-        if (menu && boxs) menu.addEventListener("click", (function(event) {
-            if ("BUTTON" != event.target.tagName) return false;
-            let target = event.target.dataset["view"];
-            boxs.forEach((function(el) {
-                el.classList.remove("hide");
-                if (!el.classList.contains(target) && "pub-all" != target) el.classList.add("hide");
+        window.setupPubsBlock = function setupPubsBlock() {
+            let boxs = document.querySelectorAll(".publication-selector__item");
+            let menu = document.querySelector(".publication-selector__menu");
+            let btns = document.querySelectorAll(".pub-menu-slider .publication-selector__btn");
+            if (menu && btns) {
+                btns.forEach((elem => {
+                    elem.addEventListener("click", (function(event) {
+                        btns.forEach((btn => {
+                            btn.classList.remove("publication-selector__btn-active");
+                        }));
+                        elem.classList.add("publication-selector__btn-active");
+                    }));
+                }));
+                menu.addEventListener("click", (function(event) {
+                    if ("BUTTON" != event.target.tagName) return false;
+                    let target = event.target.dataset["view"];
+                    if (boxs) boxs.forEach((function(el) {
+                        el.classList.remove("hide");
+                        if (!el.classList.contains(target) && "pub-all" != target) el.classList.add("hide");
+                    }));
+                }));
+            }
+        };
+        setupPubsBlock();
+        let boxs = document.querySelectorAll(".stats-selector__item");
+        let menu = document.querySelector(".stats-selector__menu");
+        let btns = document.querySelectorAll(".stats-selector__btn-1");
+        if (menu && btns) {
+            btns.forEach((elem => {
+                elem.addEventListener("click", (function(event) {
+                    btns.forEach((btn => {
+                        btn.classList.remove("stats-selector__btn-1-active");
+                    }));
+                    elem.classList.add("stats-selector__btn-1-active");
+                }));
             }));
-        }));
-        let stats_selector_boxs = document.querySelectorAll(".stats-selector__item");
-        let stats_selector_menu = document.querySelector(".stats-selector__menu");
-        if (stats_selector_menu && stats_selector_boxs) stats_selector_menu.addEventListener("click", (function(event) {
-            if ("BUTTON" != event.target.tagName) return false;
-            let target = event.target.dataset["view"];
-            stats_selector_boxs.forEach((function(el) {
-                el.classList.remove("hide");
-                if (!el.classList.contains(target) && "pub-all" != target) el.classList.add("hide");
+            menu.addEventListener("click", (function(event) {
+                if ("BUTTON" != event.target.tagName) return false;
+                let target = event.target.dataset["view"];
+                if (boxs) boxs.forEach((function(el) {
+                    el.classList.remove("hide");
+                    if (!el.classList.contains(target) && "pub-all" != target) el.classList.add("hide");
+                }));
             }));
-        }));
+        }
         new Swiper(".blog-slider", {
             effect: "fade",
             loop: true,
@@ -19833,7 +19858,7 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         });
         new Swiper(".pub-menu-slider", {
-            slidesPerView: "auto",
+            slidesPerView: 6,
             spaceBetween: 20,
             observer: true,
             observeParents: true,
@@ -20105,18 +20130,14 @@ PERFORMANCE OF THIS SOFTWARE.
             observeParents: true,
             observeSlideChildren: true,
             freeMode: true,
-            autoplay: {
-                delay: 7e3,
-                stopOnLastSlide: false,
-                disableOnInteraction: false
-            },
             mousewheel: {
                 invert: false
             },
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
-                clickable: true
+                clickable: true,
+                dynamicBullets: true
             },
             navigation: {
                 prevEl: ".team-slider__nav-prev",
