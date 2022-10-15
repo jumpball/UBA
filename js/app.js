@@ -17736,8 +17736,11 @@
                 const stickyBlockItem = stickyParent.querySelector("[data-sticky-item]");
                 const headerHeight = stickyConfig.header;
                 const offsetTop = headerHeight + stickyConfig.top;
-                const startPoint = stickyBlockItem.getBoundingClientRect().top + scrollY - offsetTop;
-                document.addEventListener("windowScroll", stickyBlockActions);
+                let startPoint;
+                if (stickyBlockItem) {
+                    startPoint = stickyBlockItem.getBoundingClientRect().top + scrollY - offsetTop;
+                    document.addEventListener("windowScroll", stickyBlockActions);
+                }
                 function stickyBlockActions(e) {
                     const endPoint = stickyParent.offsetHeight + stickyParent.getBoundingClientRect().top + scrollY - (offsetTop + stickyBlockItem.offsetHeight + stickyConfig.bottom);
                     let stickyItemValues = {
@@ -19674,10 +19677,21 @@ PERFORMANCE OF THIS SOFTWARE.
             };
         }));
         let boxs = document.querySelectorAll(".publication-selector__item");
-        document.querySelector(".publication-selector__menu").addEventListener("click", (function(event) {
+        let menu = document.querySelector(".publication-selector__menu");
+        if (menu && boxs) menu.addEventListener("click", (function(event) {
             if ("BUTTON" != event.target.tagName) return false;
             let target = event.target.dataset["view"];
             boxs.forEach((function(el) {
+                el.classList.remove("hide");
+                if (!el.classList.contains(target) && "pub-all" != target) el.classList.add("hide");
+            }));
+        }));
+        let stats_selector_boxs = document.querySelectorAll(".stats-selector__item");
+        let stats_selector_menu = document.querySelector(".stats-selector__menu");
+        if (stats_selector_menu && stats_selector_boxs) stats_selector_menu.addEventListener("click", (function(event) {
+            if ("BUTTON" != event.target.tagName) return false;
+            let target = event.target.dataset["view"];
+            stats_selector_boxs.forEach((function(el) {
                 el.classList.remove("hide");
                 if (!el.classList.contains(target) && "pub-all" != target) el.classList.add("hide");
             }));
@@ -19825,13 +19839,53 @@ PERFORMANCE OF THIS SOFTWARE.
             observeParents: true,
             observeSlideChildren: true,
             nested: true,
-            loop: true,
             mousewheel: {
                 invert: false
             },
             navigation: {
                 prevEl: ".pub-menu-slider__nav-prev",
                 nextEl: ".pub-menu-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                470: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                690: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                910: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                1140: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                },
+                1360: {
+                    slidesPerView: 6,
+                    spaceBetween: 20
+                }
+            }
+        });
+        new Swiper(".stats-menu-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            nested: true,
+            mousewheel: {
+                invert: false
+            },
+            navigation: {
+                prevEl: ".stats-menu-slider__nav-prev",
+                nextEl: ".stats-menu-slider__nav-next"
             },
             breakpoints: {
                 320: {
@@ -20150,7 +20204,6 @@ PERFORMANCE OF THIS SOFTWARE.
         document.addEventListener("DOMContentLoaded", (() => {
             const this_data = new Date;
             this_data.setDate(this_data.getDate() + 7);
-            console.log(this_data);
             const daysVal = document.querySelector(".time-count__days .time-count__val");
             const hoursVal = document.querySelector(".time-count__hours .time-count__val");
             const minutesVal = document.querySelector(".time-count__minutes .time-count__val");
@@ -20163,24 +20216,26 @@ PERFORMANCE OF THIS SOFTWARE.
                 let cases = [ 2, 0, 1, 1, 1, 2 ];
                 return titles[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]];
             }
-            const timeCount = () => {
-                let now = new Date;
-                let leftUntil = this_data - now;
-                let days = Math.floor(leftUntil / 1e3 / 60 / 60 / 24);
-                let hours = Math.floor(leftUntil / 1e3 / 60 / 60) % 24;
-                let minutes = Math.floor(leftUntil / 1e3 / 60) % 60;
-                let seconds = Math.floor(leftUntil / 1e3) % 60;
-                daysVal.textContent = days;
-                hoursVal.textContent = hours;
-                minutesVal.textContent = minutes;
-                secondsVal.textContent = seconds;
-                daysText.textContent = declOfNum(days, [ "день", "дня", "дней" ]);
-                hoursText.textContent = declOfNum(hours, [ "час", "часа", "часов" ]);
-                minutesText.textContent = declOfNum(minutes, [ "минута", "минуты", "минут" ]);
-                secondsText.textContent = declOfNum(seconds, [ "секунда", "секунды", "секунд" ]);
-            };
-            timeCount();
-            setInterval(timeCount, 1e3);
+            if (daysVal && hoursVal) {
+                const timeCount = () => {
+                    let now = new Date;
+                    let leftUntil = this_data - now;
+                    let days = Math.floor(leftUntil / 1e3 / 60 / 60 / 24);
+                    let hours = Math.floor(leftUntil / 1e3 / 60 / 60) % 24;
+                    let minutes = Math.floor(leftUntil / 1e3 / 60) % 60;
+                    let seconds = Math.floor(leftUntil / 1e3) % 60;
+                    daysVal.textContent = days;
+                    hoursVal.textContent = hours;
+                    minutesVal.textContent = minutes;
+                    secondsVal.textContent = seconds;
+                    daysText.textContent = declOfNum(days, [ "день", "дня", "дней" ]);
+                    hoursText.textContent = declOfNum(hours, [ "час", "часа", "часов" ]);
+                    minutesText.textContent = declOfNum(minutes, [ "минута", "минуты", "минут" ]);
+                    secondsText.textContent = declOfNum(seconds, [ "секунда", "секунды", "секунд" ]);
+                };
+                timeCount();
+                setInterval(timeCount, 1e3);
+            }
         }));
         const $jsChart1 = document.querySelector("#jsChart1");
         const jsChart1Y = {
