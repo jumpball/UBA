@@ -5692,7 +5692,7 @@ td.table-footer {
 }
 
 .profile__player-publications {
-  margin: 0px 0px 50px 0px;
+  margin: -50px 0px 50px 0px;
 }
 
 .profile__team-publications {
@@ -5744,6 +5744,42 @@ td.table-footer {
 @supports not (height: clamp( 21.875rem , 16.7729591837rem  +  25.5102040816vw , 37.5rem )) {
   .profile-header__photo {
     height: calc(21.875rem + 15.625 * (100vw - 20rem) / 61.25);
+  }
+}
+
+@supports (width: clamp( 18.75rem , 16.0969387755rem  +  13.2653061224vw , 26.875rem )) {
+  .profile-header__photo-1 {
+    width: clamp( 18.75rem , 16.0969387755rem  +  13.2653061224vw , 26.875rem );
+  }
+}
+
+@supports not (width: clamp( 18.75rem , 16.0969387755rem  +  13.2653061224vw , 26.875rem )) {
+  .profile-header__photo-1 {
+    width: calc(18.75rem + 8.125 * (100vw - 20rem) / 61.25);
+  }
+}
+
+@supports (height: clamp( 18.75rem , 16.0969387755rem  +  13.2653061224vw , 26.875rem )) {
+  .profile-header__photo-1 {
+    height: clamp( 18.75rem , 16.0969387755rem  +  13.2653061224vw , 26.875rem );
+  }
+}
+
+@supports not (height: clamp( 18.75rem , 16.0969387755rem  +  13.2653061224vw , 26.875rem )) {
+  .profile-header__photo-1 {
+    height: calc(18.75rem + 8.125 * (100vw - 20rem) / 61.25);
+  }
+}
+
+@supports (margin-top: clamp( 4.0625rem , -0.028202484rem  +  9.090702484vw , 9.0625rem )) {
+  .profile-header__photo-1 {
+    margin-top: clamp( 4.0625rem , -0.028202484rem  +  9.090702484vw , 9.0625rem );
+  }
+}
+
+@supports not (margin-top: clamp( 4.0625rem , -0.028202484rem  +  9.090702484vw , 9.0625rem )) {
+  .profile-header__photo-1 {
+    margin-top: calc(4.0625rem + 5 * (100vw - 44.99875rem) / 55.00125);
   }
 }
 
@@ -5806,22 +5842,137 @@ td.table-footer {
   }
 }
 
+.profile-header__title-1 {
+  font-weight: 900;
+  color: #3a3a3a;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  text-align: start;
+  grid-column: 1/2 span;
+  grid-row: 2/3 span;
+}
+
+@supports (font-size: clamp( 1.5rem , 0.6818181818rem  +  1.8181818182vw , 2.5rem )) {
+  .profile-header__title-1 {
+    font-size: clamp( 1.5rem , 0.6818181818rem  +  1.8181818182vw , 2.5rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.6818181818rem  +  1.8181818182vw , 2.5rem )) {
+  .profile-header__title-1 {
+    font-size: calc(1.5rem + 1 * (100vw - 45rem) / 55);
+  }
+}
+
+@supports (line-height: clamp( 1.875rem , 0.9545454545rem  +  2.0454545455vw , 3rem )) {
+  .profile-header__title-1 {
+    line-height: clamp( 1.875rem , 0.9545454545rem  +  2.0454545455vw , 3rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.875rem , 0.9545454545rem  +  2.0454545455vw , 3rem )) {
+  .profile-header__title-1 {
+    line-height: calc(1.875rem + 1.125 * (100vw - 45rem) / 55);
+  }
+}
+
 .profile-header__number {
   font-weight: 900;
   color: #a80d1c;
   grid-row: 2/4 span;
 }
 
-@supports (font-size: clamp( 3.75rem , 2.25rem  +  4vw , 6.25rem )) {
+@supports (font-size: clamp( 4.625rem , 2.6389891947rem  +  3.6110108053vw , 6.25rem )) {
   .profile-header__number {
-    font-size: clamp( 3.75rem , 2.25rem  +  4vw , 6.25rem );
+    font-size: clamp( 4.625rem , 2.6389891947rem  +  3.6110108053vw , 6.25rem );
   }
 }
 
-@supports not (font-size: clamp( 3.75rem , 2.25rem  +  4vw , 6.25rem )) {
+@supports not (font-size: clamp( 4.625rem , 2.6389891947rem  +  3.6110108053vw , 6.25rem )) {
   .profile-header__number {
-    font-size: calc(3.75rem + 2.5 * (100vw - 37.5rem) / 62.5);
+    font-size: calc(4.625rem + 1.625 * (100vw - 54.99875rem) / 45.00125);
   }
+}
+
+@supports (line-height: clamp( 5rem , 2.7084490709rem  +  4.1665509291vw , 6.875rem )) {
+  .profile-header__number {
+    line-height: clamp( 5rem , 2.7084490709rem  +  4.1665509291vw , 6.875rem );
+  }
+}
+
+@supports not (line-height: clamp( 5rem , 2.7084490709rem  +  4.1665509291vw , 6.875rem )) {
+  .profile-header__number {
+    line-height: calc(5rem + 1.875 * (100vw - 54.99875rem) / 45.00125);
+  }
+}
+
+.profile-header__team-logo {
+  grid-row: 7/4 span;
+}
+
+@supports (height: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo {
+    height: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem );
+  }
+}
+
+@supports not (height: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo {
+    height: calc(5rem + 1.25 * (100vw - 44.99875rem) / 55.00125);
+  }
+}
+
+@supports (width: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo {
+    width: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem );
+  }
+}
+
+@supports not (width: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo {
+    width: calc(5rem + 1.25 * (100vw - 44.99875rem) / 55.00125);
+  }
+}
+
+.profile-header__team-logo img {
+  padding: 0.3125rem;
+}
+
+.profile-header__team-logo-1 {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 0.1875rem;
+  bottom: 0.625rem;
+  right: 0;
+  z-index: 3;
+}
+
+@supports (height: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo-1 {
+    height: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem );
+  }
+}
+
+@supports not (height: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo-1 {
+    height: calc(5rem + 1.25 * (100vw - 44.99875rem) / 55.00125);
+  }
+}
+
+@supports (width: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo-1 {
+    width: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem );
+  }
+}
+
+@supports not (width: clamp( 5rem , 3.977324379rem  +  2.272675621vw , 6.25rem )) {
+  .profile-header__team-logo-1 {
+    width: calc(5rem + 1.25 * (100vw - 44.99875rem) / 55.00125);
+  }
+}
+
+.profile-header__team-logo-1 img {
+  padding: 0.3125rem;
 }
 
 .profile-header__subtitle {
@@ -5834,27 +5985,61 @@ td.table-footer {
   grid-row: 1/1 span;
 }
 
-@supports (font-size: clamp( 1.125rem , 0.9204545455rem  +  0.4545454545vw , 1.375rem )) {
+@supports (font-size: clamp( 1rem , 0.7954545455rem  +  0.4545454545vw , 1.25rem )) {
   .profile-header__subtitle {
-    font-size: clamp( 1.125rem , 0.9204545455rem  +  0.4545454545vw , 1.375rem );
+    font-size: clamp( 1rem , 0.7954545455rem  +  0.4545454545vw , 1.25rem );
   }
 }
 
-@supports not (font-size: clamp( 1.125rem , 0.9204545455rem  +  0.4545454545vw , 1.375rem )) {
+@supports not (font-size: clamp( 1rem , 0.7954545455rem  +  0.4545454545vw , 1.25rem )) {
   .profile-header__subtitle {
-    font-size: calc(1.125rem + 0.25 * (100vw - 45rem) / 55);
+    font-size: calc(1rem + 0.25 * (100vw - 45rem) / 55);
   }
 }
 
-@supports (line-height: clamp( 1.5rem , 1.3977272727rem  +  0.2272727273vw , 1.625rem )) {
+@supports (line-height: clamp( 1.375rem , 1.1704545455rem  +  0.4545454545vw , 1.625rem )) {
   .profile-header__subtitle {
-    line-height: clamp( 1.5rem , 1.3977272727rem  +  0.2272727273vw , 1.625rem );
+    line-height: clamp( 1.375rem , 1.1704545455rem  +  0.4545454545vw , 1.625rem );
   }
 }
 
-@supports not (line-height: clamp( 1.5rem , 1.3977272727rem  +  0.2272727273vw , 1.625rem )) {
+@supports not (line-height: clamp( 1.375rem , 1.1704545455rem  +  0.4545454545vw , 1.625rem )) {
   .profile-header__subtitle {
-    line-height: calc(1.5rem + 0.125 * (100vw - 45rem) / 55);
+    line-height: calc(1.375rem + 0.25 * (100vw - 45rem) / 55);
+  }
+}
+
+.profile-header__subtitle-1 {
+  font-weight: 600;
+  color: #3a3a3a;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  text-align: start;
+  grid-column: 1/2 span;
+  grid-row: 1/1 span;
+}
+
+@supports (font-size: clamp( 1rem , 0.7954545455rem  +  0.4545454545vw , 1.25rem )) {
+  .profile-header__subtitle-1 {
+    font-size: clamp( 1rem , 0.7954545455rem  +  0.4545454545vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7954545455rem  +  0.4545454545vw , 1.25rem )) {
+  .profile-header__subtitle-1 {
+    font-size: calc(1rem + 0.25 * (100vw - 45rem) / 55);
+  }
+}
+
+@supports (line-height: clamp( 1.375rem , 1.1704545455rem  +  0.4545454545vw , 1.625rem )) {
+  .profile-header__subtitle-1 {
+    line-height: clamp( 1.375rem , 1.1704545455rem  +  0.4545454545vw , 1.625rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.375rem , 1.1704545455rem  +  0.4545454545vw , 1.625rem )) {
+  .profile-header__subtitle-1 {
+    line-height: calc(1.375rem + 0.25 * (100vw - 45rem) / 55);
   }
 }
 
@@ -5904,6 +6089,16 @@ td.table-footer {
   grid-column: 1/2 span;
 }
 
+.profile-header__text-4 {
+  grid-row: 5/1 span;
+  grid-column: 1/2 span;
+}
+
+.profile-header__text-5 {
+  grid-row: 6/1 span;
+  grid-column: 1/2 span;
+}
+
 .profile-header__image {
   border: 0.0625rem solid #eef0f2;
   border-radius: 0.0625rem;
@@ -5911,27 +6106,27 @@ td.table-footer {
   grid-column: 1/2 span;
 }
 
-@supports (width: clamp( 3.125rem , 2.0535714286rem  +  2.8571428571vw , 4.375rem )) {
+@supports (width: clamp( 3.125rem , 0.5061366125rem  +  4.7616780153vw , 4.375rem )) {
   .profile-header__image {
-    width: clamp( 3.125rem , 2.0535714286rem  +  2.8571428571vw , 4.375rem );
+    width: clamp( 3.125rem , 0.5061366125rem  +  4.7616780153vw , 4.375rem );
   }
 }
 
-@supports not (width: clamp( 3.125rem , 2.0535714286rem  +  2.8571428571vw , 4.375rem )) {
+@supports not (width: clamp( 3.125rem , 0.5061366125rem  +  4.7616780153vw , 4.375rem )) {
   .profile-header__image {
-    width: calc(3.125rem + 1.25 * (100vw - 37.5rem) / 43.75);
+    width: calc(3.125rem + 1.25 * (100vw - 54.99875rem) / 26.25125);
   }
 }
 
-@supports (height: clamp( 2.1875rem , 1.4375rem  +  2vw , 3.0625rem )) {
+@supports (height: clamp( 2.1875rem , 0.3542956288rem  +  3.3331746107vw , 3.0625rem )) {
   .profile-header__image {
-    height: clamp( 2.1875rem , 1.4375rem  +  2vw , 3.0625rem );
+    height: clamp( 2.1875rem , 0.3542956288rem  +  3.3331746107vw , 3.0625rem );
   }
 }
 
-@supports not (height: clamp( 2.1875rem , 1.4375rem  +  2vw , 3.0625rem )) {
+@supports not (height: clamp( 2.1875rem , 0.3542956288rem  +  3.3331746107vw , 3.0625rem )) {
   .profile-header__image {
-    height: calc(2.1875rem + 0.875 * (100vw - 37.5rem) / 43.75);
+    height: calc(2.1875rem + 0.875 * (100vw - 54.99875rem) / 26.25125);
   }
 }
 
@@ -5950,6 +6145,10 @@ td.table-footer {
   top: -30px;
   left: 0;
   width: 100%;
+}
+
+.profile-body__tabs {
+  margin: 20px 0px 0px 0px;
 }
 
 .timeline {
@@ -6532,6 +6731,18 @@ td.table-footer {
 
 .timeline__stats-item-as::before {
   content: "передачи";
+}
+
+.timeline__stats-item-w::before {
+  content: "победы";
+}
+
+.timeline__stats-item-l::before {
+  content: "поражения";
+}
+
+.timeline__stats-item-pr::before {
+  content: "%";
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -8474,7 +8685,8 @@ td.table-footer {
 
 .publication__photo {
   position: relative;
-  padding: 0px 0px 75% 0px;
+  max-height: 40.625rem;
+  height: 40.625rem;
   overflow: hidden;
   margin: 20px 0px 20px 0px;
 }
@@ -8548,6 +8760,35 @@ td.table-footer {
 
 .publication__selector-hidden {
   display: none;
+}
+
+.publication__signature-list {
+  margin: 20px 0px 0px 0px;
+}
+
+.publication__signature-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3125rem;
+  margin: 0px 0px 20px 0px;
+}
+
+.publication__signature-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.publication__signature-text {
+  display: inline-block;
+}
+
+.publication__signature-link {
+  display: inline-block;
+  color: #146eb4;
 }
 
 .person-gallery__box {
@@ -15101,6 +15342,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 100rem) {
+@supports (height: clamp( 21.875rem , -8.715482221rem  +  49.340482221vw , 40.625rem )) {
+    .publication__photo {
+      height: clamp( 21.875rem , -8.715482221rem  +  49.340482221vw , 40.625rem );
+    }
+}
+
+@supports not (height: clamp( 21.875rem , -8.715482221rem  +  49.340482221vw , 40.625rem )) {
+    .publication__photo {
+      height: calc(21.875rem + 18.75 * (100vw - 61.99875rem) / 38.00125);
+    }
+}
+
   .game-profile-header__row {
     padding: 0px 30px 0px 30px;
   }
@@ -16374,6 +16627,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .publication__photo {
     margin: 10px 0px 20px 0px;
   }
+
+@supports (height: clamp( 11.25rem , 0.2377674931rem  +  55.0611625346vw , 34.375rem )) {
+    .publication__photo {
+      height: clamp( 11.25rem , 0.2377674931rem  +  55.0611625346vw , 34.375rem );
+    }
+}
+
+@supports not (height: clamp( 11.25rem , 0.2377674931rem  +  55.0611625346vw , 34.375rem )) {
+    .publication__photo {
+      height: calc(11.25rem + 23.125 * (100vw - 20rem) / 41.99875);
+    }
+}
 
   .publication__sidebar {
     margin-bottom: 2.5rem;
@@ -18883,7 +19148,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .profile__player-publications {
-    margin: -100px 0px 30px 0px;
+    margin: 0px 0px 30px 0px;
   }
 
   .profile-header__bg-logo {
@@ -18908,6 +19173,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .profile-header__photo {
+    margin: 0 auto;
+  }
+
+  .profile-header__photo-1 {
     margin: 0 auto;
   }
 
@@ -18971,24 +19240,174 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-  .profile-header__number {
-    position: absolute;
-    right: 0;
+  .profile-header__title-1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
   }
 
-@supports (top: clamp( 2.5rem , -1.875rem  +  19.4444444444vw , 6.875rem )) {
-    .profile-header__number {
-      top: clamp( 2.5rem , -1.875rem  +  19.4444444444vw , 6.875rem );
+@supports (font-size: clamp( 1.125rem , 0.525rem  +  3vw , 1.875rem )) {
+    .profile-header__title-1 {
+      font-size: clamp( 1.125rem , 0.525rem  +  3vw , 1.875rem );
     }
 }
 
-@supports not (top: clamp( 2.5rem , -1.875rem  +  19.4444444444vw , 6.875rem )) {
+@supports not (font-size: clamp( 1.125rem , 0.525rem  +  3vw , 1.875rem )) {
+    .profile-header__title-1 {
+      font-size: calc(1.125rem + 0.75 * (100vw - 20rem) / 25);
+    }
+}
+
+@supports (line-height: clamp( 1.375rem , 0.675rem  +  3.5vw , 2.25rem )) {
+    .profile-header__title-1 {
+      line-height: clamp( 1.375rem , 0.675rem  +  3.5vw , 2.25rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.375rem , 0.675rem  +  3.5vw , 2.25rem )) {
+    .profile-header__title-1 {
+      line-height: calc(1.375rem + 0.875 * (100vw - 20rem) / 25);
+    }
+}
+
+@supports (font-weight: clamp( 37.5rem , 22.5rem  +  75vw , 56.25rem )) {
+    .profile-header__title-1 {
+      font-weight: clamp( 37.5rem , 22.5rem  +  75vw , 56.25rem );
+    }
+}
+
+@supports not (font-weight: clamp( 37.5rem , 22.5rem  +  75vw , 56.25rem )) {
+    .profile-header__title-1 {
+      font-weight: calc(37.5rem + 18.75 * (100vw - 20rem) / 25);
+    }
+}
+
+  .profile-header__number {
+    position: absolute;
+    left: 0;
+  }
+
+@supports (top: clamp( 3.25rem , -1.0002361242rem  +  18.8899383299vw , 7.5rem )) {
     .profile-header__number {
-      top: calc(2.5rem + 4.375 * (100vw - 22.5rem) / 22.5);
+      top: clamp( 3.25rem , -1.0002361242rem  +  18.8899383299vw , 7.5rem );
+    }
+}
+
+@supports not (top: clamp( 3.25rem , -1.0002361242rem  +  18.8899383299vw , 7.5rem )) {
+    .profile-header__number {
+      top: calc(3.25rem + 4.25 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+@supports (font-size: clamp( 3.375rem , 0.7498541586rem  +  11.6673148508vw , 6rem )) {
+    .profile-header__number {
+      font-size: clamp( 3.375rem , 0.7498541586rem  +  11.6673148508vw , 6rem );
+    }
+}
+
+@supports not (font-size: clamp( 3.375rem , 0.7498541586rem  +  11.6673148508vw , 6rem )) {
+    .profile-header__number {
+      font-size: calc(3.375rem + 2.625 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+@supports (line-height: clamp( 3.75rem , 0.8748402689rem  +  12.7784876938vw , 6.625rem )) {
+    .profile-header__number {
+      line-height: clamp( 3.75rem , 0.8748402689rem  +  12.7784876938vw , 6.625rem );
+    }
+}
+
+@supports not (line-height: clamp( 3.75rem , 0.8748402689rem  +  12.7784876938vw , 6.625rem )) {
+    .profile-header__number {
+      line-height: calc(3.75rem + 2.875 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+  .profile-header__team-logo {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+  }
+
+@supports (height: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo {
+      height: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem );
+    }
+}
+
+@supports not (height: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo {
+      height: calc(3.75rem + 2.5 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+@supports (width: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo {
+      width: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem );
+    }
+}
+
+@supports not (width: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo {
+      width: calc(3.75rem + 2.5 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+@supports (top: clamp( 3.125rem , -1.2502430691rem  +  19.4455247514vw , 7.5rem )) {
+    .profile-header__team-logo {
+      top: clamp( 3.125rem , -1.2502430691rem  +  19.4455247514vw , 7.5rem );
+    }
+}
+
+@supports not (top: clamp( 3.125rem , -1.2502430691rem  +  19.4455247514vw , 7.5rem )) {
+    .profile-header__team-logo {
+      top: calc(3.125rem + 4.375 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+@supports (height: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo-1 {
+      height: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem );
+    }
+}
+
+@supports not (height: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo-1 {
+      height: calc(3.75rem + 2.5 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+@supports (width: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo-1 {
+      width: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem );
+    }
+}
+
+@supports not (width: clamp( 3.75rem , 1.2498611034rem  +  11.1117284294vw , 6.25rem )) {
+    .profile-header__team-logo-1 {
+      width: calc(3.75rem + 2.5 * (100vw - 22.5rem) / 22.49875);
+    }
+}
+
+@supports (top: clamp( 3.125rem , -1.2502430691rem  +  19.4455247514vw , 7.5rem )) {
+    .profile-header__team-logo-1 {
+      top: clamp( 3.125rem , -1.2502430691rem  +  19.4455247514vw , 7.5rem );
+    }
+}
+
+@supports not (top: clamp( 3.125rem , -1.2502430691rem  +  19.4455247514vw , 7.5rem )) {
+    .profile-header__team-logo-1 {
+      top: calc(3.125rem + 4.375 * (100vw - 22.5rem) / 22.49875);
     }
 }
 
   .profile-header__subtitle {
+    color: #eef0f2;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  .profile-header__subtitle-1 {
     color: #eef0f2;
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -19038,16 +19457,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     border-radius: 0.0625rem;
   }
 
+  .profile-header__text-4 {
+    padding-top: 0.625rem;
+    border-top: 0.1875rem solid #eef0f2;
+    border-radius: 0.0625rem;
+  }
+
+  .profile-header__text-5 {
+    display: none;
+  }
+
   .profile-header__image {
     display: none;
   }
 
   .profile-body {
-    top: -170px;
+    top: -40px;
   }
 
   .profile-body__tabs {
-    margin-top: 4.375rem;
+    margin: 70px 0px 0px 0px;
   }
 
   .game__publications {
