@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Игроки</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221018182925">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221018182925">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div data-sticky class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo">
+						<div class="header__logo-ball element-animation -ibg">
+							<a href="#" class="header__logo-link">
+								<img src="img/UBA/UBA_ball-white.svg" alt="Лого UBA">
+							</a>
+						</div>
+						<div class="header__logo-text element-animation -ibg">
+							<img src="img/UBA/UBA_text-white.svg" alt="Лого UBA">
+						</div>
+					</div>
+
+
+					<div class="header__top">
+						<div class="header__search-form">
+							<!-- <button type="button" class="header__search-form-btn -ibg">
+						<img src="img/icon/search-w.svg" alt="">
+					</button> -->
+							<form action="#" class="header__search-form-item">
+
+
+								<input autocomplete="off" type="text" name="form[]" placeholder="Поиск" class="header__search-form-input" data-placeholder="Поиск">
+								<div class="header__search-form-btn-box">
+									<button type="submit" class="header__search-form-btn-1 -ibg">
+										<img src="img/icon/search-w.svg" alt="">
+									</button>
+								</div>
+							</form>
+						</div>
+
+
+						<div data-da=".header__menu, 991.98,2" class="header__icons">
+							<ul class="header__icons-list">
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/twitter-1-gold.svg" alt="иконка Твиттер"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/vk-1-gold.svg" alt="иконка ВКонтакте"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/telegram-1-gold.svg" alt="иконка Телеграм"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/tiktok-1-gold.svg" alt="иконка Тик-Ток"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/youtube-1-gold.svg" alt="иконка Ютуб"></a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- <form data-da=".header__body, 991.98,2" action="#" class="header__form">
+					<div class="header__form-line">
+						<div class="select header__form-select-lang _select-active" data-id="1"><select id="select-lang"
+								name="form[]" class="header__form-list" hidden="" data-id="1" data-speed="150">
+								<option class="header__form-item" value="1" selected="selected">RU</option>
+								<option class="header__form-item" value="2">ENG</option>
+							</select>
+						</div>
+					</div>
+				</form> -->
+
+
+
+
+
+
+
+					</div>
+					<button type="button" class="header__menu-burger icon-menu"><span></span></button>
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Календарь</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Статистика</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Таблица</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Команды</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Игроки</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Рейтинг</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<!-- BREADCRUMS -->
+			<div class="section__container">
+				<ul class="page__breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li>Игроки</li>
+				</ul>
+			</div>
+
+			<!-- TEAM PROFILE HEADER -->
+			<section class="team-profile__section section-offset">
+				<div class="section__container">
+					<div class="team-profile__header-1">
+						<h2 class="section-title-h2b publication-selector__title element-animation">Игроки</h2>
+						<div data-spollers="450,max" class="team-profile__spollers">
+							<div class="team-profile__spollers-item">
+								<button type="button" data-spoller class="team-profile__spollers-title">навигация</button>
+								<div class="team-profile__spollers-body">
+									<div class="team-profile__nav">
+										<form action="#" class="team-profile__form">
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-season-4">выбрать
+													сезон</label>
+												<select data-label data-scroll data-show name="form[]" id="select-season-4" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">
+														2022/2023</option>
+													<option class="person-stats__item" value="2">2021/2022</option>
+													<option class="person-stats__item" value="3">2020/2021</option>
+													<option class="person-stats__item" value="4">2019/2020</option>
+													<option class="person-stats__item" value="5">2018/2019</option>
+												</select>
+											</div>
+
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-team-2">выбрать
+													команду</label>
+												<select data-label data-scroll data-show name="form[]" id="select-team-2" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">все
+														команды</option>
+													<option class="person-stats__item" value="2">БК Московский</option>
+													<option class="person-stats__item" value="3">Take Shot Black</option>
+													<option class="person-stats__item" value="4">Росток</option>
+													<option class="person-stats__item" value="5">Take Shot White</option>
+													<option class="person-stats__item" value="6">AMS</option>
+												</select>
+											</div>
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-tabs class="tabs team-profile__tabs">
+							<nav data-tabs-titles class="team-profile__tabs-navigation">
+								<button type="button" class="team-profile__tabs-title _tab-active -ibg">
+									<img src="img/icon/icon-cards-red.svg" alt="">
+								</button>
+								<button type="button" class="team-profile__tabs-title -ibg">
+									<img src="img/icon/icon-table-red.svg" alt="">
+								</button>
+							</nav>
+							<div data-tabs-body class="team-profile__tabs-content">
+								<div class="team-profile__tabs-body">
+									<div data-showmore data-showmore-media="879.98,min" class="block team-profile__players-block">
+										<div data-showmore-content="980" class="block__content">
+											<div class="team-profile__roster-cards">
+
+												<div class="team-profile__players">
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">1</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/30.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/30.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Иванов</h3>
+															<h3 class="player-card__title">Владислав</h3>
+															<span>легкий форвард</span>
+															<p>18.03.1996</p>
+															<p>Россия</p>
+															<p>200 см / 96 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+
+															<h3 class="player-card__number">9</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/31.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/31.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Семенов</h3>
+															<h3 class="player-card__title">Алексей</h3>
+															<span>центровой</span>
+															<p>18.03.1996</p>
+															<p>Россия</p>
+															<p>208 см / 100 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">11</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/32.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/32.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Крашенинников</h3>
+															<h3 class="player-card__title">Виталий</h3>
+															<span>атакующий защитник</span>
+															<p>18.03.1999</p>
+															<p>Россия</p>
+															<p>196 см / 85 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">10</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/33.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/33.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Луговой</h3>
+															<h3 class="player-card__title">Константин</h3>
+															<span>тяжелый форвард</span>
+															<p>05.04.1996</p>
+															<p>Россия</p>
+															<p>202 см / 98 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">13</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/34.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/34.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Востриков</h3>
+															<h3 class="player-card__title">Артем</h3>
+															<span>разыгрывающий</span>
+															<p>22.01.2001</p>
+															<p>Россия</p>
+															<p>189 см / 84 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">27</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/35.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/35.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Сергеев</h3>
+															<h3 class="player-card__title">Анатолий</h3>
+															<span>атакующий защитник</span>
+															<p>10.12.2001</p>
+															<p>Россия</p>
+															<p>198 см / 95 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">22</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/36.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/36.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Еременко</h3>
+															<h3 class="player-card__title">Иван</h3>
+															<span>тяжелый форвард</span>
+															<p>09.09.1989</p>
+															<p>Россия</p>
+															<p>204 см / 102 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">30</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/37.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/37.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Кошкин</h3>
+															<h3 class="player-card__title">Всеволод</h3>
+															<span>разыгрывающий</span>
+															<p>28.07.2003</p>
+															<p>Россия</p>
+															<p>182 см / 77 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">24</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/38.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/38.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Елисеев</h3>
+															<h3 class="player-card__title">Андрей</h3>
+															<span>разыгрывающий</span>
+															<p>27.06.2000</p>
+															<p>Россия</p>
+															<p>192 см / 86 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+															<h3 class="player-card__number">19</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/39.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/39.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Фомин</h3>
+															<h3 class="player-card__title">Александр</h3>
+															<span>легкий форвард</span>
+															<p>18.12.2000</p>
+															<p>Россия</p>
+															<p>203 см / 95 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+
+															<h3 class="player-card__number">7</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/40.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/40.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Ефимов</h3>
+															<h3 class="player-card__title">Иван</h3>
+															<span>тяжелый форвард</span>
+															<p>09.09.1994</p>
+															<p>Россия</p>
+															<p>207 см / 103 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+
+															<h3 class="player-card__number">20</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/41.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/41.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Комаров</h3>
+															<h3 class="player-card__title">Сергей</h3>
+															<span>разыгрывающий</span>
+															<p>23.05.2000</p>
+															<p>Россия</p>
+															<p>186 см / 80 кг</p>
+														</div>
+													</div>
+													<div class="player-card__body team-roster__tab-item">
+														<div class="player-card__mini-logo -ibg">
+															<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+														</div>
+														<div class="player-card__stats-bage">
+
+															<h3 class="player-card__number">33</h3>
+														</div>
+
+
+														<div class="player-card__social">
+															<a class="player-card__logo -ibg">
+																<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+															</a>
+														</div>
+
+														<div class="player-card__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/42.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/42.png" alt=""></picture>
+														</div>
+														<div class="player-card__content">
+															<h3 class="player-card__title">Ступин</h3>
+															<h3 class="player-card__title">Николай</h3>
+															<span>разыгрывающий</span>
+															<p>14.09.2002</p>
+															<p>Россия</p>
+															<p>189 см / 81 кг</p>
+														</div>
+													</div>
+												</div>
+												<div class="team-slider team-profile__players-slider">
+													<div class="swiper-wrapper team-slider__wrapper">
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">1</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/30.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/30.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Иванов</h3>
+																	<h3 class="player-card__title">Владислав</h3>
+																	<span>легкий форвард</span>
+																	<p>18.03.1996</p>
+																	<p>Россия</p>
+																	<p>200 см / 96 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+
+																	<h3 class="player-card__number">9</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/31.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/31.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Семенов</h3>
+																	<h3 class="player-card__title">Алексей</h3>
+																	<span>центровой</span>
+																	<p>18.03.1996</p>
+																	<p>Россия</p>
+																	<p>208 см / 100 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">11</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/32.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/32.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Крашенинников</h3>
+																	<h3 class="player-card__title">Виталий</h3>
+																	<span>атакующий защитник</span>
+																	<p>18.03.1999</p>
+																	<p>Россия</p>
+																	<p>196 см / 85 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">13</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/33.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/33.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Востриков</h3>
+																	<h3 class="player-card__title">Артем</h3>
+																	<span>разыгрывающий</span>
+																	<p>22.01.2001</p>
+																	<p>Россия</p>
+																	<p>189 см / 84 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">27</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/34.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/34.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Сергеев</h3>
+																	<h3 class="player-card__title">Анатолий</h3>
+																	<span>атакующий защитник</span>
+																	<p>10.12.2001</p>
+																	<p>Россия</p>
+																	<p>198 см / 95 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">22</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/35.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/35.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Еременко</h3>
+																	<h3 class="player-card__title">Иван</h3>
+																	<span>тяжелый форвард</span>
+																	<p>09.09.1989</p>
+																	<p>Россия</p>
+																	<p>204 см / 102 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">30</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/36.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/36.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Кошкин</h3>
+																	<h3 class="player-card__title">Всеволод</h3>
+																	<span>разыгрывающий</span>
+																	<p>28.07.2003</p>
+																	<p>Россия</p>
+																	<p>182 см / 77 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">24</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/37.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/37.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Елисеев</h3>
+																	<h3 class="player-card__title">Андрей</h3>
+																	<span>разыгрывающий</span>
+																	<p>27.06.2000</p>
+																	<p>Россия</p>
+																	<p>192 см / 86 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+																	<h3 class="player-card__number">19</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/38.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/38.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Фомин</h3>
+																	<h3 class="player-card__title">Александр</h3>
+																	<span>легкий форвард</span>
+																	<p>18.12.2000</p>
+																	<p>Россия</p>
+																	<p>203 см / 95 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+
+																	<h3 class="player-card__number">7</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/39.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/39.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Ефимов</h3>
+																	<h3 class="player-card__title">Иван</h3>
+																	<span>тяжелый форвард</span>
+																	<p>09.09.1994</p>
+																	<p>Россия</p>
+																	<p>207 см / 103 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+
+																	<h3 class="player-card__number">20</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/40.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/40.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Комаров</h3>
+																	<h3 class="player-card__title">Сергей</h3>
+																	<span>разыгрывающий</span>
+																	<p>23.05.2000</p>
+																	<p>Россия</p>
+																	<p>186 см / 80 кг</p>
+																</div>
+															</div>
+														</div>
+														<div class="team-slider__item swiper-slide">
+															<div class="player-card__body team-roster__tab-item">
+																<div class="player-card__mini-logo -ibg">
+																	<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																</div>
+																<div class="player-card__stats-bage">
+
+																	<h3 class="player-card__number">33</h3>
+																</div>
+
+
+																<div class="player-card__social">
+																	<a class="player-card__logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</a>
+																</div>
+
+																<div class="player-card__photo -ibg">
+																	<picture><source data-srcset="img/UBA/uba_players/41.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/41.png" alt=""></picture>
+																</div>
+																<div class="player-card__content">
+																	<h3 class="player-card__title">Ступин</h3>
+																	<h3 class="player-card__title">Николай</h3>
+																	<span>разыгрывающий</span>
+																	<p>14.09.2002</p>
+																	<p>Россия</p>
+																	<p>189 см / 81 кг</p>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="team-slider__navigation">
+														<div class="team-slider__nav-prev -ibg">
+															<img src="img/icon/prev2.svg" alt="">
+														</div>
+														<div class="team-slider__nav-next -ibg">
+															<img src="img/icon/next2.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<h3 class="block-title-h3b element-animation">Тренеры</h3>
+												<div class="team-profile__team-staff">
+													<div class="team-slider team-profile__staff-slider">
+														<div class="swiper-wrapper team-slider__wrapper">
+															<div class="team-slider__item swiper-slide">
+																<div class="player-card__body team-roster__tab-item-1">
+																	<div class="player-card__mini-logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</div>
+																	<!-- <div class="player-card__stats-bage">
+							<h3 class="player-card__number">20</h3>
+						</div> -->
+
+																	<div class="player-card__social">
+																		<a class="player-card__logo -ibg">
+																			<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																		</a>
+																	</div>
+
+																	<div class="player-card__photo -ibg">
+																		<img data-src="img/UBA/uba_players/s3.svg" alt="">
+																	</div>
+																	<div class="player-card__content">
+																		<h3 class="player-card__title">Климов</h3>
+																		<h3 class="player-card__title">Евгений</h3>
+																		<span>тренер</span>
+																		<p>23.05.1977</p>
+																		<p>Россия</p>
+																	</div>
+																</div>
+															</div>
+															<div class="team-slider__item swiper-slide">
+																<div class="player-card__body team-roster__tab-item-1">
+																	<div class="player-card__mini-logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</div>
+																	<!-- <div class="player-card__stats-bage">
+							<h3 class="player-card__number">7</h3>
+						</div> -->
+
+
+																	<div class="player-card__social">
+																		<a class="player-card__logo -ibg">
+																			<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																		</a>
+																	</div>
+
+																	<div class="player-card__photo -ibg">
+																		<img data-src="img/UBA/uba_players/s3.svg" alt="">
+																	</div>
+																	<div class="player-card__content">
+																		<h3 class="player-card__title">Галанин</h3>
+																		<h3 class="player-card__title">Иван</h3>
+																		<span>тренер</span>
+																		<p>09.09.1970</p>
+																		<p>Россия</p>
+																	</div>
+																</div>
+															</div>
+															<div class="team-slider__item swiper-slide">
+																<div class="player-card__body team-roster__tab-item-1">
+																	<div class="player-card__mini-logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</div>
+																	<!-- <div class="player-card__stats-bage">
+													<h3 class="player-card__number">7</h3>
+												</div> -->
+
+
+																	<div class="player-card__social">
+																		<a class="player-card__logo -ibg">
+																			<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																		</a>
+																	</div>
+
+																	<div class="player-card__photo -ibg">
+																		<img data-src="img/UBA/uba_players/s3.svg" alt="">
+																	</div>
+																	<div class="player-card__content">
+																		<h3 class="player-card__title">Галанин</h3>
+																		<h3 class="player-card__title">Иван</h3>
+																		<span>тренер</span>
+																		<p>09.09.1970</p>
+																		<p>Россия</p>
+																	</div>
+																</div>
+															</div>
+															<div class="team-slider__item swiper-slide">
+																<div class="player-card__body team-roster__tab-item-1">
+																	<div class="player-card__mini-logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</div>
+																	<!-- <div class="player-card__stats-bage">
+													<h3 class="player-card__number">7</h3>
+												</div> -->
+
+
+																	<div class="player-card__social">
+																		<a class="player-card__logo -ibg">
+																			<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																		</a>
+																	</div>
+
+																	<div class="player-card__photo -ibg">
+																		<img data-src="img/UBA/uba_players/s3.svg" alt="">
+																	</div>
+																	<div class="player-card__content">
+																		<h3 class="player-card__title">Галанин</h3>
+																		<h3 class="player-card__title">Иван</h3>
+																		<span>тренер</span>
+																		<p>09.09.1970</p>
+																		<p>Россия</p>
+																	</div>
+																</div>
+															</div>
+															<div class="team-slider__item swiper-slide">
+																<div class="player-card__body team-roster__tab-item-1">
+																	<div class="player-card__mini-logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</div>
+																	<!-- <div class="player-card__stats-bage">
+													<h3 class="player-card__number">7</h3>
+												</div> -->
+
+
+																	<div class="player-card__social">
+																		<a class="player-card__logo -ibg">
+																			<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																		</a>
+																	</div>
+
+																	<div class="player-card__photo -ibg">
+																		<img data-src="img/UBA/uba_players/s3.svg" alt="">
+																	</div>
+																	<div class="player-card__content">
+																		<h3 class="player-card__title">Галанин</h3>
+																		<h3 class="player-card__title">Иван</h3>
+																		<span>тренер</span>
+																		<p>09.09.1970</p>
+																		<p>Россия</p>
+																	</div>
+																</div>
+															</div>
+															<div class="team-slider__item swiper-slide">
+																<div class="player-card__body team-roster__tab-item-1">
+																	<div class="player-card__mini-logo -ibg">
+																		<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																	</div>
+																	<!-- <div class="player-card__stats-bage">
+													<h3 class="player-card__number">7</h3>
+												</div> -->
+
+
+																	<div class="player-card__social">
+																		<a class="player-card__logo -ibg">
+																			<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+																		</a>
+																	</div>
+
+																	<div class="player-card__photo -ibg">
+																		<img data-src="img/UBA/uba_players/s3.svg" alt="">
+																	</div>
+																	<div class="player-card__content">
+																		<h3 class="player-card__title">Галанин</h3>
+																		<h3 class="player-card__title">Иван</h3>
+																		<span>тренер</span>
+																		<p>09.09.1970</p>
+																		<p>Россия</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- <div class="team-slider__pagination swiper-pagination"></div> -->
+														<div class="team-slider__navigation">
+															<div class="team-slider__nav-prev -ibg">
+																<img src="img/icon/prev2.svg" alt="">
+															</div>
+															<div class="team-slider__nav-next -ibg">
+																<img src="img/icon/next2.svg" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
+											<span>Показать еще</span>
+											<span>Скрыть</span></button>
+									</div>
+								</div>
+								<div class="team-profile__tabs-body">
+									<div data-showmore class="block team-profile__players-block">
+										<div data-showmore-content="370" class="block__content">
+											<div class="table__wrapper table__wrapper-dark">
+												<div class="table__box">
+													<table class="table-fill">
+														<thead>
+															<tr>
+																<th class="text-left table__col-sm-fix">№</th>
+																<th class="text-left table__col-xxl table__col-xxl-fix">игрок</th>
+																<th class="text-center table__col-s">дата рождения</th>
+																<th class="text-center table__col-s">возраст</th>
+																<th class="text-center table__col-s">страна</th>
+																<th class="text-center table__col-s">позиция</th>
+																<th class="text-center table__col-s">рост</th>
+																<th class="text-center table__col-s">вес</th>
+																<th class="text-center table__col-s">команда</th>
+
+															</tr>
+														</thead>
+														<tbody class="table-hover">
+
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+																<td class="text-center table__col-s">19.03.1998</td>
+																<td class="text-center table__col-s">24</td>
+																<td class="text-center table__col-s">Россия</td>
+																<td class="text-center table__col-s">разыгрывающий</td>
+																<td class="text-center table__col-s">196 см</td>
+																<td class="text-center table__col-s">84 кг</td>
+																<td class="text-center table__col-s">БК Московский</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+																<td class="text-center table__col-s">19.03.1998</td>
+																<td class="text-center table__col-s">24</td>
+																<td class="text-center table__col-s">Россия</td>
+																<td class="text-center table__col-s">разыгрывающий</td>
+																<td class="text-center table__col-s">196 см</td>
+																<td class="text-center table__col-s">84 кг</td>
+																<td class="text-center table__col-s">МГУ</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+																<td class="text-center table__col-s">19.03.1998</td>
+																<td class="text-center table__col-s">24</td>
+																<td class="text-center table__col-s">Россия</td>
+																<td class="text-center table__col-s">разыгрывающий</td>
+																<td class="text-center table__col-s">196 см</td>
+																<td class="text-center table__col-s">84 кг</td>
+																<td class="text-center table__col-s">ЦСКА-Юниор</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+																<td class="text-center table__col-s">19.03.1998</td>
+																<td class="text-center table__col-s">24</td>
+																<td class="text-center table__col-s">Россия</td>
+																<td class="text-center table__col-s">разыгрывающий</td>
+																<td class="text-center table__col-s">196 см</td>
+																<td class="text-center table__col-s">84 кг</td>
+																<td class="text-center table__col-s">AMS</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xxl table__col-xxl-fix">Константинопольский Константин</td>
+																<td class="text-center table__col-s">19.03.1998</td>
+																<td class="text-center table__col-s">24</td>
+																<td class="text-center table__col-s">Россия</td>
+																<td class="text-center table__col-s">разыгрывающий</td>
+																<td class="text-center table__col-s">196 см</td>
+																<td class="text-center table__col-s">84 кг</td>
+																<td class="text-center table__col-s">Take Shot Black</td>
+
+															</tr>
+
+
+
+														</tbody>
+														<tfoot>
+															<tr>
+																<td class="text-left table-footer  table__col-s-fix"></td>
+																<td class="text-left table-footer table__col-xxl table__col-xxl-fix"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+
+
+												<div class="table__box-1">
+													<table class="table-fill-1">
+														<thead>
+															<tr>
+																<th class="text-left table__col-s-fix">№</th>
+																<th class="text-left table__col-xl-fix table__col-hide">игрок</th>
+
+															</tr>
+														</thead>
+														<tbody class="table-hover">
+
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xl-fix table__col-hide">Колесников Александр</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">7</td>
+																<td class="text-left table__col-xl-fix table__col-hide">Михайлов Сергей</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">9</td>
+																<td class="text-left table__col-xl-fix table__col-hide">Ивановский Константин</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">11</td>
+																<td class="text-left table__col-xl-fix table__col-hide">Луговой Евгений</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">13</td>
+																<td class="text-left table__col-xxl-fix table__col-hide">Константинопольский Константин</td>
+
+															</tr>
+														</tbody>
+														<tfoot>
+															<tr>
+																<td class="text-left table-footer  table__col-s-fix"></td>
+																<td class="text-left table-footer table__col-xl-fix table__col-hide"></td>
+
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+
+
+
+
+
+
+											</div>
+											<h3 class="block-title-h3b element-animation">Тренеры</h3>
+											<div class="table__wrapper table__wrapper-dark">
+												<div class="table__box">
+													<table class="table-fill">
+														<thead>
+															<tr>
+																<th class="text-left table__col-sm-fix">№</th>
+																<th class="text-left table__col-xxl table__col-xxl-fix">штаб</th>
+																<th class="text-center table__col-s">дата рождения</th>
+																<th class="text-center table__col-s">возраст</th>
+																<th class="text-center table__col-s">страна</th>
+																<th class="text-center table__col-s">позиция</th>
+																<th class="text-center table__col-s">звание</th>
+
+																<th class="text-center table__col-s">команда</th>
+
+															</tr>
+														</thead>
+														<tbody class="table-hover">
+
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+																<td class="text-center table__col-s">19.03.1980</td>
+																<td class="text-center table__col-s">42</td>
+																<td class="text-center table__col-s">Россия</td>
+																<td class="text-center table__col-s">главный тренер</td>
+																<td class="text-center table__col-s">ЗТР</td>
+
+																<td class="text-center table__col-s">БК Московский</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+																<td class="text-center table__col-s">19.03.1979</td>
+																<td class="text-center table__col-s">43</td>
+																<td class="text-center table__col-s">Россия</td>
+																<td class="text-center table__col-s">тренер</td>
+																<td class="text-center table__col-s"></td>
+
+																<td class="text-center table__col-s">Take Shot Black</td>
+
+															</tr>
+
+
+
+
+														</tbody>
+														<tfoot>
+															<tr>
+																<td class="text-left table-footer  table__col-s-fix"></td>
+																<td class="text-left table-footer table__col-xxl table__col-xxl-fix"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+																<td class="text-center table-footer table__col-s"></td>
+
+
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+
+
+												<div class="table__box-1">
+													<table class="table-fill-1">
+														<thead>
+															<tr>
+																<th class="text-left table__col-s-fix">№</th>
+																<th class="text-left table__col-xl-fix table__col-hide">тренер</th>
+
+															</tr>
+														</thead>
+														<tbody class="table-hover">
+
+															<tr>
+																<td class="text-center table__col-s-fix">1</td>
+																<td class="text-left table__col-xl-fix table__col-hide">Колесников Александр</td>
+
+															</tr>
+															<tr>
+																<td class="text-center table__col-s-fix">2</td>
+																<td class="text-left table__col-xl-fix table__col-hide">Егоров Станислав</td>
+
+															</tr>
+
+														</tbody>
+														<tfoot>
+															<tr>
+																<td class="text-left table-footer  table__col-s-fix"></td>
+																<td class="text-left table-footer table__col-xl-fix table__col-hide"></td>
+
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+
+
+
+
+
+
+											</div>
+										</div>
+										<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
+											<span>Показать еще</span>
+											<span>Скрыть</span></button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="team-profile__header-box">
+						</div>
+					</div>
+				</div>
+
+
+				<!-- PLAYERS COMPARISON -->
+				<div class="teams__body diagonal-box bg-one">
+					<div class="section__container content__box">
+						<h2 class="section-title-h2w element-animation">сравнение игроков</h2>
+						<div class="calendar-slider__box">
+							<div class="calendar-slider__partner element-animation -ibg">
+								<img src="img/UBA/winline-color.svg" alt="">
+							</div>
+						</div>
+
+						<div data-spollers="450,max" class="teams__spollers">
+							<div class="teams__spollers-item">
+								<button type="button" data-spoller class="teams__spollers-title">выбрать игрока</button>
+								<div class="teams__spollers-body">
+									<div class="teams__nav-1">
+										<form action="#" class="teams__form-2">
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-team-5">выбрать
+													команду А</label>
+												<select data-label data-scroll data-show name="form[]" id="select-team-5" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">выбрать команду А</option>
+													<option class="person-stats__item" value="2">БК Московский</option>
+													<option class="person-stats__item" value="3">МГУ</option>
+													<option class="person-stats__item" value="4">Росток</option>
+													<option class="person-stats__item" value="5">Take Shot White</option>
+													<option class="person-stats__item" value="6">AMS</option>
+												</select>
+											</div>
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-player">выбрать
+													игрока</label>
+												<select data-label data-scroll data-show name="form[]" id="select-player" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">выбрать игрока</option>
+													<option class="person-stats__item" value="2">Константинопольский Константин</option>
+													<option class="person-stats__item" value="3">Иванов Александр</option>
+													<option class="person-stats__item" value="4">Петров Сергей</option>
+													<option class="person-stats__item" value="5">Алексеев Семен</option>
+													<option class="person-stats__item" value="6">Игнатов Петр</option>
+												</select>
+											</div>
+										</form>
+										<form action="#" class="teams__form-2">
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-team-4">выбрать
+													команду Б</label>
+												<select data-label data-scroll data-show name="form[]" id="select-team-4" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">выбрать команду Б</option>
+													<option class="person-stats__item" value="2">БК Московский</option>
+													<option class="person-stats__item" value="3">МГУ</option>
+													<option class="person-stats__item" value="4">Росток</option>
+													<option class="person-stats__item" value="5">Take Shot White</option>
+													<option class="person-stats__item" value="6">AMS</option>
+												</select>
+											</div>
+											<div class="person-stats__box">
+												<label class="person-stats__label" for="select-player-1">выбрать
+													игрока</label>
+												<select data-label data-scroll data-show name="form[]" id="select-player-1" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">выбрать игрока</option>
+													<option class="person-stats__item" value="2">Константинопольский Константин</option>
+													<option class="person-stats__item" value="3">Иванов Александр</option>
+													<option class="person-stats__item" value="4">Петров Сергей</option>
+													<option class="person-stats__item" value="5">Алексеев Семен</option>
+													<option class="person-stats__item" value="6">Игнатов Петр</option>
+												</select>
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="teams-compare__teams-2">
+
+							<div class="player-card-1 player-card-1__left">
+								<div class="player-card-1__main-1 player-card-1__main-left">
+									<div class="player-card-1__img -ibg">
+										<picture><source srcset="img/UBA/uba_players/30.webp" type="image/webp"><img src="img/UBA/uba_players/30.png" alt=""></picture>
+									</div>
+
+									<div class="player-card-1__top">
+										<div class="player-card-1__head">
+											<a href="#" class="player-card-1__title">
+												<span class="player-card-1__title-name">Семенов</span>
+												<span class="player-card-1__title-name">Александр</span>
+											</a>
+											<div class="player-card-1__divider player-card-1__divider-left"></div>
+											<ul class="player-card-1__desc">
+												<li>разыгрывающий</li>
+												<!-- <li>203 см / 88 кг</li> -->
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="player-card-1__info player-card-1__info-left">
+			<span class="player-card-1__info-label">очки</span>
+			<span class="player-card-1__info-item">16.9</span>
+		</div> -->
+								<div class="player-card-1__bage-1 player-card-1__bage-1-left">
+									<div class="player-card-1__logo -ibg">
+										<picture><source srcset="img/UBA/uba_team-logo/2.webp" type="image/webp"><img src="img/UBA/uba_team-logo/2.png" alt=""></picture>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="teams-compare__bg"></div> -->
+
+							<div class="player-card-1 player-card-1__right">
+								<div class="player-card-1__main-1 player-card-1__main-right">
+									<div class="player-card-1__img -ibg">
+										<picture><source srcset="img/UBA/uba_players/31.webp" type="image/webp"><img src="img/UBA/uba_players/31.png" alt=""></picture>
+									</div>
+
+									<div class="player-card-1__top">
+										<div class="player-card-1__head">
+											<a href="#" class="player-card-1__title">
+												<span class="player-card-1__title-name">Константинопольский</span>
+												<span class="player-card-1__title-name">Константин</span>
+											</a>
+											<div class="player-card-1__divider player-card-1__divider-right"></div>
+											<ul class="player-card-1__desc">
+												<li>цетровой</li>
+												<!-- <li>203 см / 88 кг</li> -->
+											</ul>
+										</div>
+									</div>
+
+
+								</div>
+
+								<!-- <div class="player-card-1__info player-card-1__info-right">
+			<span class="player-card-1__info-label">очки</span>
+			<span class="player-card-1__info-item">17.2</span>
+		</div> -->
+
+								<div class="player-card-1__bage-1 player-card-1__bage-1-right">
+									<div class="player-card-1__logo -ibg">
+										<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="table__box">
+							<table class="table-fill">
+								<tbody class="table-hover">
+									<tr class="table__row">
+										<td class="text-right table__col-left">198</td>
+										<td class="text-center table__col-center">рост / см</td>
+										<td class="text-left table__col-right">207</td>
+									</tr>
+									<tr class="table__row">
+										<td class="text-right table__col-left">83</td>
+										<td class="text-center table__col-center">вес / кг</td>
+										<td class="text-left table__col-right">101</td>
+									</tr>
+									<tr class="table__row">
+										<td class="text-right table__col-left">12.4</td>
+										<td class="text-center table__col-center">очки</td>
+										<td class="text-left table__col-right">17.3</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">41.6%</td>
+										<td class="text-center table__col-center">2-х очковые</td>
+										<td class="text-left table__col-right">45.5%</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">36.6%</td>
+										<td class="text-center table__col-center">3-х очковые</td>
+										<td class="text-left table__col-right">40.1%</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">75.6%</td>
+										<td class="text-center table__col-center">штрафные</td>
+										<td class="text-left table__col-right">82.3%</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">8.6</td>
+										<td class="text-center table__col-center">подборы</td>
+										<td class="text-left table__col-right">7.4</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">5.3</td>
+										<td class="text-center table__col-center">передачи</td>
+										<td class="text-left table__col-right">4.7</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">1.6</td>
+										<td class="text-center table__col-center">перехваты</td>
+										<td class="text-left table__col-right">3.5</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">0.9</td>
+										<td class="text-center table__col-center">блокшоты</td>
+										<td class="text-left table__col-right">2.1</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">2.6</td>
+										<td class="text-center table__col-center">потери</td>
+										<td class="text-left table__col-right">4.1</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">3.8</td>
+										<td class="text-center table__col-center">фолы</td>
+										<td class="text-left table__col-right">2.2</td>
+									</tr>
+									<tr class="table__row-1">
+										<td class="text-right table__col-left">42.8</td>
+										<td class="text-center table__col-center">рейтинг UBA</td>
+										<td class="text-left table__col-right">34.2</td>
+									</tr>
+								</tbody>
+
+							</table>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="profile__tournament-publications">
+				<div class="section__container">
+					<div class="publication-selector__title-block">
+						<h2 class="section-title-h2b publication-selector__title element-animation">О турнире</h2>
+
+						<div class="pub-menu-slider__navigation">
+							<div class="pub-menu-slider__nav-prev -ibg">
+								<img src="img/icon/prev2.svg" alt="">
+							</div>
+							<div class="pub-menu-slider__nav-next -ibg">
+								<img src="img/icon/next2.svg" alt="">
+							</div>
+						</div>
+
+					</div>
+					<!-- === PUBLICATION SELECTOR === -->
+					<div class="pub-menu-slider__box">
+						<div class="pub-menu-slider">
+							<div class="swiper-wrapper pub-menu-slider__wrapper publication-selector__menu">
+								<div class="pub-menu-slider__item swiper-slide">
+									<button type="button" class="publication-selector__btn publication-selector__btn-active" data-view="pub-all">Все</button>
+								</div>
+								<div class="pub-menu-slider__item swiper-slide">
+									<button type="button" class="publication-selector__btn" data-view="pub-news">Новости</button>
+								</div>
+								<div class="pub-menu-slider__item swiper-slide">
+									<button type="button" class="publication-selector__btn" data-view="pub-nterview">Интервью</button>
+								</div>
+								<div class="pub-menu-slider__item swiper-slide">
+									<button type="button" class="publication-selector__btn" data-view="pub-article">Статьи</button>
+								</div>
+								<div class="pub-menu-slider__item swiper-slide">
+									<button type="button" class="publication-selector__btn" data-view="pub-video">Видео</button>
+								</div>
+								<div class="pub-menu-slider__item swiper-slide">
+									<button type="button" class="publication-selector__btn" data-view="pub-event">События</button>
+								</div>
+
+
+							</div>
+							<div class="pub-menu-slider__pagination swiper-pagination"></div>
+
+						</div>
+					</div>
+					<div data-showmore class="block">
+						<div data-showmore-content="460" class="block__content">
+							<!-- ===================== PUBLICATION CARDS =================== -->
+							<ul class="publication-selector__list">
+								<li class="publication-selector__item pub-article">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/19.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/19.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Статьи</a></div>
+											<h5 class="card__title"><a href="#">Генеральный менеджер команды Руна-2 - Сергей
+													Юхневич
+													прокомментировал участие в сезоне</a></h5>
+											<div class="card__subtitle">uba leto 22</div>
+
+											<p class="card__description">Я давно хотел найти возможность для нашей молодёжной
+												команды играть
+												против команд, игроки которой старше и гораздо
+												опытнее. Я уверен, что молодежка будет такой «темной лошадкой» турнира, главная их
+												цель на турнир -
+												это проиграть
+												исключительно RUNA-POWERCELL, в которой будут собраны уже старые и уставшие от жизни
+												игроки.
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">23 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+								<li class="publication-selector__item pub-nterview">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/13.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/13.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Интервью</a></div>
+											<h5 class="card__title"><a href="#">Moscow Hustlers - команда 4 сезона Лиги UBA</a>
+											</h5>
+											<div class="card__subtitle">UBA</div>
+
+											<p class="card__description">Спортивный директор команды Moscow Hustlers - Александр
+												Дубовицкий
+												прокомментировал участие в сезоне: — В новом сезоне делаем шаг вперёд, есть все
+												договорённости по
+												выполнению условий тренировочного процесса.
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="card__pub-date">22 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+								<li class="publication-selector__item pub-news">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/9.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/9.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Новости</a></div>
+											<h5 class="card__title"><a href="#">Владислав Старателев в новом сезоне будет выступать
+													за Росток</a>
+											</h5>
+											<div class="card__subtitle">uba leto 22</div>
+
+											<p class="card__description">— Цель команды - проявить себя конкурентноспособным
+												коллективом, готовым
+												биться с любым соперником, прогрессировать шаг
+												за шагом, стараться побеждать в каждом матче, чтобы наши молодые игроки развивались,
+												получали
+												необходимый опыт и
+												практику на уровне сильнейшей любительской лиги.
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">22 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+								<li class="publication-selector__item pub-video">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Видео</a></div>
+											<h5 class="card__title"><a href="#">Take Shot White пятый участник 4 сезона</a></h5>
+											<div class="card__subtitle">UBA</div>
+
+											<p class="card__description">Тренер команды Take Shot - Иван Воробьев прокомментировал
+												участие в
+												сезоне:
+
+												— В прошлом сезоне Take Shot White не попали в призы. Цель в предстоящем сезоне -
+												улучшить
+												результат.
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">24 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+								<li class="publication-selector__item pub-event">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/15.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/15.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">События</a></div>
+											<h5 class="card__title"><a href="#">RUNA-POWERCELL залетает в новый сезон</a></h5>
+											<div class="card__subtitle">uba leto 22</div>
+
+											<p class="card__description">— Мы с нетерпением ждём начало нового сезона, уже хочется
+												выйти на паркет
+												и сыграть первую игру. На данном этапе мы
+												формируем состав и скоро приступим к тренировкам.</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">22 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+								<li class="publication-selector__item pub-news">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/6.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Новости</a></div>
+											<h5 class="card__title"><a href="#">Какую статистику покажет Сергей Быков в новом
+													сезоне?</a>
+											</h5>
+											<div class="card__subtitle">uba leto 22</div>
+
+											<p class="card__description">В прошлом сезоне в среднем за игру Сергей набирал: 21.6
+												очка, 6.1
+												подбора, 6.8 передач
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">22 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+								<li class="publication-selector__item pub-article">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/7.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Статьи</a></div>
+											<h5 class="card__title"><a href="#">МБА-Глория, добро пожаловать в 4 сезон Лиги UBA</a>
+											</h5>
+											<div class="card__subtitle">uba leto 22</div>
+
+											<p class="card__description">В прошлом сезоне команда одержала 4 победы, 16 поражений в
+												регулярном
+												Чемпионате и через турнир плей-инн пробилась в
+												плей-офф (0-2 в плей-офф).
+												Общее количество побед/поражений за первые 3 сезона у МБА-Глория 12-54.
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">23 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+								<li class="publication-selector__item pub-nterview">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/12.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/12.jpg" alt=""></picture></a>
+										</div>
+										<div class="card__category-logo -ibg">
+											<img class="thead-cell__img" src="img/UBA/UBA_ball-red.svg" alt="">
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Интервью</a></div>
+											<h5 class="card__title"><a href="#">Вторая команда, которая уже четвёртый год подряд
+													будет принимать
+													участие в Чемпионате UBA - AMS Academy</a></h5>
+											<div class="card__subtitle">UBA</div>
+
+											<p class="card__description">— Цель у команды AMS - вернуть утраченные в прошлом сезоне
+												лидерские
+												позиции и неофициальный статус главного конкурента
+												Московского в борьбе за чемпионский титул.
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">22 октября 2022</span>
+										</footer>
+									</article>
+								</li>
+							</ul>
+						</div>
+						<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
+							<span>Показать еще</span>
+							<span>Скрыть</span></button>
+					</div>
+				</div>
+			</section>
+
+			<!-- === PARTNERS === -->
+
+			<section class="partners-slider__section section-offset diagonal-box bg-one">
+				<div class="section__container partners-slider__box content__box">
+					<h2 class="section-title-h2w partners-slider__title element-animation">партнеры</h2>
+
+					<div class="partners-slider__duo">
+						<a href="#" class="partners-slider__image -ibg">
+							<img class="partners-slider__img" src="img/partners/rfb-mono.svg" alt="">
+							<img class="partners-slider__img-hover" src="img/partners/rfb-color.svg" alt="">
+						</a>
+						<a href="#" class="partners-slider__image -ibg">
+							<img class="partners-slider__img" src="img/partners/vtb-mono.svg" alt="">
+							<img class="partners-slider__img-hover" src="img/partners/vtb-colour.svg" alt="">
+						</a>
+					</div>
+
+					<!-- PARTNERS SLIDER -->
+
+					<div class="partners-slider">
+						<div class="swiper-wrapper partners-slider__wrapper">
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+
+						</div>
+						<div class="partners-slider__pagination swiper-pagination"></div>
+						<div class="partners-slider__navigation">
+							<div class="partners-slider__nav-prev -ibg">
+								<img src="img/icon/prev1.svg" alt="стрелка назад">
+							</div>
+							<div class="partners-slider__nav-next -ibg">
+								<img src="img/icon/next1.svg" alt="стрелка вперед">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer" id="site-footer">
+			<div class="footer__container">
+				<section class="footer__section footer__top-section" id="footer-top-section">
+					<a href="#" class=" footer__logo -ibg">
+						<img src="img/UBA/UBA-white-2.svg" alt="лого UBA">
+					</a>
+					<div class="footer__top-menu" id="footer-top-menu-container" role="menubar">
+						<ul class="footer__top-menu-list" id="footer-top-menu" role="menu">
+
+							<!-- <li class="footer__top-menu-item" role="menuitem">
+						<a href="#" class="footer__top-menu-link">Группа поддержки</a>
+					</li> -->
+							<li class="footer__top-menu-item footer__top-menu-item-active" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Магазин</a>
+							</li>
+							<li class="footer__top-menu-item" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Медиа</a>
+							</li>
+							<li class="footer__top-menu-item" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Рейтинг</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="footer__top-menu-btn" id="footer-buttons-container">
+						Стать Партнером
+					</button>
+				</section>
+
+				<section class="footer__section footer__middle-section" id="footer-middle-section">
+					<div id="footer-about" class="footer__columns footer__first-column">
+						<h1 class="footer__title-1">ОФИС UBA</h1>
+						<address class="footer__address">
+							<p><img class="footer__icon" src="img/icon/location.svg" alt="иконка локация">Москва,
+								Складочная улица, 1
+							</p>
+							<p><img class="footer__icon" src="img/icon/tel.svg" alt="иконка телефон">+7 (999) 222-00-33</p>
+							<p><img class="footer__icon" src="img/icon/mail.svg" alt="иконка почта">uba@gmail.com</p>
+						</address>
+						<h1 class="footer__title-1">СЛУЖБА БЕЗОПАСНОСТИ</h1>
+						<address>
+							<p><img class="footer__icon" src="img/icon/mail.svg" alt="иконка почта">uba_save@gmail.com</p>
+						</address>
+					</div>
+					<div class=" footer__columns footer__second-column">
+						<h1 class="footer__title">АССОЦИАЦИЯ</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Информация</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">История</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Руководство</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Партнёры</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Спонсоры</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__columns footer__second-column">
+						<h1 class="footer__title">ТУРНИР</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Календарь</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Статистика</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Таблица</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Команды</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Игроки</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class=" footer__columns footer__second-column">
+						<h1 class="footer__title">О НАС</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Лицензия</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Положение</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Контакты</a>
+							</li>
+							<li class="footer__column-menu-item">
+								<a href="#" class="footer__column-menu-link" role="menuitem">Франшиза</a>
+							</li>
+
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Документы</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class=" footer__section footer__bottom-section" id="footer-bottom-section">
+					<div class="footer__copyright" id="footer-copyright-info">
+						&copy; United Basketball Association 2022. Все права защищены.
+					</div>
+
+					<div class="footer__icons element-animation">
+						<ul class="footer__icons-list">
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/twitter-1-gold.svg" alt="иконка Твиттер"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/vk-1-gold.svg" alt="иконка ВКонтакте"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/telegram-1-gold.svg" alt="иконка Телеграм"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/tiktok-1-gold.svg" alt="иконка Тик-Ток"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/youtube-1-gold.svg" alt="иконка Ютуб"></a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="footer__site-developer">
+						<a href="#" class="footer__column-menu-link">Разработано: jumpball</a>
+					</div>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<div id="go-to-game" aria-hidden="true" class="popup game-popup">
+		<div class="popup__wrapper game-popup__wrapper">
+			<div class="popup__content game-popup__content">
+
+				<div class="popup__header game-popup__header">
+					<div class="game-popup__logo element-animation -ibg">
+						<img src="img/UBA/UBA.svg" alt="">
+					</div>
+					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
+						<h3 class="time-count__title">до матча</h3>
+						<div class="time-count__content">
+							<div class="time-count__item time-count__days">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">дней</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__hours">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">часов</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__minutes">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">минут</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__seconds">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">секунд</span>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
+						<img src="img/icon/x-main.svg" alt="">
+					</button>
+				</div>
+
+
+
+				<div class="popup__text game-popup__text">
+				</div>
+
+				<div class="game-card__body">
+					<h3 class="game-card__time">19:30</h3>
+					<div class="game-card__date">
+						<h4 class="game-card__day">24</h4>
+						<div class="game-card__label">
+							<div class="game-card__months">августа</div>
+							<div class="game-card__months-1">фев</div>
+							<div class="game-card__week">суббота</div>
+							<div class="game-card__week-1">сб</div>
+						</div>
+
+					</div>
+					<div class="game-card__team-name">
+						<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
+						<h3 class="game-card__title">-</h3>
+						<h3 class="game-card__title game-card__title-l">БК Московский</h3>
+					</div>
+					<div class="game-card__teams">
+						<div class="game-card__team -ibg">
+							<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+						</div>
+						<div class="game-card__score">
+							<h3 class="game-card__team-score game-card__title-r">0</h3>
+							<p class="game-card__team-score-1">-</p>
+							<h3 class="game-card__team-score game-card__title-l">0</h3>
+						</div>
+						<div class="game-card__team -ibg">
+							<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="game-card__content">
+						<span>UBA</span>
+						<p>Playground Савеловская</p>
+						<p>Москва, Россия</p>
+						<button type="button" class="game-card__btn">статистика</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="go-to-video" aria-hidden="true" class="popup game-popup">
+		<div class="popup__wrapper game-popup__wrapper">
+			<div class="popup__content game-popup__content">
+
+				<div class="popup__header game-popup__header">
+					<div class="game-popup__logo element-animation -ibg">
+						<img src="img/UBA/UBA.svg" alt="">
+					</div>
+					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
+						<h3 class="time-count__title">до матча</h3>
+						<div class="time-count__content">
+							<div class="time-count__item time-count__days">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">дней</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__hours">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">часов</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__minutes">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">минут</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__seconds">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">секунд</span>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
+						<img src="img/icon/x-main.svg" alt="">
+					</button>
+				</div>
+
+
+
+				<div class="popup__text game-popup__text">
+				</div>
+
+				<!-- <div class="game-card__body">
+				<h3 class="game-card__time">19:30</h3>
+				<div class="game-card__date">
+					<h4 class="game-card__day">24</h4>
+					<div class="game-card__label">
+						<div class="game-card__months">августа</div>
+						<div class="game-card__months-1">фев</div>
+						<div class="game-card__week">суббота</div>
+						<div class="game-card__week-1">сб</div>
+					</div>
+
+				</div>
+				<div class="game-card__team-name">
+					<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
+					<h3 class="game-card__title">-</h3>
+					<h3 class="game-card__title game-card__title-l">БК Московский</h3>
+				</div>
+				<div class="game-card__teams">
+					<div class="game-card__team -ibg">
+						<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+					</div>
+					<div class="game-card__score">
+						<h3 class="game-card__team-score game-card__title-r">0</h3>
+						<p class="game-card__team-score-1">-</p>
+						<h3 class="game-card__team-score game-card__title-l">0</h3>
+					</div>
+					<div class="game-card__team -ibg">
+						<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+					</div>
+				</div>
+				<div class="game-card__content">
+					<span>UBA</span>
+					<p>Playground Савеловская</p>
+					<p>Москва, Россия</p>
+					<button type="button" class="game-card__btn">статистика</button>
+				</div>
+			</div> -->
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221018182925"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221018182925"></script>
+	<script src="js/app.min.js?_v=20221018182925"></script>
+</body>
+
+</html>
