@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Рейтинг</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221022014442">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221022014442">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div data-sticky class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo">
+						<div class="header__logo-ball element-animation -ibg">
+							<a href="#" class="header__logo-link">
+								<img src="img/UBA/UBA_ball-white.svg" alt="Лого UBA">
+							</a>
+						</div>
+						<div class="header__logo-text element-animation -ibg">
+							<img src="img/UBA/UBA_text-white.svg" alt="Лого UBA">
+						</div>
+					</div>
+
+
+					<div class="header__top">
+						<div class="header__search-form">
+							<!-- <button type="button" class="header__search-form-btn -ibg">
+						<img src="img/icon/search-w.svg" alt="">
+					</button> -->
+							<form action="#" class="header__search-form-item">
+
+
+								<input autocomplete="off" type="text" name="form[]" placeholder="Поиск" class="header__search-form-input" data-placeholder="Поиск">
+								<div class="header__search-form-btn-box">
+									<button type="submit" class="header__search-form-btn-1 -ibg">
+										<img src="img/icon/search-w.svg" alt="">
+									</button>
+								</div>
+							</form>
+						</div>
+
+
+						<div data-da=".header__menu, 991.98,2" class="header__icons">
+							<ul class="header__icons-list">
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/twitter-1-gold.svg" alt="иконка Твиттер"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/vk-1-gold.svg" alt="иконка ВКонтакте"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/telegram-1-gold.svg" alt="иконка Телеграм"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/tiktok-1-gold.svg" alt="иконка Тик-Ток"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/youtube-1-gold.svg" alt="иконка Ютуб"></a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- <form data-da=".header__body, 991.98,2" action="#" class="header__form">
+					<div class="header__form-line">
+						<div class="select header__form-select-lang _select-active" data-id="1"><select id="select-lang"
+								name="form[]" class="header__form-list" hidden="" data-id="1" data-speed="150">
+								<option class="header__form-item" value="1" selected="selected">RU</option>
+								<option class="header__form-item" value="2">ENG</option>
+							</select>
+						</div>
+					</div>
+				</form> -->
+
+
+
+
+
+
+
+					</div>
+					<button type="button" class="header__menu-burger icon-menu"><span></span></button>
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Календарь</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Статистика</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Таблица</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Команды</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Игроки</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Рейтинг</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<!-- BREADCRUMS -->
+			<div class="section__container">
+				<ul class="page__breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">сезон 2022/2023</a></li>
+					<li>Рейтинг UBA</li>
+				</ul>
+			</div>
+
+			<!-- PROFILE SECTION -->
+			<section class="profile__section section-offset">
+				<div class="section__container">
+					<!-- PROFILE HEADER -->
+					<div class="base-profile__header">
+						<h2 class="section-title-h2b publication-selector__title element-animation">Рейтинг UBA</h2>
+						<div data-spollers="900,max" class="calendar__spollers">
+							<div class="calendar__spollers-item">
+								<button type="button" data-spoller class="calendar__spollers-title">навигация</button>
+								<div class="calendar__spollers-body">
+									<div class="calendar__nav">
+										<form action="#" class="calendar__form">
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="select-season-5">выбрать
+													сезон</label>
+												<select data-label data-scroll data-show name="form[]" id="select-season-5" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">
+														2022/2023</option>
+													<option class="person-stats__item" value="2">2021/2022</option>
+													<option class="person-stats__item" value="3">2020/2021</option>
+													<option class="person-stats__item" value="4">2019/2020</option>
+													<option class="person-stats__item" value="5">2018/2019</option>
+												</select>
+											</div>
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="tournament-stage-1">этап турнира</label>
+												<select data-label data-scroll data-show name="form[]" id="tournament-stage-1" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">все
+														этапы</option>
+													<option data-label class="person-stats__item" value="2">регулярный сезон
+													</option>
+													<option data-label class="person-stats__item" value="3">регулярный сезон - 1 тур
+													</option>
+													<option data-label class="person-stats__item" value="4">регулярный сезон - 2 тур
+													</option>
+													<option data-label class="person-stats__item" value="5">регулярный сезон - 3 тур
+													</option>
+													<option data-label class="person-stats__item" value="6">регулярный сезон - 4 тур
+													</option>
+													<option data-label class="person-stats__item" value="7">регулярный сезон - 5 тур
+													</option>
+													<option data-label class="person-stats__item" value="8">плей-ин
+													</option>
+													<option data-label class="person-stats__item" value="9">плей-офф
+													</option>
+													<option data-label class="person-stats__item" value="10">финал
+													</option>
+
+
+												</select>
+											</div>
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="select-team-4">выбрать
+													команду</label>
+												<select data-label data-scroll data-show name="form[]" id="select-team-4" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">все
+														команды</option>
+													<option class="person-stats__item" value="2">БК Московский</option>
+													<option class="person-stats__item" value="3">Take Shot Black</option>
+													<option class="person-stats__item" value="4">Росток</option>
+													<option class="person-stats__item" value="5">Take Shot White</option>
+													<option class="person-stats__item" value="6">AMS</option>
+												</select>
+											</div>
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="show-1">Показать</label>
+												<select data-label data-scroll data-show name="form[]" id="show-1" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">топ 10</option>
+													<option data-label class="person-stats__item" value="2">топ 25
+													</option>
+													<option data-label class="person-stats__item" value="3">топ 50
+													</option>
+													<option data-label class="person-stats__item" value="4">все игроки
+													</option>
+												</select>
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="team-slider">
+							<div class="swiper-wrapper team-slider__wrapper">
+
+								<div class="team-slider__item swiper-slide">
+									<div class="player-card__body">
+										<div class="player-card__mini-logo -ibg">
+											<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+										</div>
+										<div class="player-card__stats-bage">
+											<div class="player-card__stats">рейтинг</div>
+											<h3 class="player-card__number">45.3</h3>
+										</div>
+
+
+										<div class="player-card__social">
+											<a class="player-card__logo -ibg">
+												<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+											</a>
+										</div>
+
+
+										<div class="player-card__photo -ibg">
+											<picture><source data-srcset="img/UBA/uba_players/AMS/Греков.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/AMS/Греков.png" alt=""></picture>
+										</div>
+										<div class="player-card__content">
+											<h3 class="player-card__title">Востриков</h3>
+											<h3 class="player-card__title">Артем</h3>
+											<span>тяжелый форвард</span>
+											<p>18.03.1996</p>
+											<p>Россия</p>
+											<p>200 см / 96 кг</p>
+										</div>
+									</div>
+								</div>
+								<div class="team-slider__item swiper-slide">
+									<div class="player-card__body">
+										<div class="player-card__mini-logo -ibg">
+											<picture><source srcset="img/UBA/uba_team-logo/4.webp" type="image/webp"><img src="img/UBA/uba_team-logo/4.png" alt=""></picture>
+										</div>
+										<div class="player-card__stats-bage">
+											<div class="player-card__stats">рейтинг</div>
+											<h3 class="player-card__number">42.7</h3>
+										</div>
+
+
+										<div class="player-card__social">
+											<a class="player-card__logo -ibg">
+												<picture><source srcset="img/UBA/uba_team-logo/4.webp" type="image/webp"><img src="img/UBA/uba_team-logo/4.png" alt=""></picture>
+											</a>
+										</div>
+
+										<div class="player-card__photo -ibg">
+											<picture><source data-srcset="img/UBA/uba_players/МГУ/Макушин.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/МГУ/Макушин.png" alt=""></picture>
+										</div>
+										<div class="player-card__content">
+											<h3 class="player-card__title">Макушин</h3>
+											<h3 class="player-card__title">Александр</h3>
+											<span>центровой</span>
+											<p>18.03.1988</p>
+											<p>Россия</p>
+											<p>205 см / 100 кг</p>
+										</div>
+									</div>
+								</div>
+								<div class="team-slider__item swiper-slide">
+									<div class="player-card__body">
+										<div class="player-card__mini-logo -ibg">
+											<picture><source srcset="img/UBA/uba_team-logo/10.webp" type="image/webp"><img src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+										</div>
+										<div class="player-card__stats-bage">
+											<div class="player-card__stats">рейтинг</div>
+											<h3 class="player-card__number">40.5</h3>
+										</div>
+
+
+										<div class="player-card__social">
+											<a class="player-card__logo -ibg">
+												<picture><source srcset="img/UBA/uba_team-logo/10.webp" type="image/webp"><img src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+											</a>
+										</div>
+
+										<div class="player-card__photo -ibg">
+											<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Зацепин.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Зацепин.png" alt=""></picture>
+										</div>
+										<div class="player-card__content">
+											<h3 class="player-card__title">Макаров</h3>
+											<h3 class="player-card__title">Максим</h3>
+											<span>легкий форвард</span>
+											<p>18.03.1995</p>
+											<p>Россия</p>
+											<p>200 см / 87 кг</p>
+										</div>
+									</div>
+								</div>
+								<div class="team-slider__item swiper-slide">
+									<div class="player-card__body">
+										<div class="player-card__mini-logo -ibg">
+											<picture><source srcset="img/UBA/uba_team-logo/6.webp" type="image/webp"><img src="img/UBA/uba_team-logo/6.png" alt=""></picture>
+										</div>
+										<div class="player-card__stats-bage">
+											<div class="player-card__stats">рейтинг</div>
+											<h3 class="player-card__number">38.9</h3>
+										</div>
+
+
+										<div class="player-card__social">
+											<a class="player-card__logo -ibg">
+												<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+											</a>
+										</div>
+
+										<div class="player-card__photo -ibg">
+											<picture><source data-srcset="img/UBA/uba_players/БКМ/Алиев.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/БКМ/Алиев.png" alt=""></picture>
+										</div>
+										<div class="player-card__content">
+											<h3 class="player-card__title">Еременко</h3>
+											<h3 class="player-card__title">Николай</h3>
+											<span>разыгрывающий</span>
+											<p>26.10.1990</p>
+											<p>Россия</p>
+											<p>192 см / 76 кг</p>
+										</div>
+									</div>
+								</div>
+								<div class="team-slider__item swiper-slide">
+									<div class="player-card__body">
+										<div class="player-card__mini-logo -ibg">
+											<picture><source srcset="img/UBA/uba_team-logo/10.webp" type="image/webp"><img src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+										</div>
+										<div class="player-card__stats-bage">
+											<div class="player-card__stats">рейтинг</div>
+											<h3 class="player-card__number">33.5</h3>
+										</div>
+
+
+										<div class="player-card__social">
+											<a class="player-card__logo -ibg">
+												<picture><source srcset="img/UBA/uba_team-logo/10.webp" type="image/webp"><img src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+											</a>
+										</div>
+
+										<div class="player-card__photo -ibg">
+											<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Макаров.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Макаров.png" alt=""></picture>
+										</div>
+										<div class="player-card__content">
+											<h3 class="player-card__title">Емельянов</h3>
+											<h3 class="player-card__title">Иван</h3>
+											<span>центровой</span>
+											<p>11.07.1985</p>
+											<p>Россия</p>
+											<p>207 см / 102 кг</p>
+										</div>
+									</div>
+								</div>
+								<div class="team-slider__item swiper-slide">
+									<div class="player-card__body">
+										<div class="player-card__mini-logo -ibg">
+											<picture><source srcset="img/UBA/uba_team-logo/4.webp" type="image/webp"><img src="img/UBA/uba_team-logo/4.png" alt=""></picture>
+										</div>
+										<div class="player-card__stats-bage">
+											<div class="player-card__stats">рейтинг</div>
+											<h3 class="player-card__number">33.9</h3>
+										</div>
+
+
+										<div class="player-card__social">
+											<a class="player-card__logo -ibg">
+												<picture><source srcset="img/UBA/uba_team-logo/4.webp" type="image/webp"><img src="img/UBA/uba_team-logo/4.png" alt=""></picture>
+											</a>
+										</div>
+
+										<div class="player-card__photo -ibg">
+											<picture><source data-srcset="img/UBA/uba_players/МГУ/Дубинин.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/МГУ/Дубинин.png" alt=""></picture>
+										</div>
+										<div class="player-card__content">
+											<h3 class="player-card__title">Ковалев</h3>
+											<h3 class="player-card__title">Евгений</h3>
+											<span>атакующий защитник</span>
+											<p>18.03.1988</p>
+											<p>Россия</p>
+											<p>195 см / 79 кг</p>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="team-slider__pagination swiper-pagination"></div>
+							<div class="team-slider__navigation">
+								<div class="team-slider__nav-prev -ibg">
+									<img src="img/icon/prev2.svg" alt="">
+								</div>
+								<div class="team-slider__nav-next -ibg">
+									<img src="img/icon/next2.svg" alt="">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- PROFILE BODY -->
+				<div class="base-profile__body diagonal-box bg-one">
+					<div class="section__container content__box">
+						<h2 class="section-title-h2w element-animation">рейтинг uba</h2>
+						<div data-showmore class="block">
+							<div data-showmore-content="400" class="block__content">
+								<div class="table__wrapper table__wrapper-dark">
+									<div class="table__box">
+										<table class="table-fill">
+											<thead>
+												<tr>
+													<!-- <th class="text-left table__col-s-fix">№</th> -->
+													<th class="text-left table__col-s-fix">
+														<div class="table__image -ibg">
+															<img data-src="img/UBA/UBA_ball-gold.svg" alt="Логотип команды">
+														</div>
+													</th>
+													<th class="text-left table__col-xxl table__col-xxl-fix">игрок</th>
+													<th class="text-center table__col-s">ком</th>
+													<th class="text-center table__col-s">рейтинг</th>
+													<th class="text-center table__col-s">и</th>
+													<th class="text-center table__col-s">мин</th>
+													<th class="text-center table__col-s">очки</th>
+													<th class="text-center table__col-s">пб</th>
+													<th class="text-center table__col-s">рп</th>
+													<th class="text-center table__col-s">пх</th>
+													<th class="text-center table__col-s">бш</th>
+													<th class="text-center table__col-s">пт</th>
+													<th class="text-center table__col-s">% с игры</th>
+													<th class="text-center table__col-s">% штр</th>
+
+
+
+
+												</tr>
+											</thead>
+											<tbody class="table-hover">
+
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Абрамов.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__image -ibg">
+															<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-center text-bold table__col-s">35.8</td>
+													<td class="text-center table__col-s">28</td>
+													<td class="text-center table__col-s">26:32</td>
+													<td class="text-center table__col-s">16.8</td>
+													<td class="text-center table__col-s">11.1</td>
+													<td class="text-center table__col-s">3.7</td>
+													<td class="text-center table__col-s">2.8</td>
+													<td class="text-center table__col-s">3.5</td>
+													<td class="text-center table__col-s">1.7</td>
+													<td class="text-center table__col-s">53.5%</td>
+													<td class="text-center table__col-s">76.5%</td>
+
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Абрамов.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__image -ibg">
+															<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-center text-bold table__col-s">35.8</td>
+													<td class="text-center table__col-s">28</td>
+													<td class="text-center table__col-s">26:32</td>
+													<td class="text-center table__col-s">16.8</td>
+													<td class="text-center table__col-s">11.1</td>
+													<td class="text-center table__col-s">3.7</td>
+													<td class="text-center table__col-s">2.8</td>
+													<td class="text-center table__col-s">3.5</td>
+													<td class="text-center table__col-s">1.7</td>
+													<td class="text-center table__col-s">53.5%</td>
+													<td class="text-center table__col-s">76.5%</td>
+
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Абрамов.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__image -ibg">
+															<picture><source data-srcset="img/UBA/uba_team-logo/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/4.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-center text-bold table__col-s">35.8</td>
+													<td class="text-center table__col-s">28</td>
+													<td class="text-center table__col-s">26:32</td>
+													<td class="text-center table__col-s">16.8</td>
+													<td class="text-center table__col-s">11.1</td>
+													<td class="text-center table__col-s">3.7</td>
+													<td class="text-center table__col-s">2.8</td>
+													<td class="text-center table__col-s">3.5</td>
+													<td class="text-center table__col-s">1.7</td>
+													<td class="text-center table__col-s">53.5%</td>
+													<td class="text-center table__col-s">76.5%</td>
+
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Абрамов.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__image -ibg">
+															<picture><source data-srcset="img/UBA/uba_team-logo/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/5.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-center text-bold table__col-s">35.8</td>
+													<td class="text-center table__col-s">28</td>
+													<td class="text-center table__col-s">26:32</td>
+													<td class="text-center table__col-s">16.8</td>
+													<td class="text-center table__col-s">11.1</td>
+													<td class="text-center table__col-s">3.7</td>
+													<td class="text-center table__col-s">2.8</td>
+													<td class="text-center table__col-s">3.5</td>
+													<td class="text-center table__col-s">1.7</td>
+													<td class="text-center table__col-s">53.5%</td>
+													<td class="text-center table__col-s">76.5%</td>
+
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Абрамов.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__image -ibg">
+															<picture><source data-srcset="img/UBA/uba_team-logo/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/6.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-center text-bold table__col-s">35.8</td>
+													<td class="text-center table__col-s">28</td>
+													<td class="text-center table__col-s">26:32</td>
+													<td class="text-center table__col-s">16.8</td>
+													<td class="text-center table__col-s">11.1</td>
+													<td class="text-center table__col-s">3.7</td>
+													<td class="text-center table__col-s">2.8</td>
+													<td class="text-center table__col-s">3.5</td>
+													<td class="text-center table__col-s">1.7</td>
+													<td class="text-center table__col-s">53.5%</td>
+													<td class="text-center table__col-s">76.5%</td>
+
+												</tr>
+
+											</tbody>
+											<tfoot>
+												<tr>
+													<td class="text-left table-footer table__col-s-fix"></td>
+													<td class="text-left table-footer table__col-xxl table__col-xxl-fix"></td>
+
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+													<td class="text-center table-footer table__col-s"></td>
+
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<div class="table__box-1">
+										<table class="table-fill-1">
+											<thead>
+												<tr>
+													<!-- <th class="text-left table__col-s-fix">№</th> -->
+													<th class="text-left table__col-s-fix">
+														<div class="table__image -ibg">
+															<img data-src="img/UBA/UBA_ball-gold.svg" alt="Логотип команды">
+														</div>
+													</th>
+													<th class="text-left table__col-xxl-fix table__col-hide">игрок</th>
+
+												</tr>
+											</thead>
+											<tbody class="table-hover">
+
+												<tr>
+													<!-- <td class="text-center table__col-s-fix">1</td> -->
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Абрамов.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<!-- <td class="text-left table__col-xxl-fix table__col-hide">Колесников Александр</td> -->
+													<td class="text-left table__col-xxl-fix table__col-hide">
+														<span>Колесников</span>
+														<span>Александр</span>
+													</td>
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/МГУ/Макушин.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/МГУ/Макушин.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl-fix table__col-hide">Михайлов Сергей</td>
+
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Зацепин.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Зацепин.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl-fix table__col-hide">Ивановский Константин</td>
+
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/БКМ/Захаров.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/БКМ/Захаров.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl-fix table__col-hide">Константинопольский Константин</td>
+
+												</tr>
+												<tr>
+													<td class="table__body-col-1 table__body-col-logo">
+														<div class="table__photo -ibg">
+															<picture><source data-srcset="img/UBA/uba_players/AMS/Гресев.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/AMS/Гресев.png" alt="Логотип команды"></picture>
+														</div>
+													</td>
+													<td class="text-left table__col-xxl-fix table__col-hide">Мокеев Николай</td>
+
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td class="text-left table-footer  table__col-s-fix"></td>
+													<td class="text-left table-footer table__col-xxl-fix table__col-hide"></td>
+
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+							<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
+								<span>Показать еще</span>
+								<span>Скрыть</span></button>
+						</div>
+						<div data-spollers class="rating-profile__spollers">
+							<div class="rating-profile__spollers-item">
+								<button type="button" data-spoller class="rating-profile__spollers-btn publication-selector__btn">Формула рейтинга</button>
+								<div class="rating-profile__spollers-body">
+									<h4 class="rating-profile__spollers-title">
+										<span>Рейтинг</span> = ОЧКИ + ПБ + 1.4*РП + ПХ + 1.4*БШ - 0.7*ПТ + БРЗ + 0.5*И
+										- 0.8*(БРБ-БРЗ) + 0.25*ШТЗ - 0.8*(ШТБ-ШТЗ)
+									</h4>
+									<div class="rating-profile__glossary">
+										<table class="table-fill">
+											<tbody class="table-hover">
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">Ком</td>
+													<td class="text-left text-tel table__col-s">Команда</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">И</td>
+													<td class="text-left text-tel table__col-s">Игры</td>
+												</tr>
+
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">ПБ</td>
+													<td class="text-left text-tel table__col-s">Подборы в среднем</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">РП</td>
+													<td class="text-left text-tel table__col-s">Передачи</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table-fill">
+											<tbody class="table-hover">
+
+
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">ПХ</td>
+													<td class="text-left text-tel table__col-s">Перехваты</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">БШ</td>
+													<td class="text-left text-tel table__col-s">Блокшоты</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">ПТ</td>
+													<td class="text-left text-tel table__col-s">Потери</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">Мин</td>
+													<td class="text-left text-tel table__col-s">Минуты в среднем</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table-fill">
+											<tbody class="table-hover">
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">БРБ</td>
+													<td class="text-left text-tel table__col-s">Броски с игры бросил</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">БРЗ</td>
+													<td class="text-left text-tel table__col-s">Броски с игры забил</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">ШТБ</td>
+													<td class="text-left text-tel table__col-s">Штрафные бросил</td>
+												</tr>
+												<tr>
+													<td class="text-center text-bold table__col-s-fix">ШТЗ</td>
+													<td class="text-left text-tel table__col-s">Штрафные Забил</td>
+												</tr>
+											</tbody>
+										</table>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- PROFILE FOOTER -->
+				<div class="base-profile__footer">
+					<div class="section__container base-profile__container">
+						<div class="rating-profile__roster-cards">
+							<h2 class="section-title-h2b element-animation">MVP тура</h2>
+							<div class="team-profile__team-staff">
+								<div class="team-slider team-profile__staff-slider">
+									<div class="swiper-wrapper team-slider__wrapper">
+										<div class="team-slider__item swiper-slide">
+											<div class="player-card-mvp team-roster__tab-item">
+												<div class="diagonal-box-1 bg-one player-card-mvp__header">
+
+													<div class="player-card-mvp__bage">
+														<div class="player-card-mvp__number">24</div>
+														<div class="player-card-mvp__name">
+															<h3 class="player-card-mvp__title">Захаров</h3>
+															<h3 class="player-card-mvp__title">Максим</h3>
+														</div>
+
+													</div>
+												</div>
+												<div class="player-card-mvp__body">
+													<a class="player-card-mvp__team-logo -ibg">
+														<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+													</a>
+													<div class="player-card-mvp__photo -ibg">
+														<picture><source data-srcset="img/UBA/uba_players/30.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/30.png" alt=""></picture>
+													</div>
+												</div>
+												<div class="diagonal-box-1 bg-two player-card-mvp__footer">
+													<div class="player-card-mvp__image -ibg">
+														<img data-src="img/UBA/mvp.svg" alt="">
+													</div>
+													<div class="player-card-mvp__tour">
+														<h3 class="player-card-mvp__title-1">1</h3>
+														<h3 class="player-card-mvp__title-1">тур</h3>
+													</div>
+													<div class="player-card-mvp__tournament-logo -ibg">
+														<img src="img/UBA/UBA_white-1.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-slider__item swiper-slide">
+											<div class="player-card-mvp team-roster__tab-item">
+												<div class="diagonal-box-1 bg-one player-card-mvp__header">
+
+													<div class="player-card-mvp__bage">
+														<div class="player-card-mvp__number">45</div>
+														<div class="player-card-mvp__name">
+															<h3 class="player-card-mvp__title">Александров</h3>
+															<h3 class="player-card-mvp__title">Николай</h3>
+														</div>
+
+													</div>
+												</div>
+												<div class="player-card-mvp__body">
+													<a class="player-card-mvp__team-logo -ibg">
+														<picture><source srcset="img/UBA/uba_team-logo/10.webp" type="image/webp"><img src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+													</a>
+													<div class="player-card-mvp__photo -ibg">
+														<picture><source data-srcset="img/UBA/uba_players/ЦСКА-Ю/Косяков.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/ЦСКА-Ю/Косяков.png" alt=""></picture>
+													</div>
+												</div>
+												<div class="diagonal-box-1 bg-two player-card-mvp__footer">
+													<div class="player-card-mvp__image -ibg">
+														<img data-src="img/UBA/mvp.svg" alt="">
+													</div>
+													<div class="player-card-mvp__tour">
+														<h3 class="player-card-mvp__title-1">2</h3>
+														<h3 class="player-card-mvp__title-1">тур</h3>
+													</div>
+													<div class="player-card-mvp__tournament-logo -ibg">
+														<img src="img/UBA/UBA_white-1.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-slider__item swiper-slide">
+											<div class="player-card-mvp team-roster__tab-item">
+												<div class="diagonal-box-1 bg-one player-card-mvp__header">
+
+													<div class="player-card-mvp__bage">
+														<div class="player-card-mvp__number">7</div>
+														<div class="player-card-mvp__name">
+															<h3 class="player-card-mvp__title">Васильков</h3>
+															<h3 class="player-card-mvp__title">Владислав</h3>
+														</div>
+
+													</div>
+												</div>
+												<div class="player-card-mvp__body">
+													<a class="player-card-mvp__team-logo -ibg">
+														<picture><source srcset="img/UBA/uba_team-logo/4.webp" type="image/webp"><img src="img/UBA/uba_team-logo/4.png" alt=""></picture>
+													</a>
+													<div class="player-card-mvp__photo -ibg">
+														<picture><source data-srcset="img/UBA/uba_players/МГУ/Макушин.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/МГУ/Макушин.png" alt=""></picture>
+													</div>
+												</div>
+												<div class="diagonal-box-1 bg-two player-card-mvp__footer">
+													<div class="player-card-mvp__image -ibg">
+														<img data-src="img/UBA/mvp.svg" alt="">
+													</div>
+													<div class="player-card-mvp__tour">
+														<h3 class="player-card-mvp__title-1">3</h3>
+														<h3 class="player-card-mvp__title-1">тур</h3>
+													</div>
+													<div class="player-card-mvp__tournament-logo -ibg">
+														<img src="img/UBA/UBA_white-1.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-slider__item swiper-slide">
+											<div class="player-card-mvp team-roster__tab-item">
+												<div class="diagonal-box-1 bg-one player-card-mvp__header">
+
+													<div class="player-card-mvp__bage">
+														<div class="player-card-mvp__number">11</div>
+														<div class="player-card-mvp__name">
+															<h3 class="player-card-mvp__title">Лукьянов</h3>
+															<h3 class="player-card-mvp__title">Александр</h3>
+														</div>
+
+													</div>
+												</div>
+												<div class="player-card-mvp__body">
+													<a class="player-card-mvp__team-logo -ibg">
+														<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+													</a>
+													<div class="player-card-mvp__photo -ibg">
+														<picture><source data-srcset="img/UBA/uba_players/36.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/36.png" alt=""></picture>
+													</div>
+												</div>
+												<div class="diagonal-box-1 bg-two player-card-mvp__footer">
+													<div class="player-card-mvp__image -ibg">
+														<img data-src="img/UBA/mvp.svg" alt="">
+													</div>
+													<div class="player-card-mvp__tour">
+														<h3 class="player-card-mvp__title-1">4</h3>
+														<h3 class="player-card-mvp__title-1">тур</h3>
+													</div>
+													<div class="player-card-mvp__tournament-logo -ibg">
+														<img src="img/UBA/UBA_white-1.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-slider__item swiper-slide">
+											<div class="player-card-mvp team-roster__tab-item">
+												<div class="diagonal-box-1 bg-one player-card-mvp__header">
+
+													<div class="player-card-mvp__bage">
+														<div class="player-card-mvp__number">9</div>
+														<div class="player-card-mvp__name">
+															<h3 class="player-card-mvp__title">Иванов</h3>
+															<h3 class="player-card-mvp__title">Егор</h3>
+														</div>
+
+													</div>
+												</div>
+												<div class="player-card-mvp__body">
+													<a class="player-card-mvp__team-logo -ibg">
+														<picture><source srcset="img/UBA/uba_team-logo/12.webp" type="image/webp"><img src="img/UBA/uba_team-logo/12.png" alt=""></picture>
+													</a>
+													<div class="player-card-mvp__photo -ibg">
+														<picture><source data-srcset="img/UBA/uba_players/AMS/Греков.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/AMS/Греков.png" alt=""></picture>
+													</div>
+												</div>
+												<div class="diagonal-box-1 bg-two player-card-mvp__footer">
+													<div class="player-card-mvp__image -ibg">
+														<img data-src="img/UBA/mvp.svg" alt="">
+													</div>
+													<div class="player-card-mvp__tour">
+														<h3 class="player-card-mvp__title-1">5</h3>
+														<h3 class="player-card-mvp__title-1">тур</h3>
+													</div>
+													<div class="player-card-mvp__tournament-logo -ibg">
+														<img src="img/UBA/UBA_white-1.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-slider__item swiper-slide">
+											<div class="player-card-mvp team-roster__tab-item">
+												<div class="diagonal-box-1 bg-one player-card-mvp__header">
+
+													<div class="player-card-mvp__bage">
+														<div class="player-card-mvp__number">24</div>
+														<div class="player-card-mvp__name">
+															<h3 class="player-card-mvp__title">Захаров</h3>
+															<h3 class="player-card-mvp__title">Максим</h3>
+														</div>
+
+													</div>
+												</div>
+												<div class="player-card-mvp__body">
+													<a class="player-card-mvp__team-logo -ibg">
+														<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+													</a>
+													<div class="player-card-mvp__photo -ibg">
+														<picture><source data-srcset="img/UBA/uba_players/30.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/30.png" alt=""></picture>
+													</div>
+												</div>
+												<div class="diagonal-box-1 bg-two player-card-mvp__footer">
+													<div class="player-card-mvp__image -ibg">
+														<img data-src="img/UBA/mvp.svg" alt="">
+													</div>
+													<div class="player-card-mvp__tour">
+														<h3 class="player-card-mvp__title-1">1</h3>
+														<h3 class="player-card-mvp__title-1">тур</h3>
+													</div>
+													<div class="player-card-mvp__tournament-logo -ibg">
+														<img src="img/UBA/UBA_white-1.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-slider__item swiper-slide">
+											<div class="player-card-mvp team-roster__tab-item">
+												<div class="diagonal-box-1 bg-one player-card-mvp__header">
+
+													<div class="player-card-mvp__bage">
+														<div class="player-card-mvp__number">24</div>
+														<div class="player-card-mvp__name">
+															<h3 class="player-card-mvp__title">Захаров</h3>
+															<h3 class="player-card-mvp__title">Максим</h3>
+														</div>
+
+													</div>
+												</div>
+												<div class="player-card-mvp__body">
+													<a class="player-card-mvp__team-logo -ibg">
+														<picture><source srcset="img/UBA/uba_team-logo/1.webp" type="image/webp"><img src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+													</a>
+													<div class="player-card-mvp__photo -ibg">
+														<picture><source data-srcset="img/UBA/uba_players/30.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_players/30.png" alt=""></picture>
+													</div>
+												</div>
+												<div class="diagonal-box-1 bg-two player-card-mvp__footer">
+													<div class="player-card-mvp__image -ibg">
+														<img data-src="img/UBA/mvp.svg" alt="">
+													</div>
+													<div class="player-card-mvp__tour">
+														<h3 class="player-card-mvp__title-1">1</h3>
+														<h3 class="player-card-mvp__title-1">тур</h3>
+													</div>
+													<div class="player-card-mvp__tournament-logo -ibg">
+														<img src="img/UBA/UBA_white-1.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="team-slider__pagination swiper-pagination"></div> -->
+									<div class="team-slider__navigation">
+										<div class="team-slider__nav-prev -ibg">
+											<img src="img/icon/prev2.svg" alt="">
+										</div>
+										<div class="team-slider__nav-next -ibg">
+											<img src="img/icon/next2.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- === PARTNERS === -->
+
+			<section class="partners-slider__section section-offset diagonal-box bg-one">
+				<div class="section__container partners-slider__box content__box">
+					<h2 class="section-title-h2w partners-slider__title element-animation">партнеры</h2>
+
+					<div class="partners-slider__duo">
+						<a href="#" class="partners-slider__image -ibg">
+							<img class="partners-slider__img" src="img/partners/rfb-mono.svg" alt="">
+							<img class="partners-slider__img-hover" src="img/partners/rfb-color.svg" alt="">
+						</a>
+						<a href="#" class="partners-slider__image -ibg">
+							<img class="partners-slider__img" src="img/partners/vtb-mono.svg" alt="">
+							<img class="partners-slider__img-hover" src="img/partners/vtb-colour.svg" alt="">
+						</a>
+					</div>
+
+					<!-- PARTNERS SLIDER -->
+
+					<div class="partners-slider">
+						<div class="swiper-wrapper partners-slider__wrapper">
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+							<div class="partners-slider__item swiper-slide">
+								<a href="#" class="partners-slider__image-5 -ibg">
+									<img class="partners-slider__img" src="img/partners/5.svg" alt="">
+									<img class="partners-slider__img-hover" src="img/partners/5-1.svg" alt="">
+								</a>
+							</div>
+
+						</div>
+						<div class="partners-slider__pagination swiper-pagination"></div>
+						<div class="partners-slider__navigation">
+							<div class="partners-slider__nav-prev -ibg">
+								<img src="img/icon/prev1.svg" alt="стрелка назад">
+							</div>
+							<div class="partners-slider__nav-next -ibg">
+								<img src="img/icon/next1.svg" alt="стрелка вперед">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer" id="site-footer">
+			<div class="footer__container">
+				<section class="footer__section footer__top-section" id="footer-top-section">
+					<a href="#" class=" footer__logo -ibg">
+						<img src="img/UBA/UBA-white-2.svg" alt="лого UBA">
+					</a>
+					<div class="footer__top-menu" id="footer-top-menu-container" role="menubar">
+						<ul class="footer__top-menu-list" id="footer-top-menu" role="menu">
+
+							<!-- <li class="footer__top-menu-item" role="menuitem">
+						<a href="#" class="footer__top-menu-link">Группа поддержки</a>
+					</li> -->
+							<li class="footer__top-menu-item footer__top-menu-item-active" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Магазин</a>
+							</li>
+							<li class="footer__top-menu-item" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Медиа</a>
+							</li>
+							<li class="footer__top-menu-item" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Рейтинг</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="footer__top-menu-btn" id="footer-buttons-container">
+						Стать Партнером
+					</button>
+				</section>
+
+				<section class="footer__section footer__middle-section" id="footer-middle-section">
+					<div id="footer-about" class="footer__columns footer__first-column">
+						<h1 class="footer__title-1">ОФИС UBA</h1>
+						<address class="footer__address">
+							<p><img class="footer__icon" src="img/icon/location.svg" alt="иконка локация">Москва,
+								Складочная улица, 1
+							</p>
+							<p><img class="footer__icon" src="img/icon/tel.svg" alt="иконка телефон">+7 (999) 222-00-33</p>
+							<p><img class="footer__icon" src="img/icon/mail.svg" alt="иконка почта">uba@gmail.com</p>
+						</address>
+						<h1 class="footer__title-1">СЛУЖБА БЕЗОПАСНОСТИ</h1>
+						<address>
+							<p><img class="footer__icon" src="img/icon/mail.svg" alt="иконка почта">uba_save@gmail.com</p>
+						</address>
+					</div>
+					<div class=" footer__columns footer__second-column">
+						<h1 class="footer__title">АССОЦИАЦИЯ</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Информация</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">История</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Руководство</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Партнёры</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Спонсоры</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__columns footer__second-column">
+						<h1 class="footer__title">ТУРНИР</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Календарь</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Статистика</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Таблица</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Команды</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Игроки</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class=" footer__columns footer__second-column">
+						<h1 class="footer__title">О НАС</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Лицензия</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Положение</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Контакты</a>
+							</li>
+							<li class="footer__column-menu-item">
+								<a href="#" class="footer__column-menu-link" role="menuitem">Франшиза</a>
+							</li>
+
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Документы</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class=" footer__section footer__bottom-section" id="footer-bottom-section">
+					<div class="footer__copyright" id="footer-copyright-info">
+						&copy; United Basketball Association 2022. Все права защищены.
+					</div>
+
+					<div class="footer__icons element-animation">
+						<ul class="footer__icons-list">
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/twitter-1-gold.svg" alt="иконка Твиттер"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/vk-1-gold.svg" alt="иконка ВКонтакте"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/telegram-1-gold.svg" alt="иконка Телеграм"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/tiktok-1-gold.svg" alt="иконка Тик-Ток"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/youtube-1-gold.svg" alt="иконка Ютуб"></a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="footer__site-developer">
+						<a href="#" class="footer__column-menu-link">Разработано: jumpball</a>
+					</div>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<div id="go-to-game" aria-hidden="true" class="popup game-popup">
+		<div class="popup__wrapper game-popup__wrapper">
+			<div class="popup__content game-popup__content">
+
+				<div class="popup__header game-popup__header">
+					<div class="game-popup__logo element-animation -ibg">
+						<img src="img/UBA/UBA.svg" alt="">
+					</div>
+					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
+						<h3 class="time-count__title">до матча</h3>
+						<div class="time-count__content">
+							<div class="time-count__item time-count__days">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">дней</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__hours">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">часов</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__minutes">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">минут</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__seconds">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">секунд</span>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
+						<img src="img/icon/x-main.svg" alt="">
+					</button>
+				</div>
+
+
+
+				<div class="popup__text game-popup__text">
+				</div>
+
+				<div class="game-card__body">
+					<h3 class="game-card__time">19:30</h3>
+					<div class="game-card__date">
+						<h4 class="game-card__day">24</h4>
+						<div class="game-card__label">
+							<div class="game-card__months">августа</div>
+							<div class="game-card__months-1">фев</div>
+							<div class="game-card__week">суббота</div>
+							<div class="game-card__week-1">сб</div>
+						</div>
+
+					</div>
+					<div class="game-card__team-name">
+						<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
+						<h3 class="game-card__title">-</h3>
+						<h3 class="game-card__title game-card__title-l">БК Московский</h3>
+					</div>
+					<div class="game-card__teams">
+						<div class="game-card__team -ibg">
+							<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+						</div>
+						<div class="game-card__score">
+							<h3 class="game-card__team-score game-card__title-r">0</h3>
+							<p class="game-card__team-score-1">-</p>
+							<h3 class="game-card__team-score game-card__title-l">0</h3>
+						</div>
+						<div class="game-card__team -ibg">
+							<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="game-card__content">
+						<span>UBA</span>
+						<p>Playground Савеловская</p>
+						<p>Москва, Россия</p>
+						<button type="button" class="game-card__btn">статистика</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="go-to-video" aria-hidden="true" class="popup game-popup">
+		<div class="popup__wrapper game-popup__wrapper">
+			<div class="popup__content game-popup__content">
+
+				<div class="popup__header game-popup__header">
+					<div class="game-popup__logo element-animation -ibg">
+						<img src="img/UBA/UBA.svg" alt="">
+					</div>
+					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
+						<h3 class="time-count__title">до матча</h3>
+						<div class="time-count__content">
+							<div class="time-count__item time-count__days">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">дней</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__hours">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">часов</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__minutes">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">минут</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__seconds">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">секунд</span>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
+						<img src="img/icon/x-main.svg" alt="">
+					</button>
+				</div>
+
+
+
+				<div class="popup__text game-popup__text">
+				</div>
+
+				<!-- <div class="game-card__body">
+				<h3 class="game-card__time">19:30</h3>
+				<div class="game-card__date">
+					<h4 class="game-card__day">24</h4>
+					<div class="game-card__label">
+						<div class="game-card__months">августа</div>
+						<div class="game-card__months-1">фев</div>
+						<div class="game-card__week">суббота</div>
+						<div class="game-card__week-1">сб</div>
+					</div>
+
+				</div>
+				<div class="game-card__team-name">
+					<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
+					<h3 class="game-card__title">-</h3>
+					<h3 class="game-card__title game-card__title-l">БК Московский</h3>
+				</div>
+				<div class="game-card__teams">
+					<div class="game-card__team -ibg">
+						<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+					</div>
+					<div class="game-card__score">
+						<h3 class="game-card__team-score game-card__title-r">0</h3>
+						<p class="game-card__team-score-1">-</p>
+						<h3 class="game-card__team-score game-card__title-l">0</h3>
+					</div>
+					<div class="game-card__team -ibg">
+						<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+					</div>
+				</div>
+				<div class="game-card__content">
+					<span>UBA</span>
+					<p>Playground Савеловская</p>
+					<p>Москва, Россия</p>
+					<button type="button" class="game-card__btn">статистика</button>
+				</div>
+			</div> -->
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221022014442"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221022014442"></script>
+	<script src="js/app.min.js?_v=20221022014442"></script>
+</body>
+
+</html>
