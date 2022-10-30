@@ -19724,9 +19724,6 @@ PERFORMANCE OF THIS SOFTWARE.
         new Swiper(".blog-slider", {
             effect: "fade",
             loop: true,
-            mousewheel: {
-                invert: false
-            },
             autoplay: {
                 delay: 6e3,
                 stopOnLastSlide: false,
@@ -19748,9 +19745,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 delay: 9e3,
                 stopOnLastSlide: false,
                 disableOnInteraction: false
-            },
-            mousewheel: {
-                invert: false
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -19797,9 +19791,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 stopOnLastSlide: false,
                 disableOnInteraction: false
             },
-            mousewheel: {
-                invert: false
-            },
             navigation: {
                 prevEl: ".team-slider__nav-prev",
                 nextEl: ".team-slider__nav-next"
@@ -19844,9 +19835,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 stretch: 150,
                 slideShadows: true
             },
-            mousewheel: {
-                invert: false
-            },
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
@@ -19864,9 +19852,6 @@ PERFORMANCE OF THIS SOFTWARE.
             observeParents: true,
             observeSlideChildren: true,
             nested: true,
-            mousewheel: {
-                invert: false
-            },
             navigation: {
                 prevEl: ".pub-menu-slider__nav-prev",
                 nextEl: ".pub-menu-slider__nav-next"
@@ -19898,16 +19883,13 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
-        new Swiper(".stats-menu-slider", {
+        var compBestPlayersSwiper = new Swiper(".stats-menu-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
             nested: true,
-            mousewheel: {
-                invert: false
-            },
             navigation: {
                 prevEl: ".stats-menu-slider__nav-prev",
                 nextEl: ".stats-menu-slider__nav-next"
@@ -19939,6 +19921,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
+        window.sss = compBestPlayersSwiper;
         new Swiper(".banner-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
@@ -19949,9 +19932,6 @@ PERFORMANCE OF THIS SOFTWARE.
             slideToClickedSlide: true,
             autoHeight: true,
             centeredSlides: true,
-            mousewheel: {
-                invert: false
-            },
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
@@ -20025,9 +20005,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 stopOnLastSlide: false,
                 disableOnInteraction: false
             },
-            mousewheel: {
-                invert: false
-            },
             navigation: {
                 prevEl: ".banner-slider__nav-prev",
                 nextEl: ".banner-slider__nav-next"
@@ -20072,9 +20049,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 delay: 12e3,
                 stopOnLastSlide: false,
                 disableOnInteraction: false
-            },
-            mousewheel: {
-                invert: false
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -20130,9 +20104,6 @@ PERFORMANCE OF THIS SOFTWARE.
             observeParents: true,
             observeSlideChildren: true,
             freeMode: true,
-            mousewheel: {
-                invert: false
-            },
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
@@ -20175,9 +20146,6 @@ PERFORMANCE OF THIS SOFTWARE.
             observeSlideChildren: true,
             freeMode: true,
             loop: true,
-            mousewheel: {
-                invert: true
-            },
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",

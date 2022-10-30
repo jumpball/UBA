@@ -7,8 +7,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221028035738">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221028035738">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221030025544">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221030025544">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -122,14 +122,14 @@
 				<div class="section__container">
 					<div class="team-profile__header">
 						<h2 class="section-title-h2b publication-selector__title element-animation">Лидеры турнира</h2>
-						<div data-spollers="679.98,max" class="tournament-stats__spollers">
-							<div class="tournament-stats__spollers-item">
-								<button type="button" data-spoller class="tournament-stats__spollers-title">навигация</button>
-								<div class="tournament-stats__spollers-body">
-									<div class="tournament-stats__nav">
-										<form action="#" class="tournament-stats__form">
-											<div class="tournament-stats__box">
-												<label class="person-stats__label" for="select-season-4">выбрать
+						<div data-spollers="639.98,max" class="team-profile__spollers">
+							<div class="team-profile__spollers-item">
+								<button type="button" data-spoller class="calendar__spollers-title calendar__spollers-title-1">навигация</button>
+								<div class="team-profile__spollers-body">
+									<div class="team-profile__nav">
+										<form action="#" class="team-profile__form-1">
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="select-season-4">выбрать
 													сезон</label>
 												<select data-label data-scroll data-show name="form[]" id="select-season-4" class="person-stats__list">
 													<option class="person-stats__item" value="1" selected="selected">
@@ -138,6 +138,74 @@
 													<option class="person-stats__item" value="3">2020/2021</option>
 													<option class="person-stats__item" value="4">2019/2020</option>
 													<option class="person-stats__item" value="5">2018/2019</option>
+												</select>
+											</div>
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="select-tournament-2">выбрать
+													турнир</label>
+												<select data-label data-scroll data-show name="form[]" id="select-tournament-2" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">Регулярный
+														чемпионат UBA 22/23</option>
+													<option class="person-stats__item" value="2">Летняя лига UBA 21/22</option>
+													<option class="person-stats__item" value="3">Регулярный чемпионат UBA 21/22
+													</option>
+													<option class="person-stats__item" value="4">Летняя лига UBA 20/21</option>
+													<option class="person-stats__item" value="5">Регулярный чемпионат UBA 20/21
+													</option>
+												</select>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-spollers="767.98,max" class="team-profile__spollers">
+							<div class="team-profile__spollers-item">
+								<button type="button" data-spoller class="calendar__spollers-title">сортировка</button>
+								<div class="team-profile__spollers-body">
+									<div class="team-profile__nav">
+										<form action="#" class="calendar__form">
+
+
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="tournament-stage-1">этап турнира</label>
+												<select data-label data-scroll data-show name="form[]" id="tournament-stage-1" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">все
+														этапы</option>
+													<option data-label class="person-stats__item" value="2">регулярный сезон
+													</option>
+													<option data-label class="person-stats__item" value="3">регулярный сезон - 1 тур
+													</option>
+													<option data-label class="person-stats__item" value="4">регулярный сезон - 2 тур
+													</option>
+													<option data-label class="person-stats__item" value="5">регулярный сезон - 3 тур
+													</option>
+													<option data-label class="person-stats__item" value="6">регулярный сезон - 4 тур
+													</option>
+													<option data-label class="person-stats__item" value="7">регулярный сезон - 5 тур
+													</option>
+													<option data-label class="person-stats__item" value="8">плей-ин
+													</option>
+													<option data-label class="person-stats__item" value="9">плей-офф
+													</option>
+													<option data-label class="person-stats__item" value="10">финал
+													</option>
+
+
+												</select>
+											</div>
+
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="select-team-2">выбрать
+													команду</label>
+												<select data-label data-scroll data-show name="form[]" id="select-team-2" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">все
+														команды</option>
+													<option class="person-stats__item" value="2">БК Московский</option>
+													<option class="person-stats__item" value="3">Take Shot Black</option>
+													<option class="person-stats__item" value="4">Росток</option>
+													<option class="person-stats__item" value="5">Take Shot White</option>
+													<option class="person-stats__item" value="6">AMS</option>
 												</select>
 											</div>
 
@@ -153,38 +221,25 @@
 													<option class="person-stats__item" value="5">блокшоты в среднем</option>
 												</select>
 											</div>
-
-											<div class="tournament-stats__box">
-												<label class="team-profile-nav__label" for="select-view">показать</label>
-												<select data-label data-scroll data-show name="form[]" id="select-view" class="team-profile-nav__list">
-													<option class="team-profile-nav__item" value="1" selected="selected">
-														первые 10</option>
-													<option class="team-profile-nav__item" value="2">первые 25</option>
-													<option class="team-profile-nav__item" value="3">первые 50</option>
-													<option class="team-profile-nav__item" value="4">первые 100</option>
-													<option class="team-profile-nav__item" value="5">все</option>
-												</select>
-											</div>
 										</form>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div data-tabs class="tabs tournament-stats__tabs">
-							<nav data-tabs-titles class="tournament-stats__tabs-navigation">
-								<button type="button" class="tournament-stats__tabs-title _tab-active -ibg">
+						<div data-tabs class="calendar__tabs">
+							<nav data-tabs-titles class="calendar__tabs-navigation-1">
+								<button type="button" class="calendar__tabs-title _tab-active -ibg">
 									<img src="img/icon/icon-cards-red.svg" alt="">
 								</button>
-								<button type="button" class="tournament-stats__tabs-title -ibg">
+								<button type="button" class="calendar__tabs-title -ibg">
 									<img src="img/icon/icon-table-red.svg" alt="">
 								</button>
 							</nav>
-							<div data-tabs-body class="tournament-stats__tabs-content">
-								<div class="tournament-stats__tabs-body">
+							<div data-tabs-body class="calendar__tabs-content">
+								<div class="calendar__tabs-body">
 									<!-- TAB SLIDER - TEAM ROSTER-->
 									<div class="team-slider">
 										<div class="swiper-wrapper team-slider__wrapper">
-											<!-- <img class="team-slider__bg-logo" src="img/logo/Zenit-logo-bc-tr.svg" alt=""> -->
 											<div class="team-slider__item swiper-slide">
 												<div class="player-card__body team-roster__tab-item">
 													<div class="player-card__mini-logo -ibg">
@@ -203,7 +258,7 @@
 													</div>
 
 													<div class="player-card__photo -ibg">
-														<img data-src="img/UBA/uba_players/1.jpg" alt="">
+														<img data-src="img/UBA/uba_players/AMS/Моня.png" alt="">
 													</div>
 													<div class="player-card__content">
 														<h3 class="player-card__title">Востриков</h3>
@@ -231,7 +286,7 @@
 													</div>
 
 													<div class="player-card__photo -ibg">
-														<img src="img/UBA/uba_players/2.jpg" alt="">
+														<img src="img/UBA/uba_players/МГУ/Морозов.png" alt="">
 													</div>
 													<div class="player-card__content">
 
@@ -261,7 +316,7 @@
 													</div>
 
 													<div class="player-card__photo -ibg">
-														<img data-src="img/UBA/uba_players/3.jpg" alt="">
+														<img data-src="img/UBA/uba_players/ЦСКА-Ю/Ключенков.png" alt="">
 													</div>
 													<div class="player-card__content">
 														<h3 class="player-card__title">Зубков</h3>
@@ -289,7 +344,7 @@
 													</div>
 
 													<div class="player-card__photo -ibg">
-														<img data-src="img/UBA/uba_players/14.jpg" alt="">
+														<img data-src="img/UBA/uba_players/БКМ/Исаков.png" alt="">
 													</div>
 													<div class="player-card__content">
 														<h3 class="player-card__title">Павлов</h3>
@@ -317,7 +372,7 @@
 													</div>
 
 													<div class="player-card__photo -ibg">
-														<img data-src="img/UBA/uba_players/18.jpg" alt="">
+														<img data-src="img/UBA/uba_players/ЦСКА-Ю/Зацепин.png" alt="">
 													</div>
 													<div class="player-card__content">
 														<h3 class="player-card__title">Рыжов</h3>
@@ -345,7 +400,7 @@
 													</div>
 
 													<div class="player-card__photo -ibg">
-														<img data-src="img/UBA/uba_players/9.jpg" alt="">
+														<img data-src="img/UBA/uba_players/МГУ/Макушин.png" alt="">
 													</div>
 													<div class="player-card__content">
 														<h3 class="player-card__title">Малахов</h3>
@@ -370,148 +425,99 @@
 										</div>
 									</div>
 								</div>
-								<div class="tournament-stats__tabs-body">
-									<div data-showmore class="block">
-										<div data-showmore-content="370" class="block__content">
-											<div class="table__wrapper table__wrapper-dark">
-												<div class="table__box">
-													<table class="table-fill">
-														<thead>
-															<tr>
-																<th class="text-left table__col-sm-fix">№</th>
-																<th class="text-left table__col-xxl table__col-xxl-fix">игрок</th>
-																<th class="text-center table__col-s">команда</th>
-																<th class="text-center table__col-s">результат</th>
-																<th class="text-center table__col-s">игры</th>
-															</tr>
-														</thead>
-														<tbody class="table-hover">
-
-															<tr>
-																<td class="text-center table__col-s-fix">1</td>
-																<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
-																<td class="text-center table__col-s">БК Московский</td>
-																<td class="text-center table__col-s">24.8</td>
-																<td class="text-center table__col-s">3</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">2</td>
-																<td class="text-left table__col-xxl table__col-xxl-fix">Максимов Евгений</td>
-																<td class="text-center table__col-s">ЦСКА-Юниор</td>
-																<td class="text-center table__col-s">22.7</td>
-																<td class="text-center table__col-s">3</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">3</td>
-																<td class="text-left table__col-xxl table__col-xxl-fix">Семенов Владислав</td>
-																<td class="text-center table__col-s">МГУ</td>
-																<td class="text-center table__col-s">20.3</td>
-																<td class="text-center table__col-s">3</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">4</td>
-																<td class="text-left table__col-xxl table__col-xxl-fix">Васильев Анвтолий</td>
-																<td class="text-center table__col-s">Хастлерс</td>
-																<td class="text-center table__col-s">19.8</td>
-																<td class="text-center table__col-s">3</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">5</td>
-																<td class="text-left table__col-xxl table__col-xxl-fix">Твордовский Николай</td>
-																<td class="text-center table__col-s">Take Shot Black</td>
-																<td class="text-center table__col-s">17.7</td>
-																<td class="text-center table__col-s">3</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">6</td>
-																<td class="text-left table__col-xxl table__col-xxl-fix">Елисеев Михаил</td>
-																<td class="text-center table__col-s">ЦСКА-Юниор</td>
-																<td class="text-center table__col-s">16.3</td>
-																<td class="text-center table__col-s">3</td>
-															</tr>
-
-														</tbody>
-														<tfoot>
-															<tr>
-																<td class="text-left table-footer  table__col-s-fix"></td>
-																<td class="text-left table-footer table__col-xxl table__col-xxl-fix"></td>
-																<td class="text-center table-footer table__col-s"></td>
-																<td class="text-center table-footer table__col-s"></td>
-																<td class="text-center table-footer table__col-s"></td>
-
-
-															</tr>
-														</tfoot>
-													</table>
-												</div>
-
-
-												<div class="table__box-1">
-													<table class="table-fill-1">
-														<thead>
-															<tr>
-																<th class="text-left table__col-s-fix">№</th>
-																<th class="text-left table__col-xl-fix table__col-hide">игрок</th>
-
-															</tr>
-														</thead>
-														<tbody class="table-hover">
-
-															<tr>
-																<td class="text-center table__col-s-fix">1</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Колесников Александр</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">2</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Михайлов Сергей</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">3</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Ивановский Константин</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">4</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Луговой Евгений</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">5</td>
-																<td class="text-left table__col-xxl-fix table__col-hide">Константинопольский Константин</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-s-fix">6</td>
-																<td class="text-left table__col-xxl-fix table__col-hide">Алексеев Александр</td>
-
-															</tr>
-														</tbody>
-														<tfoot>
-															<tr>
-																<td class="text-left table-footer  table__col-s-fix"></td>
-																<td class="text-left table-footer table__col-xl-fix table__col-hide"></td>
-
-															</tr>
-														</tfoot>
-													</table>
-												</div>
-
-
-
-
-
-
-											</div>
+								<div class="calendar__tabs-body">
+									<div class="table__wrapper table__wrapper-dark">
+										<div class="table__box">
+											<table class="table-fill">
+												<thead>
+													<tr>
+														<th class="text-center table__col-s-fix">№</th>
+														<th class="text-left table__col-s">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип команды">
+															</div>
+														</th>
+														<th class="text-center table__col-s">игрок</th>
+														<th class="text-center table__col-s">результат</th>
+														<th class="text-center table__col-s">игры</th>
+														<th class="text-center table__col-s">позиция</th>
+														<th colspan="2" class="text-center table__col-s">команда</th>
+													</tr>
+												</thead>
+												<tbody class="table-hover">
+													<tr>
+														<td class="text-center table__col-s-fix">1</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s">Колесников Александр</td>
+														<td class="text-center table__col-s">26.7</td>
+														<td class="text-center table__col-s">6</td>
+														<td class="text-center table__col-s">разыгрывающий</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="Логотип команды">
+															</div>
+														</td>
+														<td class="text-center table__col-s">БК Московский</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-s-fix">12</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/БКМ/Алиев.png" alt="Логотип команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s">Семенов Евгений</td>
+														<td class="text-center table__col-s">22.3</td>
+														<td class="text-center table__col-s">6</td>
+														<td class="text-center table__col-s">легкий форвард</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/2.png" alt="Логотип команды">
+															</div>
+														</td>
+														<td class="text-center table__col-s">Take Shot Black</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
-										<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
-											<span>Показать еще</span>
-											<span>Скрыть</span></button>
+										<div class="table__box-1 table__col-scroll">
+											<table class="table-fill-1">
+												<thead>
+													<tr>
+														<th class="text-center table__col-s-fix">№</th>
+														<th class="text-left table__col-s">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип команды">
+															</div>
+														</th>
+													</tr>
+												</thead>
+												<tbody class="table-hover">
+													<tr>
+														<td class="text-center table__col-s-fix">1</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-s-fix">7</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды">
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -521,20 +527,19 @@
 				<!-- TEAM PROFILE BODY -->
 				<div class="profile-body__team diagonal-box bg-one">
 					<div class="section__container content__box">
-						<!-- PROFILE STATS -->
-						<h2 class="section-title-h2w element-animation">статистика игроков</h2>
+						<!-- PROFILE PLAYERS STATS -->
+						<h2 class="section-title-h2w element-animation">статистика</h2>
 						<div class="team-roster__partner element-animation -ibg">
-							<img src="img/UBA/UBA-color-1.svg" alt="">
+							<img src="img/UBA/UBA-white-2.svg" alt="">
 						</div>
-						<div data-spollers="650,max" class="person-stats-chart__spollers">
+						<div data-spollers="679.98,max" class="person-stats-chart__spollers">
 							<div class="person-stats-chart__spollers-item">
-								<button type="button" data-spoller class="person-stats-chart__spollers-title"></button>
+								<button type="button" data-spoller class="person-stats-chart__spollers-title-3">навигация</button>
 								<div class="person-stats-chart__spollers-body">
 									<div class="person-stats__nav">
-										<form action="#" class="person-stats__form">
-
+										<form action="#" class="person-stats__form-3">
 											<div class="person-stats__box">
-												<label class="team-profile-nav__label" for="select-view">показать</label>
+												<label class="person-stats__label" for="select-view">показать</label>
 												<select data-label data-scroll data-show name="form[]" id="select-view" class="team-profile-nav__list">
 													<option class="team-profile-nav__item" value="1" selected="selected">
 														первые 10</option>
@@ -565,284 +570,306 @@
 												<select data-label data-scroll data-show name="form[]" id="type-stats-1" class="person-stats__list">
 													<option class="person-stats__item" value="1" selected="selected">в
 														среднем</option>
-													<option data-label class="person-stats__item" value="2">всего</option>
+													<option data-label class="person-stats__item" value="2">абсолютные
+														показатели</option>
 												</select>
 											</div>
-
 										</form>
-
 									</div>
 								</div>
 							</div>
 						</div>
-						<div data-showmore class="block">
-							<div data-showmore-content="370" class="block__content">
-								<div class="table__wrapper table__wrapper-dark">
-									<div class="table__box">
-										<table class="table-fill">
-											<thead>
-												<tr>
-													<th class="text-left table__col-s-fix">№</th>
-													<th class="text-left table__col-xxl table__col-xxl-fix">игрок</th>
-													<th class="text-center table__col-s">и</th>
-													<th class="text-center table__col-s">мин</th>
-													<th class="text-center table__col-s">очки</th>
-													<th class="text-center table__col-s">2-очк</th>
-													<th class="text-center table__col-s">%</th>
-													<th class="text-center table__col-s">3-очк</th>
-													<th class="text-center table__col-s">%</th>
-													<th class="text-center table__col-s">шт</th>
-													<th class="text-center table__col-s">%</th>
-													<th class="text-center table__col-s">сщ</th>
-													<th class="text-center table__col-s">чщ</th>
-													<th class="text-center table__col-s">пб</th>
-													<th class="text-center table__col-s">гп</th>
-													<th class="text-center table__col-s">пх</th>
-													<th class="text-center table__col-s">пт</th>
-													<th class="text-center table__col-s">бш</th>
-													<th class="text-center table__col-s">ф</th>
-													<th class="text-center table__col-s">фс</th>
-													<th class="text-center table__col-s">+/-</th>
-													<th class="text-center table__col-s">кпи</th>
-												</tr>
-											</thead>
-											<tbody class="table-hover">
+						<div class="table__wrapper table__wrapper-dark ">
+							<div class="table__box">
+								<table class="table-fill">
+									<thead>
+										<tr>
+											<th colspan="2" rowspan="2" class="text-center  text-bottom table__col-s">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип команды">
+												</div>
+											</th>
+											<th rowspan="2" class="text-left text-bottom table__col-s">игрок</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">и</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">мин</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">очки</th>
+											<th colspan="6" class="text-center table__col-s table__th-colspan">броски</th>
+											<th colspan="3" class="text-center table__col-s table__th-colspan">подборы</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">гп</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">пх</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">пт</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">бш</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">ф</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">фс</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">+/-</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">кпи</th>
 
-												<tr>
-													<td class="text-center table__col-s-fix">1</td>
-													<td class="text-left table__col-xxl table__col-xxl-fix">Колесников Александр</td>
+										</tr>
+										<tr>
+											<th class="text-center table__col-s">2-х</th>
+											<th class="text-center table__col-s">%</th>
+											<th class="text-center table__col-s">3-х</th>
+											<th class="text-center table__col-s">%</th>
+											<th class="text-center table__col-s">шб</th>
+											<th class="text-center table__col-s">%</th>
+											<th class="text-center table__col-s">сщ</th>
+											<th class="text-center table__col-s">чщ</th>
+											<th class="text-center table__col-s">вс</th>
+										</tr>
+									</thead>
+									<tbody class="table-hover">
+										<tr>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/2.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="text-left table__col-s"> <a href="#">Колесников Александр</a></td>
+											<td class="text-center table__col-s">20</td>
+											<td class="text-center table__col-s">26:32</td>
+											<td class="text-center table__col-s">16</td>
+											<td class="text-center table__col-s">4/10</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">2/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">4/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">6</td>
+											<td class="text-center table__col-s">4</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">1</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">5</td>
+											<td class="text-center table__col-s">+14</td>
+											<td class="text-center table__col-s">18</td>
+										</tr>
+										<tr>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/2.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="text-left table__col-s"> <a href="#">Колесников Александр</a></td>
+											<td class="text-center table__col-s">20</td>
+											<td class="text-center table__col-s">26:32</td>
+											<td class="text-center table__col-s">16</td>
+											<td class="text-center table__col-s">4/10</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">2/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">4/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">6</td>
+											<td class="text-center table__col-s">4</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">1</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">5</td>
+											<td class="text-center table__col-s">+14</td>
+											<td class="text-center table__col-s">18</td>
 
-													<td class="text-center table__col-s">28</td>
-													<td class="text-center table__col-s">26:32</td>
-													<td class="text-center table__col-s">16.8</td>
-													<td class="text-center table__col-s">4.5/10.2</td>
-													<td class="text-center table__col-s">43.7%</td>
-													<td class="text-center table__col-s">2.2/5.8</td>
-													<td class="text-center table__col-s">34.8%</td>
-													<td class="text-center table__col-s">3.8/5.3</td>
-													<td class="text-center table__col-s">79.6%</td>
-													<td class="text-center table__col-s">6.8</td>
-													<td class="text-center table__col-s">4.3</td>
-													<td class="text-center table__col-s">11.1</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">3.5</td>
-													<td class="text-center table__col-s">1.7</td>
-													<td class="text-center table__col-s">3.4</td>
-													<td class="text-center table__col-s">5.3</td>
-													<td class="text-center table__col-s">+14.7</td>
-													<td class="text-center table__col-s">18.6</td>
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">4</td>
-													<td class="text-left table__col-xxl table__col-xxl-fix">Петров Александр</td>
+										</tr>
+										<tr>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/2.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="text-left table__col-s"> <a href="#">Колесников Александр</a></td>
+											<td class="text-center table__col-s">20</td>
+											<td class="text-center table__col-s">26:32</td>
+											<td class="text-center table__col-s">16</td>
+											<td class="text-center table__col-s">4/10</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">2/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">13/25</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">6</td>
+											<td class="text-center table__col-s">4</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">1</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">5</td>
+											<td class="text-center table__col-s">+14</td>
+											<td class="text-center table__col-s">18</td>
 
-													<td class="text-center table__col-s">38</td>
-													<td class="text-center table__col-s">32:15</td>
-													<td class="text-center table__col-s">24.8</td>
-													<td class="text-center table__col-s">6.2/9.8</td>
-													<td class="text-center table__col-s">57.3%</td>
-													<td class="text-center table__col-s">3.2/7.1</td>
-													<td class="text-center table__col-s">36.5%</td>
-													<td class="text-center table__col-s">4.5/5.0</td>
-													<td class="text-center table__col-s">90.1%</td>
-													<td class="text-center table__col-s">5.2</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">8.9</td>
-													<td class="text-center table__col-s">4.1</td>
-													<td class="text-center table__col-s">1.5</td>
-													<td class="text-center table__col-s">2.9</td>
-													<td class="text-center table__col-s">0.8</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">4.2</td>
-													<td class="text-center table__col-s">+9.2</td>
-													<td class="text-center table__col-s">21.2</td>
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">8</td>
-													<td class="text-left table__col-xxl table__col-xxl-fix">Логинов Иван</td>
-													<td class="text-center table__col-s">33</td>
-
-													<td class="text-center table__col-s">26:32</td>
-													<td class="text-center table__col-s">16.8</td>
-													<td class="text-center table__col-s">4.5/10.2</td>
-													<td class="text-center table__col-s">43.7%</td>
-													<td class="text-center table__col-s">2.2/5.8</td>
-													<td class="text-center table__col-s">34.8%</td>
-													<td class="text-center table__col-s">3.8/5.3</td>
-													<td class="text-center table__col-s">79.6%</td>
-													<td class="text-center table__col-s">6.8</td>
-													<td class="text-center table__col-s">4.3</td>
-													<td class="text-center table__col-s">11.1</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">3.5</td>
-													<td class="text-center table__col-s">1.7</td>
-													<td class="text-center table__col-s">3.4</td>
-													<td class="text-center table__col-s">5.3</td>
-													<td class="text-center table__col-s">+14.7</td>
-													<td class="text-center table__col-s">18.6</td>
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">10</td>
-													<td class="text-left table__col-xxl table__col-xxl-fix">Ивановский Владислав</td>
-													<td class="text-center table__col-s">38</td>
-
-													<td class="text-center table__col-s">32:15</td>
-													<td class="text-center table__col-s">24.8</td>
-													<td class="text-center table__col-s">6.2/9.8</td>
-													<td class="text-center table__col-s">57.3%</td>
-													<td class="text-center table__col-s">3.2/7.1</td>
-													<td class="text-center table__col-s">36.5%</td>
-													<td class="text-center table__col-s">4.5/5.0</td>
-													<td class="text-center table__col-s">90.1%</td>
-													<td class="text-center table__col-s">5.2</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">8.9</td>
-													<td class="text-center table__col-s">4.1</td>
-													<td class="text-center table__col-s">1.5</td>
-													<td class="text-center table__col-s">2.9</td>
-													<td class="text-center table__col-s">0.8</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">4.2</td>
-													<td class="text-center table__col-s">+9.2</td>
-													<td class="text-center table__col-s">21.2</td>
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">17</td>
-													<td class="text-left table__col-xxl table__col-xxl-fix">Константинопольский Константин</td>
-													<td class="text-center table__col-s">38</td>
-
-													<td class="text-center table__col-s">32:15</td>
-													<td class="text-center table__col-s">24.8</td>
-													<td class="text-center table__col-s">6.2/9.8</td>
-													<td class="text-center table__col-s">57.3%</td>
-													<td class="text-center table__col-s">3.2/7.1</td>
-													<td class="text-center table__col-s">36.5%</td>
-													<td class="text-center table__col-s">4.5/5.0</td>
-													<td class="text-center table__col-s">90.1%</td>
-													<td class="text-center table__col-s">5.2</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">8.9</td>
-													<td class="text-center table__col-s">4.1</td>
-													<td class="text-center table__col-s">1.5</td>
-													<td class="text-center table__col-s">2.9</td>
-													<td class="text-center table__col-s">0.8</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">4.2</td>
-													<td class="text-center table__col-s">+9.2</td>
-													<td class="text-center table__col-s">21.2</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td class="text-left table-footer table__col-s-fix"></td>
-													<td class="text-left table-footer table__col-xxl table__col-xxl-fix"></td>
-
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-									<div class="table__box-1">
-										<table class="table-fill-1">
-											<thead>
-												<tr>
-													<th class="text-left table__col-s-fix">№</th>
-													<th class="text-left table__col-xxl-fix table__col-hide">игрок</th>
-
-												</tr>
-											</thead>
-											<tbody class="table-hover">
-
-												<tr>
-													<td class="text-center table__col-s-fix">1</td>
-													<td class="text-left table__col-xxl-fix table__col-hide">Колесников Александр</td>
-
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">7</td>
-													<td class="text-left table__col-xxl-fix table__col-hide">Михайлов Сергей</td>
-
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">9</td>
-													<td class="text-left table__col-xxl-fix table__col-hide">Ивановский Константин</td>
-
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">11</td>
-													<td class="text-left table__col-xxl-fix table__col-hide">Константинопольский Константин</td>
-
-												</tr>
-												<tr>
-													<td class="text-center table__col-s-fix">13</td>
-													<td class="text-left table__col-xxl-fix table__col-hide">Мокеев Николай</td>
-
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td class="text-left table-footer  table__col-s-fix"></td>
-													<td class="text-left table-footer table__col-xxl-fix table__col-hide"></td>
-
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</div>
+										</tr>
+										<tr>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/2.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="text-left table__col-s"> <a href="#">Колесников Александр</a></td>
+											<td class="text-center table__col-s">20</td>
+											<td class="text-center table__col-s">26:32</td>
+											<td class="text-center table__col-s">16</td>
+											<td class="text-center table__col-s">4/10</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">2/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">13/25</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">6</td>
+											<td class="text-center table__col-s">4</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">1</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">5</td>
+											<td class="text-center table__col-s">+14</td>
+											<td class="text-center table__col-s">18</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
-								<span>Показать еще</span>
-								<span>Скрыть</span></button>
+							<div class="table__box-1">
+								<table class="table-fill-1">
+									<thead>
+										<tr>
+											<!-- <th rowspan="2" class="text-center text-bottom table__col-s-fix table__col-h2r">№</th> -->
+											<th colspan="2" rowspan="2" class="text-center  text-bottom table__col-s table__col-h2r">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип команды">
+												</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody class="table-hover">
+										<tr>
+
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/1.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/AMS/Гресев.png" alt="Фото игрока">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/2.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/БКМ/Васильев.png" alt="Фото игрока">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/3.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/МГУ/Макушин.png" alt="Фото игрока">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/10.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__photo -ibg">
+													<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Фото игрока">
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
+
+
+
 				<div class="section__container">
 					<div class="team-profile__header">
 						<h2 class="section-title-h2b publication-selector__title element-animation">Лидеры турнира</h2>
-						<div data-spollers="679.98,max" class="tournament-stats__spollers">
-							<div class="tournament-stats__spollers-item">
-								<button type="button" data-spoller class="tournament-stats__spollers-title">навигация</button>
-								<div class="tournament-stats__spollers-body">
-									<div class="tournament-stats__nav">
-										<form action="#" class="tournament-stats__form">
-											<div class="tournament-stats__box">
-												<label class="person-stats__label" for="select-season-4">выбрать
-													сезон</label>
-												<select data-label data-scroll data-show name="form[]" id="select-season-4" class="person-stats__list">
-													<option class="person-stats__item" value="1" selected="selected">
-														2022/2023</option>
-													<option class="person-stats__item" value="2">2021/2022</option>
-													<option class="person-stats__item" value="3">2020/2021</option>
-													<option class="person-stats__item" value="4">2019/2020</option>
-													<option class="person-stats__item" value="5">2018/2019</option>
+
+
+						<div data-spollers="679.98,max" class="team-profile__spollers">
+							<div class="team-profile__spollers-item">
+								<button type="button" data-spoller class="calendar__spollers-title calendar__spollers-title-2">сортировка</button>
+								<div class="team-profile__spollers-body">
+									<div class="team-profile__nav">
+										<form action="#" class="calendar__form-1">
+
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="tournament-stage-2">этап турнира</label>
+												<select data-label data-scroll data-show name="form[]" id="tournament-stage-2" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">все
+														этапы</option>
+													<option data-label class="person-stats__item" value="2">регулярный сезон
+													</option>
+													<option data-label class="person-stats__item" value="3">регулярный сезон - 1 тур
+													</option>
+													<option data-label class="person-stats__item" value="4">регулярный сезон - 2 тур
+													</option>
+													<option data-label class="person-stats__item" value="5">регулярный сезон - 3 тур
+													</option>
+													<option data-label class="person-stats__item" value="6">регулярный сезон - 4 тур
+													</option>
+													<option data-label class="person-stats__item" value="7">регулярный сезон - 5 тур
+													</option>
+													<option data-label class="person-stats__item" value="8">плей-ин
+													</option>
+													<option data-label class="person-stats__item" value="9">плей-офф
+													</option>
+													<option data-label class="person-stats__item" value="10">финал
+													</option>
+
+
 												</select>
 											</div>
 
-											<div class="tournament-stats__box">
-												<label class="person-stats__label" for="select-team-2">выбрать
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="select-stats">выбрать
 													показатель</label>
-												<select data-label data-scroll data-show name="form[]" id="select-team-2" class="person-stats__list">
+												<select data-label data-scroll data-show name="form[]" id="select-stats" class="person-stats__list">
 													<option class="person-stats__item" value="1" selected="selected">очки в среднем
 													</option>
 													<option class="person-stats__item" value="2">передачи в среднем</option>
@@ -852,15 +879,13 @@
 												</select>
 											</div>
 
-											<div class="tournament-stats__box">
-												<label class="team-profile-nav__label" for="select-view">показать</label>
-												<select data-label data-scroll data-show name="form[]" id="select-view" class="team-profile-nav__list">
-													<option class="team-profile-nav__item" value="1" selected="selected">
-														первые 10</option>
-													<option class="team-profile-nav__item" value="2">первые 25</option>
-													<option class="team-profile-nav__item" value="3">первые 50</option>
-													<option class="team-profile-nav__item" value="4">первые 100</option>
-													<option class="team-profile-nav__item" value="5">все</option>
+											<div class="person-stats__box">
+												<label class="person-stats__label-1" for="select-view-1">показать</label>
+												<select data-label data-scroll data-show name="form[]" id="select-view-1" class="person-stats__list">
+													<option class="person-stats__item" value="1" selected="selected">
+														первые 12</option>
+													<option class="person-stats__item" value="2">первые 5</option>
+													<option class="person-stats__item" value="3">все</option>
 												</select>
 											</div>
 										</form>
@@ -868,6 +893,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div data-tabs class="tabs tournament-stats__tabs">
 							<nav data-tabs-titles class="tournament-stats__tabs-navigation">
 								<button type="button" class="tournament-stats__tabs-title _tab-active -ibg">
@@ -885,9 +911,6 @@
 											<!-- <img class="team-slider__bg-logo" src="img/logo/Zenit-logo-bc-tr.svg" alt=""> -->
 											<div class="team-slider__item swiper-slide">
 												<div class="team-card-1__body team-roster__tab-item">
-													<!-- <div class="team-card-1__mini-logo -ibg">
-					<img src="img/UBA/uba_team-logo/1.png" alt="">
-				</div> -->
 													<div class="team-card-1__stats-bage">
 														<div class="team-card-1__stats">очки</div>
 														<h3 class="team-card-1__number">103.3</h3>
@@ -895,9 +918,7 @@
 
 
 													<div class="team-card-1__social">
-														<!-- <a class="team-card-1__logo -ibg">
-						<img src="img/UBA/uba_team-logo/1.png" alt="">
-					</a> -->
+
 													</div>
 
 													<div class="team-card-1__photo -ibg">
@@ -913,9 +934,6 @@
 											</div>
 											<div class="team-slider__item swiper-slide">
 												<div class="team-card-1__body team-roster__tab-item">
-													<!-- <div class="team-card-1__mini-logo -ibg">
-					<img src="img/UBA/uba_team-logo/1.png" alt="">
-				</div> -->
 													<div class="team-card-1__stats-bage">
 														<div class="team-card-1__stats">очки</div>
 														<h3 class="team-card-1__number">97.1</h3>
@@ -923,9 +941,6 @@
 
 
 													<div class="team-card-1__social">
-														<!-- <a class="team-card-1__logo -ibg">
-						<img src="img/UBA/uba_team-logo/1.png" alt="">
-					</a> -->
 													</div>
 
 													<div class="team-card-1__photo -ibg">
@@ -941,9 +956,6 @@
 											</div>
 											<div class="team-slider__item swiper-slide">
 												<div class="team-card-1__body team-roster__tab-item">
-													<!-- <div class="team-card-1__mini-logo -ibg">
-					<img src="img/UBA/uba_team-logo/1.png" alt="">
-				</div> -->
 													<div class="team-card-1__stats-bage">
 														<div class="team-card-1__stats">очки</div>
 														<h3 class="team-card-1__number">90.1</h3>
@@ -951,9 +963,6 @@
 
 
 													<div class="team-card-1__social">
-														<!-- <a class="team-card-1__logo -ibg">
-						<img src="img/UBA/uba_team-logo/1.png" alt="">
-					</a> -->
 													</div>
 
 													<div class="team-card-1__photo -ibg">
@@ -969,9 +978,6 @@
 											</div>
 											<div class="team-slider__item swiper-slide">
 												<div class="team-card-1__body team-roster__tab-item">
-													<!-- <div class="team-card-1__mini-logo -ibg">
-					<img src="img/UBA/uba_team-logo/1.png" alt="">
-				</div> -->
 													<div class="team-card-1__stats-bage">
 														<div class="team-card-1__stats">очки</div>
 														<h3 class="team-card-1__number">88.5</h3>
@@ -979,9 +985,6 @@
 
 
 													<div class="team-card-1__social">
-														<!-- <a class="team-card-1__logo -ibg">
-						<img src="img/UBA/uba_team-logo/1.png" alt="">
-					</a> -->
 													</div>
 
 													<div class="team-card-1__photo -ibg">
@@ -997,9 +1000,6 @@
 											</div>
 											<div class="team-slider__item swiper-slide">
 												<div class="team-card-1__body team-roster__tab-item">
-													<!-- <div class="team-card-1__mini-logo -ibg">
-					<img src="img/UBA/uba_team-logo/1.png" alt="">
-				</div> -->
 													<div class="team-card-1__stats-bage">
 														<div class="team-card-1__stats">очки</div>
 														<h3 class="team-card-1__number">79.7</h3>
@@ -1007,9 +1007,6 @@
 
 
 													<div class="team-card-1__social">
-														<!-- <a class="team-card-1__logo -ibg">
-						<img src="img/UBA/uba_team-logo/1.png" alt="">
-					</a> -->
 													</div>
 
 													<div class="team-card-1__photo -ibg">
@@ -1025,9 +1022,6 @@
 											</div>
 											<div class="team-slider__item swiper-slide">
 												<div class="team-card-1__body team-roster__tab-item">
-													<!-- <div class="team-card-1__mini-logo -ibg">
-					<img src="img/UBA/uba_team-logo/1.png" alt="">
-				</div> -->
 													<div class="team-card-1__stats-bage">
 														<div class="team-card-1__stats">очки</div>
 														<h3 class="team-card-1__number">77.8</h3>
@@ -1035,9 +1029,6 @@
 
 
 													<div class="team-card-1__social">
-														<!-- <a class="team-card-1__logo -ibg">
-						<img src="img/UBA/uba_team-logo/1.png" alt="">
-					</a> -->
 													</div>
 
 													<div class="team-card-1__photo -ibg">
@@ -1065,216 +1056,110 @@
 									</div>
 								</div>
 								<div class="tournament-stats__tabs-body">
-									<div data-showmore class="block">
-										<div data-showmore-content="400" class="block__content">
-											<div class="table__wrapper table__wrapper-dark">
-
-												<div class="table__box">
-													<table class="table-fill">
-														<thead>
-															<tr>
-																<th class="text-left table__col-s-fix">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/UBA_ball-gold.svg" alt="Логотип команды">
-																	</div>
-																</th>
-																<th class="text-left table__col-xl table__col-xl-fix">команда</th>
-																<th class="text-center table__col-s">результат</th>
-																<th class="text-center table__col-s">игр</th>
-
-															</tr>
-														</thead>
-														<tbody class="table-hover">
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/1.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">БК Московский</td>
-																<td class="text-center table__body-col-text table__col-s">103.5</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/2.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Take Shot Black</td>
-																<td class="text-center table__body-col-text table__col-s">100.6</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo table__col-s-fix">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/3.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">AMS</td>
-																<td class="text-center table__body-col-text table__col-s">97.8</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/4.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">МГУ</td>
-																<td class="text-center table__body-col-text table__col-s">87.4</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/5.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">RN Basketball</td>
-																<td class="text-center table__body-col-text table__col-s">85.1</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/6.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">РУНА-POWERCELL</td>
-																<td class="text-center table__body-col-text table__col-s">82.6</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/7.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Глория</td>
-																<td class="text-center table__body-col-text table__col-s">79.2</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/8.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Take Shot White</td>
-																<td class="text-center table__body-col-text table__col-s">76.5</td>
-																<td class="text-center table__body-col-text table__col-s">3</td>
-
-															</tr>
-														</tbody>
-
-													</table>
-												</div>
-
-
-												<div class="table__box-1">
-													<table class="table-fill-1">
-														<thead>
-															<tr>
-
-																<th class="text-left table__col-s-fix">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/UBA_ball-gold.svg" alt="Логотип команды">
-																	</div>
-																</th>
-																<th class="text-left table__col-xl-fix table__col-hide">команда</th>
-
-															</tr>
-														</thead>
-														<tbody class="table-hover">
-
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/1.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">БК Московский</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/2.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Take Shot Black</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/3.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">AMS</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/4.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">МГУ</td>
-
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/5.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">RN Basketball</td>
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/6.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">РУНА-POWERCELL</td>
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/7.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Глория</td>
-															</tr>
-															<tr>
-																<td class="table__body-col-1 table__body-col-logo">
-																	<div class="table__image -ibg">
-																		<img data-src="img/UBA/uba_team-logo/8.png" alt="Логотип команды">
-																	</div>
-																</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Take Shot White</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-
-
-
-											</div>
+									<div class="table__wrapper table__wrapper-dark">
+										<div class="table__box">
+											<table class="table-fill">
+												<thead>
+													<tr>
+														<th class="text-center table__col-s-fix">№</th>
+														<th class="text-left table__col-s">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип команды">
+															</div>
+														</th>
+														<th class="text-center table__col-s">команда</th>
+														<th class="text-center table__col-s">результат</th>
+														<th class="text-center table__col-s">игры</th>
+														<th colspan="2" class="text-center table__col-s">тренер</th>
+													</tr>
+												</thead>
+												<tbody class="table-hover">
+													<tr>
+														<td class="text-center table__col-s-fix">1</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="Логотип команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s">БК Московский</td>
+														<td class="text-center table__col-s">96.7</td>
+														<td class="text-center table__col-s">6</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Фото тренера">
+															</div>
+														</td>
+														<td class="text-center table__col-s">Колесников Александр</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-s-fix">2</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/2.png" alt="Логотип команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s">Take Shot Black</td>
+														<td class="text-center table__col-s">92.1</td>
+														<td class="text-center table__col-s">6</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/БКМ/Караулов.png" alt="Фото тренера">
+															</div>
+														</td>
+														<td class="text-center table__col-s">Милосердов Александр</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-s-fix">3</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/10.png" alt="Логотип команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s">ЦСКА-Юниор</td>
+														<td class="text-center table__col-s">88.1</td>
+														<td class="text-center table__col-s">6</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/Руна-2/Зубков.png" alt="Фото тренера">
+															</div>
+														</td>
+														<td class="text-center table__col-s">Герасимов Евгений</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
-										<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
-											<span>Показать еще</span>
-											<span>Скрыть</span></button>
+										<div class="table__box-1 table__col-scroll">
+											<table class="table-fill-1">
+												<thead>
+													<tr>
+														<th class="text-center table__col-s-fix">№</th>
+														<th class="text-left table__col-s">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип команды">
+															</div>
+														</th>
+													</tr>
+												</thead>
+												<tbody class="table-hover">
+													<tr>
+														<td class="text-center table__col-s-fix">1</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-s-fix">7</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__photo -ibg">
+																<img data-src="img/UBA/uba_players/ЦСКА-Ю/Абрамов.png" alt="Логотип команды">
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 								</div>
 
@@ -1290,30 +1175,29 @@
 						<!-- PROFILE STATS -->
 						<h2 class="section-title-h2w element-animation">статистика команд</h2>
 						<div class="team-roster__partner element-animation -ibg">
-							<img src="img/UBA/UBA-color-1.svg" alt="">
+							<img src="img/UBA/UBA-white-2.svg" alt="">
 						</div>
-						<div data-spollers="650,max" class="person-stats-chart__spollers">
+						<div data-spollers="679.98,max" class="person-stats-chart__spollers">
 							<div class="person-stats-chart__spollers-item">
-								<button type="button" data-spoller class="person-stats-chart__spollers-title"></button>
+								<button type="button" data-spoller class="person-stats-chart__spollers-title-3">навигация</button>
 								<div class="person-stats-chart__spollers-body">
 									<div class="person-stats__nav">
-										<form action="#" class="person-stats__form">
-
+										<form action="#" class="person-stats__form-3">
 											<div class="person-stats__box">
-												<label class="team-profile-nav__label" for="select-view">показать</label>
-												<select data-label data-scroll data-show name="form[]" id="select-view" class="team-profile-nav__list">
+												<label class="person-stats__label" for="select-view-2">показать</label>
+												<select data-label data-scroll data-show name="form[]" id="select-view-2" class="team-profile-nav__list">
 													<option class="team-profile-nav__item" value="1" selected="selected">
-														первые 10</option>
-													<option class="team-profile-nav__item" value="2">первые 25</option>
-													<option class="team-profile-nav__item" value="3">первые 50</option>
-													<option class="team-profile-nav__item" value="4">первые 100</option>
-													<option class="team-profile-nav__item" value="5">все</option>
+														первые 12</option>
+													<option class="team-profile-nav__item" value="2">первые 5</option>
+													<option class="team-profile-nav__item" value="3">первые 10</option>
+
+													<option class="team-profile-nav__item" value="5">все команды</option>
 												</select>
 											</div>
 											<div class="person-stats__box">
-												<label class="person-stats__label" for="select-tournament-1">выбрать
+												<label class="person-stats__label" for="select-tournament-3">выбрать
 													команду</label>
-												<select data-label data-scroll data-show name="form[]" id="select-tournament-1" class="person-stats__list">
+												<select data-label data-scroll data-show name="form[]" id="select-tournament-3" class="person-stats__list">
 													<option class="person-stats__item" value="1" selected="selected">все
 														команды</option>
 													<option class="person-stats__item" value="2">БК Московский</option>
@@ -1326,316 +1210,198 @@
 												</select>
 											</div>
 											<div class="person-stats__box">
-												<label class="person-stats__label" for="type-stats-1">тип
+												<label class="person-stats__label" for="type-stats-2">тип
 													статистики</label>
-												<select data-label data-scroll data-show name="form[]" id="type-stats-1" class="person-stats__list">
+												<select data-label data-scroll data-show name="form[]" id="type-stats-2" class="person-stats__list">
 													<option class="person-stats__item" value="1" selected="selected">в
 														среднем</option>
-													<option data-label class="person-stats__item" value="2">всего</option>
+													<option data-label class="person-stats__item" value="2">абсолютные
+														показатели</option>
 												</select>
 											</div>
-
 										</form>
-
 									</div>
 								</div>
 							</div>
 						</div>
-						<div data-showmore class="block">
-							<div data-showmore-content="400" class="block__content">
-								<div class="table__wrapper table__wrapper-dark">
-									<div class="table__box">
-										<table class="table-fill">
-											<thead>
-												<tr>
-													<th class="text-left table__col-s-fix">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/UBA_ball-gold.svg" alt="Логотип команды">
-														</div>
-													</th>
-													<th class="text-left table__col-xl table__col-xl-fix">команда</th>
-													<th class="text-center table__col-s">и</th>
+						<div class="table__wrapper table__wrapper-dark">
+							<div class="table__box">
+								<table class="table-fill">
+									<thead>
+										<tr>
 
-													<th class="text-center table__col-s">очки</th>
-													<th class="text-center table__col-s">2-очк</th>
-													<th class="text-center table__col-s">%</th>
-													<th class="text-center table__col-s">3-очк</th>
-													<th class="text-center table__col-s">%</th>
-													<th class="text-center table__col-s">шт</th>
-													<th class="text-center table__col-s">%</th>
-													<th class="text-center table__col-s">сщ</th>
-													<th class="text-center table__col-s">чщ</th>
-													<th class="text-center table__col-s">пб</th>
-													<th class="text-center table__col-s">гп</th>
-													<th class="text-center table__col-s">пх</th>
-													<th class="text-center table__col-s">пт</th>
-													<th class="text-center table__col-s">бш</th>
-													<th class="text-center table__col-s">ф</th>
-													<th class="text-center table__col-s">фс</th>
-													<th class="text-center table__col-s">+/-</th>
-													<th class="text-center table__col-s">кпи</th>
-												</tr>
-											</thead>
-											<tbody class="table-hover">
+											<th rowspan="2" class="text-center text-bottom table__col-s">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип турнира">
+												</div>
+											</th>
+											<th rowspan="2" class="text-left text-bottom table__col-s">команда</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">и</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">в</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">п</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">% в</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">очки</th>
+											<th colspan="6" class="text-center table__col-s table__th-colspan">броски</th>
+											<th colspan="3" class="text-center table__col-s table__th-colspan">подборы</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">гп</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">пх</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">пт</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">бш</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">ф</th>
+											<th rowspan="2" class="text-center text-bottom table__col-s">фс</th>
+										</tr>
+										<tr>
+											<th class="text-center table__col-s">2-х</th>
+											<th class="text-center table__col-s">%</th>
+											<th class="text-center table__col-s">3-х</th>
+											<th class="text-center table__col-s">%</th>
+											<th class="text-center table__col-s">шб</th>
+											<th class="text-center table__col-s">%</th>
+											<th class="text-center table__col-s">сщ</th>
+											<th class="text-center table__col-s">чщ</th>
+											<th class="text-center table__col-s">вс</th>
+										</tr>
+									</thead>
+									<tbody class="table-hover">
+										<tr>
 
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/1.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl table__col-xl-fix">БК Московский</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/1.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="text-left table__col-s"> <a href="#">БК Московский</a></td>
+											<td class="text-center table__col-s">20</td>
+											<td class="text-center table__col-s">18</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">90%</td>
+											<td class="text-center table__col-s">98.4</td>
+											<td class="text-center table__col-s">4/10</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">2/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">4/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">6</td>
+											<td class="text-center table__col-s">4</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">1</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">5</td>
+										</tr>
+										<tr>
 
-													<td class="text-center table__col-s">28</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/10.png" alt="Фото игрока">
+												</div>
+											</td>
+											<td class="text-left table__col-s"> <a href="#">ЦСКА-Юниор</a></td>
+											<td class="text-center table__col-s">18</td>
+											<td class="text-center table__col-s">18</td>
+											<td class="text-center table__col-s">9</td>
+											<td class="text-center table__col-s">50%</td>
+											<td class="text-center table__col-s">87.6</td>
+											<td class="text-center table__col-s">4/10</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">2/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">4/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">6</td>
+											<td class="text-center table__col-s">4</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">1</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">5</td>
 
-													<td class="text-center table__col-s">16.8</td>
-													<td class="text-center table__col-s">4.5/10.2</td>
-													<td class="text-center table__col-s">43.7%</td>
-													<td class="text-center table__col-s">2.2/5.8</td>
-													<td class="text-center table__col-s">34.8%</td>
-													<td class="text-center table__col-s">3.8/5.3</td>
-													<td class="text-center table__col-s">79.6%</td>
-													<td class="text-center table__col-s">6.8</td>
-													<td class="text-center table__col-s">4.3</td>
-													<td class="text-center table__col-s">11.1</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">3.5</td>
-													<td class="text-center table__col-s">1.7</td>
-													<td class="text-center table__col-s">3.4</td>
-													<td class="text-center table__col-s">5.3</td>
-													<td class="text-center table__col-s">+14.7</td>
-													<td class="text-center table__col-s">18.6</td>
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/2.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl table__col-xl-fix">Take Shot Black</td>
+										</tr>
+										<tr>
 
-													<td class="text-center table__col-s">38</td>
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/3.png" alt="Логотип команды">
+												</div>
+											</td>
+											<td class="text-left table__col-s"> <a href="#">AMS</a></td>
+											<td class="text-center table__col-s">30</td>
+											<td class="text-center table__col-s">20</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">66.6%</td>
+											<td class="text-center table__col-s">78.4</td>
+											<td class="text-center table__col-s">4/10</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">2/5</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">13/25</td>
+											<td class="text-center table__col-s">46.5%</td>
+											<td class="text-center table__col-s">6</td>
+											<td class="text-center table__col-s">4</td>
+											<td class="text-center table__col-s">10</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">2</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">1</td>
+											<td class="text-center table__col-s">3</td>
+											<td class="text-center table__col-s">5</td>
+										</tr>
 
-													<td class="text-center table__col-s">24.8</td>
-													<td class="text-center table__col-s">6.2/9.8</td>
-													<td class="text-center table__col-s">57.3%</td>
-													<td class="text-center table__col-s">3.2/7.1</td>
-													<td class="text-center table__col-s">36.5%</td>
-													<td class="text-center table__col-s">4.5/5.0</td>
-													<td class="text-center table__col-s">90.1%</td>
-													<td class="text-center table__col-s">5.2</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">8.9</td>
-													<td class="text-center table__col-s">4.1</td>
-													<td class="text-center table__col-s">1.5</td>
-													<td class="text-center table__col-s">2.9</td>
-													<td class="text-center table__col-s">0.8</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">4.2</td>
-													<td class="text-center table__col-s">+9.2</td>
-													<td class="text-center table__col-s">21.2</td>
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/3.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl table__col-xl-fix">Take Shot Black</td>
-													<td class="text-center table__col-s">33</td>
+									</tbody>
 
-
-													<td class="text-center table__col-s">16.8</td>
-													<td class="text-center table__col-s">4.5/10.2</td>
-													<td class="text-center table__col-s">43.7%</td>
-													<td class="text-center table__col-s">2.2/5.8</td>
-													<td class="text-center table__col-s">34.8%</td>
-													<td class="text-center table__col-s">3.8/5.3</td>
-													<td class="text-center table__col-s">79.6%</td>
-													<td class="text-center table__col-s">6.8</td>
-													<td class="text-center table__col-s">4.3</td>
-													<td class="text-center table__col-s">11.1</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">3.5</td>
-													<td class="text-center table__col-s">1.7</td>
-													<td class="text-center table__col-s">3.4</td>
-													<td class="text-center table__col-s">5.3</td>
-													<td class="text-center table__col-s">+14.7</td>
-													<td class="text-center table__col-s">18.6</td>
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/4.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl table__col-xl-fix">Take Shot Black</td>
-													<td class="text-center table__col-s">38</td>
-
-
-													<td class="text-center table__col-s">24.8</td>
-													<td class="text-center table__col-s">6.2/9.8</td>
-													<td class="text-center table__col-s">57.3%</td>
-													<td class="text-center table__col-s">3.2/7.1</td>
-													<td class="text-center table__col-s">36.5%</td>
-													<td class="text-center table__col-s">4.5/5.0</td>
-													<td class="text-center table__col-s">90.1%</td>
-													<td class="text-center table__col-s">5.2</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">8.9</td>
-													<td class="text-center table__col-s">4.1</td>
-													<td class="text-center table__col-s">1.5</td>
-													<td class="text-center table__col-s">2.9</td>
-													<td class="text-center table__col-s">0.8</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">4.2</td>
-													<td class="text-center table__col-s">+9.2</td>
-													<td class="text-center table__col-s">21.2</td>
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/5.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl table__col-xl-fix">Take Shot Black</td>
-													<td class="text-center table__col-s">38</td>
-
-
-													<td class="text-center table__col-s">24.8</td>
-													<td class="text-center table__col-s">6.2/9.8</td>
-													<td class="text-center table__col-s">57.3%</td>
-													<td class="text-center table__col-s">3.2/7.1</td>
-													<td class="text-center table__col-s">36.5%</td>
-													<td class="text-center table__col-s">4.5/5.0</td>
-													<td class="text-center table__col-s">90.1%</td>
-													<td class="text-center table__col-s">5.2</td>
-													<td class="text-center table__col-s">3.7</td>
-													<td class="text-center table__col-s">8.9</td>
-													<td class="text-center table__col-s">4.1</td>
-													<td class="text-center table__col-s">1.5</td>
-													<td class="text-center table__col-s">2.9</td>
-													<td class="text-center table__col-s">0.8</td>
-													<td class="text-center table__col-s">2.8</td>
-													<td class="text-center table__col-s">4.2</td>
-													<td class="text-center table__col-s">+9.2</td>
-													<td class="text-center table__col-s">21.2</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td class="text-left table-footer table__col-s-fix"></td>
-													<td class="text-left table-footer table__col-xxl table__col-xxl-fix"></td>
-
-
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-													<td class="text-center table-footer table__col-s"></td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-
-
-
-
-
-									<div class="table__box-1">
-										<table class="table-fill-1">
-											<thead>
-												<tr>
-
-													<th class="text-left table__col-s-fix">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/UBA_ball-gold.svg" alt="Логотип команды">
-														</div>
-													</th>
-													<th class="text-left table__col-xl-fix table__col-hide">команда</th>
-
-												</tr>
-											</thead>
-											<tbody class="table-hover">
-
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/1.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl-fix table__col-hide">БК Московский</td>
-
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/2.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl-fix table__col-hide">Take Shot Black</td>
-
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/3.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl-fix table__col-hide">AMS</td>
-
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/4.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl-fix table__col-hide">МГУ</td>
-
-												</tr>
-												<tr>
-													<td class="table__body-col-1 table__body-col-logo">
-														<div class="table__image -ibg">
-															<img data-src="img/UBA/uba_team-logo/5.png" alt="Логотип команды">
-														</div>
-													</td>
-													<td class="text-left table__col-xl-fix table__col-hide">RN Basketball</td>
-												</tr>
-
-											</tbody>
-										</table>
-									</div>
-
-
-
-								</div>
+								</table>
 							</div>
-							<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
-								<span>Показать еще</span>
-								<span>Скрыть</span></button>
+							<div class="table__box-1">
+								<table class="table-fill-1">
+									<thead>
+										<tr>
+
+											<th rowspan="2" class="text-center text-bottom table__col-s table__col-h2r">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип турнира">
+												</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody class="table-hover">
+										<tr>
+
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/1.png" alt="Фото игрока">
+												</div>
+											</td>
+										</tr>
+										<tr>
+
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/10.png" alt="Фото игрока">
+												</div>
+											</td>
+										</tr>
+										<tr>
+
+											<td class="table__body-col-1 table__body-col-logo">
+												<div class="table__image -ibg">
+													<img data-src="img/UBA/uba_team-logo/3.png" alt="Фото игрока">
+												</div>
+											</td>
+										</tr>
+
+									</tbody>
+
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
 			<section class="profile__team-publications">
 				<div class="section__container">
 					<div class="publication-selector__title-block">
@@ -2303,9 +2069,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221028035738"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221028035738"></script>
-	<script src="js/app.min.js?_v=20221028035738"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221030025544"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221030025544"></script>
+	<script src="js/app.min.js?_v=20221030025544"></script>
 </body>
 
 </html>
