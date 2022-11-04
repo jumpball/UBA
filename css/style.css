@@ -3256,7 +3256,7 @@ td.table-footer {
 
 .player-card-3 {
   width: 100%;
-  height: auto;
+  max-height: 7.1875rem;
   position: relative;
   background-color: #ffffff;
   display: -webkit-box;
@@ -3268,15 +3268,27 @@ td.table-footer {
   border-radius: 0.1875rem;
 }
 
-@supports (min-height: clamp( 5.625rem , 3.5856345186rem  +  3.2893654814vw , 6.875rem )) {
+@supports (height: clamp( 6.25rem , 4.720475889rem  +  2.467024111vw , 7.1875rem )) {
   .player-card-3 {
-    min-height: clamp( 5.625rem , 3.5856345186rem  +  3.2893654814vw , 6.875rem );
+    height: clamp( 6.25rem , 4.720475889rem  +  2.467024111vw , 7.1875rem );
   }
 }
 
-@supports not (min-height: clamp( 5.625rem , 3.5856345186rem  +  3.2893654814vw , 6.875rem )) {
+@supports not (height: clamp( 6.25rem , 4.720475889rem  +  2.467024111vw , 7.1875rem )) {
   .player-card-3 {
-    min-height: calc(5.625rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+    height: calc(6.25rem + 0.9375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (min-height: clamp( 6.25rem , 4.720475889rem  +  2.467024111vw , 7.1875rem )) {
+  .player-card-3 {
+    min-height: clamp( 6.25rem , 4.720475889rem  +  2.467024111vw , 7.1875rem );
+  }
+}
+
+@supports not (min-height: clamp( 6.25rem , 4.720475889rem  +  2.467024111vw , 7.1875rem )) {
+  .player-card-3 {
+    min-height: calc(6.25rem + 0.9375 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
@@ -3295,6 +3307,7 @@ td.table-footer {
 }
 
 .player-card-3__img {
+  z-index: 2;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -3417,21 +3430,10 @@ td.table-footer {
 }
 
 .player-card-3__divider {
+  height: 0.25rem;
   border-radius: 0.1875rem;
-  margin: 2px 5px 2px 5px;
-  background-color: #f9d110;
-}
-
-@supports (height: clamp( 0.125rem , 0.0230317259rem  +  0.1644682741vw , 0.1875rem )) {
-  .player-card-3__divider {
-    height: clamp( 0.125rem , 0.0230317259rem  +  0.1644682741vw , 0.1875rem );
-  }
-}
-
-@supports not (height: clamp( 0.125rem , 0.0230317259rem  +  0.1644682741vw , 0.1875rem )) {
-  .player-card-3__divider {
-    height: calc(0.125rem + 0.0625 * (100vw - 61.99875rem) / 38.00125);
-  }
+  margin: 3px 0px 3px 0px;
+  background-color: #a80d1c;
 }
 
 @supports (width: clamp( 2.5rem , 0.4606345186rem  +  3.2893654814vw , 3.75rem )) {
@@ -3455,19 +3457,19 @@ td.table-footer {
 }
 
 .player-card-3__desc {
-  color: #576574;
-  text-transform: uppercase;
+  color: #a80d1c;
+  text-transform: lowercase;
 }
 
-@supports (font-size: clamp( 0.625rem , 0.2171269037rem  +  0.6578730963vw , 0.875rem )) {
+@supports (font-size: clamp( 0.5625rem , 0.3585634519rem  +  0.3289365481vw , 0.6875rem )) {
   .player-card-3__desc {
-    font-size: clamp( 0.625rem , 0.2171269037rem  +  0.6578730963vw , 0.875rem );
+    font-size: clamp( 0.5625rem , 0.3585634519rem  +  0.3289365481vw , 0.6875rem );
   }
 }
 
-@supports not (font-size: clamp( 0.625rem , 0.2171269037rem  +  0.6578730963vw , 0.875rem )) {
+@supports not (font-size: clamp( 0.5625rem , 0.3585634519rem  +  0.3289365481vw , 0.6875rem )) {
   .player-card-3__desc {
-    font-size: calc(0.625rem + 0.25 * (100vw - 61.99875rem) / 38.00125);
+    font-size: calc(0.5625rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
@@ -3475,27 +3477,26 @@ td.table-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.625rem;
+  gap: 0.4375rem;
   position: absolute;
   text-align: center;
-  padding: 0.4375rem;
+  bottom: 0;
+  padding: 0.3125rem;
   color: #3a3a3a;
 }
 
 .player-card-3__info-left {
-  bottom: 0;
   right: 0;
 }
 
 .player-card-3__info-right {
-  bottom: 0;
   left: 0;
 }
 
 .player-card-3__info-box {
   padding: 0.1875rem;
   border: 0.0625rem solid #eef0f2;
-  border-radius: 0.0625rem;
+  border-radius: 0.1875rem;
   width: 2.5rem;
   height: 2.5rem;
   text-align: center;
@@ -3536,62 +3537,171 @@ td.table-footer {
   text-transform: uppercase;
 }
 
-@supports (font-size: clamp( 0.5rem , 0.2960634519rem  +  0.3289365481vw , 0.625rem )) {
+@supports (font-size: clamp( 0.5rem , 0.3980317259rem  +  0.1644682741vw , 0.5625rem )) {
   .player-card-3__info-label {
-    font-size: clamp( 0.5rem , 0.2960634519rem  +  0.3289365481vw , 0.625rem );
+    font-size: clamp( 0.5rem , 0.3980317259rem  +  0.1644682741vw , 0.5625rem );
   }
 }
 
-@supports not (font-size: clamp( 0.5rem , 0.2960634519rem  +  0.3289365481vw , 0.625rem )) {
+@supports not (font-size: clamp( 0.5rem , 0.3980317259rem  +  0.1644682741vw , 0.5625rem )) {
   .player-card-3__info-label {
-    font-size: calc(0.5rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
+    font-size: calc(0.5rem + 0.0625 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
-@supports (line-height: clamp( 0.625rem , 0.4210634519rem  +  0.3289365481vw , 0.75rem )) {
+@supports (line-height: clamp( 0.625rem , 0.5230317259rem  +  0.1644682741vw , 0.6875rem )) {
   .player-card-3__info-label {
-    line-height: clamp( 0.625rem , 0.4210634519rem  +  0.3289365481vw , 0.75rem );
+    line-height: clamp( 0.625rem , 0.5230317259rem  +  0.1644682741vw , 0.6875rem );
   }
 }
 
-@supports not (line-height: clamp( 0.625rem , 0.4210634519rem  +  0.3289365481vw , 0.75rem )) {
+@supports not (line-height: clamp( 0.625rem , 0.5230317259rem  +  0.1644682741vw , 0.6875rem )) {
   .player-card-3__info-label {
-    line-height: calc(0.625rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
+    line-height: calc(0.625rem + 0.0625 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
-.player-card-3__logo {
-  display: none;
-}
-
-.player-card-3__bage {
-  margin: 5px 5px 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.9375rem;
-}
-
-.player-card-3__bage-1 {
+.player-card-3__logo-bg-l {
+  opacity: 0.1;
   position: absolute;
-  padding: 0.3125rem;
+  top: 0;
+  left: 0;
 }
 
-.player-card-3__bage-1-left {
+@supports (height: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-l {
+    height: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem );
+  }
+}
+
+@supports not (height: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-l {
+    height: calc(5rem + 1.875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-l {
+    width: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem );
+  }
+}
+
+@supports not (width: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-l {
+    width: calc(5rem + 1.875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.player-card-3__logo-bg-l img,
+.player-card-3__logo-bg-r img {
+  padding: 5px;
+}
+
+.player-card-3__logo-bg-r {
+  opacity: 0.1;
+  position: absolute;
   top: 0;
   right: 0;
 }
 
-.player-card-3__bage-1-right {
+@supports (height: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-r {
+    height: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem );
+  }
+}
+
+@supports not (height: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-r {
+    height: calc(5rem + 1.875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-r {
+    width: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem );
+  }
+}
+
+@supports not (width: clamp( 5rem , 1.9409517779rem  +  4.9340482221vw , 6.875rem )) {
+  .player-card-3__logo-bg-r {
+    width: calc(5rem + 1.875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.player-card-3__team-logo {
+  opacity: 0.1;
+  position: absolute;
   top: 0;
+}
+
+@supports (height: clamp( 3.125rem , 1.0856345186rem  +  3.2893654814vw , 4.375rem )) {
+  .player-card-3__team-logo {
+    height: clamp( 3.125rem , 1.0856345186rem  +  3.2893654814vw , 4.375rem );
+  }
+}
+
+@supports not (height: clamp( 3.125rem , 1.0856345186rem  +  3.2893654814vw , 4.375rem )) {
+  .player-card-3__team-logo {
+    height: calc(3.125rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 3.125rem , 1.0856345186rem  +  3.2893654814vw , 4.375rem )) {
+  .player-card-3__team-logo {
+    width: clamp( 3.125rem , 1.0856345186rem  +  3.2893654814vw , 4.375rem );
+  }
+}
+
+@supports not (width: clamp( 3.125rem , 1.0856345186rem  +  3.2893654814vw , 4.375rem )) {
+  .player-card-3__team-logo {
+    width: calc(3.125rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.player-card-3__team-logo img {
+  padding: 5px;
+}
+
+.player-card-3__team-logo-l {
+  right: 0;
+}
+
+.player-card-3__team-logo-r {
   left: 0;
+}
+
+.player-card-3__bage {
+  top: 0;
+  margin: 3px;
+  position: absolute;
+  z-index: 2;
+}
+
+.player-card-3__bage-left {
+  left: 0;
+}
+
+.player-card-3__bage-right {
+  right: 0;
+}
+
+.player-card-3__num {
+  display: block;
+  color: #a80d1c;
+  text-align: center;
+  font-weight: 900;
+}
+
+@supports (font-size: clamp( 1.125rem , 0.5131903556rem  +  0.9868096444vw , 1.5rem )) {
+  .player-card-3__num {
+    font-size: clamp( 1.125rem , 0.5131903556rem  +  0.9868096444vw , 1.5rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.5131903556rem  +  0.9868096444vw , 1.5rem )) {
+  .player-card-3__num {
+    font-size: calc(1.125rem + 0.375 * (100vw - 61.99875rem) / 38.00125);
+  }
 }
 
 .player-card-mvp {
@@ -5054,7 +5164,7 @@ td.table-footer {
   -webkit-transform: translate(50%);
       -ms-transform: translate(50%);
           transform: translate(50%);
-  width: 16.875rem;
+  width: 11.25rem;
   height: 11.25rem;
   opacity: 0.1;
   z-index: 1;
@@ -12737,12 +12847,62 @@ td.table-footer {
   gap: 0.625rem;
 }
 
-.game-online__players-list {
+.game-online__box-1 {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  gap: 0.5rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.625rem;
+}
+
+.game-online__players-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 0.625rem;
+}
+
+@supports (width: clamp( 13.8125rem , -2.8083286734rem  +  26.8083286734vw , 24rem )) {
+  .game-online__players-list {
+    width: clamp( 13.8125rem , -2.8083286734rem  +  26.8083286734vw , 24rem );
+  }
+}
+
+@supports not (width: clamp( 13.8125rem , -2.8083286734rem  +  26.8083286734vw , 24rem )) {
+  .game-online__players-list {
+    width: calc(13.8125rem + 10.1875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__full-court {
+  position: relative;
+}
+
+@supports (width: clamp( 31.25rem , 2.4949467123rem  +  46.3800532877vw , 48.875rem )) {
+  .game-online__full-court {
+    width: clamp( 31.25rem , 2.4949467123rem  +  46.3800532877vw , 48.875rem );
+  }
+}
+
+@supports not (width: clamp( 31.25rem , 2.4949467123rem  +  46.3800532877vw , 48.875rem )) {
+  .game-online__full-court {
+    width: calc(31.25rem + 17.625 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__item-court {
+  margin: 5px 0px 0px 0px;
 }
 
 @supports (height: clamp( 17.625rem , 1.514012697rem  +  25.985987303vw , 27.5rem )) {
@@ -12769,6 +12929,342 @@ td.table-footer {
   }
 }
 
+.game-online__score {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translate(50%, 0px);
+      -ms-transform: translate(50%, 0px);
+          transform: translate(50%, 0px);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+@supports (top: clamp( 0.75rem , 0.4440951778rem  +  0.4934048222vw , 0.9375rem )) {
+  .game-online__score {
+    top: clamp( 0.75rem , 0.4440951778rem  +  0.4934048222vw , 0.9375rem );
+  }
+}
+
+@supports not (top: clamp( 0.75rem , 0.4440951778rem  +  0.4934048222vw , 0.9375rem )) {
+  .game-online__score {
+    top: calc(0.75rem + 0.1875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__score-team {
+  font-weight: 900;
+}
+
+@supports (font-size: clamp( 1.75rem , 0.5263807112rem  +  1.9736192888vw , 2.5rem )) {
+  .game-online__score-team {
+    font-size: clamp( 1.75rem , 0.5263807112rem  +  1.9736192888vw , 2.5rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.75rem , 0.5263807112rem  +  1.9736192888vw , 2.5rem )) {
+  .game-online__score-team {
+    font-size: calc(1.75rem + 0.75 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__score-team-l {
+  text-align: right;
+}
+
+@supports (width: clamp( 3.375rem , 0.7238248742rem  +  4.2761751258vw , 5rem )) {
+  .game-online__score-team-l {
+    width: clamp( 3.375rem , 0.7238248742rem  +  4.2761751258vw , 5rem );
+  }
+}
+
+@supports not (width: clamp( 3.375rem , 0.7238248742rem  +  4.2761751258vw , 5rem )) {
+  .game-online__score-team-l {
+    width: calc(3.375rem + 1.625 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__score-team-c {
+  text-align: center;
+}
+
+@supports (width: clamp( 1rem , 0.5921269037rem  +  0.6578730963vw , 1.25rem )) {
+  .game-online__score-team-c {
+    width: clamp( 1rem , 0.5921269037rem  +  0.6578730963vw , 1.25rem );
+  }
+}
+
+@supports not (width: clamp( 1rem , 0.5921269037rem  +  0.6578730963vw , 1.25rem )) {
+  .game-online__score-team-c {
+    width: calc(1rem + 0.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__score-team-r {
+  text-align: left;
+}
+
+@supports (width: clamp( 3.375rem , 0.7238248742rem  +  4.2761751258vw , 5rem )) {
+  .game-online__score-team-r {
+    width: clamp( 3.375rem , 0.7238248742rem  +  4.2761751258vw , 5rem );
+  }
+}
+
+@supports not (width: clamp( 3.375rem , 0.7238248742rem  +  4.2761751258vw , 5rem )) {
+  .game-online__score-team-r {
+    width: calc(3.375rem + 1.625 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__active-player {
+  margin: 0 auto;
+  color: #3a3a3a;
+  background-color: #ffffff;
+  border-radius: 0.1875rem;
+  padding: 0.1875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.25rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@supports (font-size: clamp( 0.75rem , 0.1381903556rem  +  0.9868096444vw , 1.125rem )) {
+  .game-online__active-player {
+    font-size: clamp( 0.75rem , 0.1381903556rem  +  0.9868096444vw , 1.125rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.1381903556rem  +  0.9868096444vw , 1.125rem )) {
+  .game-online__active-player {
+    font-size: calc(0.75rem + 0.375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (line-height: clamp( 1.375rem , 0.5592538074rem  +  1.3157461926vw , 1.875rem )) {
+  .game-online__active-player {
+    line-height: clamp( 1.375rem , 0.5592538074rem  +  1.3157461926vw , 1.875rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.375rem , 0.5592538074rem  +  1.3157461926vw , 1.875rem )) {
+  .game-online__active-player {
+    line-height: calc(1.375rem + 0.5 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__active-player-num {
+  color: #a80d1c;
+}
+
+@supports (font-size: clamp( 1.25rem , 0.4342538074rem  +  1.3157461926vw , 1.75rem )) {
+  .game-online__active-player-num {
+    font-size: clamp( 1.25rem , 0.4342538074rem  +  1.3157461926vw , 1.75rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.25rem , 0.4342538074rem  +  1.3157461926vw , 1.75rem )) {
+  .game-online__active-player-num {
+    font-size: calc(1.25rem + 0.5 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (line-height: clamp( 1.375rem , 0.5592538074rem  +  1.3157461926vw , 1.875rem )) {
+  .game-online__active-player-num {
+    line-height: clamp( 1.375rem , 0.5592538074rem  +  1.3157461926vw , 1.875rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.375rem , 0.5592538074rem  +  1.3157461926vw , 1.875rem )) {
+  .game-online__active-player-num {
+    line-height: calc(1.375rem + 0.5 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__active-player-name {
+  white-space: nowrap;
+}
+
+@supports (height: clamp( 1.875rem , 1.3651586297rem  +  0.8223413703vw , 2.1875rem )) {
+  .game-online__active-player-team {
+    height: clamp( 1.875rem , 1.3651586297rem  +  0.8223413703vw , 2.1875rem );
+  }
+}
+
+@supports not (height: clamp( 1.875rem , 1.3651586297rem  +  0.8223413703vw , 2.1875rem )) {
+  .game-online__active-player-team {
+    height: calc(1.875rem + 0.3125 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 1.875rem , 1.3651586297rem  +  0.8223413703vw , 2.1875rem )) {
+  .game-online__active-player-team {
+    width: clamp( 1.875rem , 1.3651586297rem  +  0.8223413703vw , 2.1875rem );
+  }
+}
+
+@supports not (width: clamp( 1.875rem , 1.3651586297rem  +  0.8223413703vw , 2.1875rem )) {
+  .game-online__active-player-team {
+    width: calc(1.875rem + 0.3125 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__active-player-team img {
+  padding: 0.1875rem;
+}
+
+.game-online__team-logo {
+  z-index: 2;
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: translate(0px, 50%);
+      -ms-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  opacity: 0.1;
+}
+
+@supports (height: clamp( 3.75rem , 2.7303172593rem  +  1.6446827407vw , 4.375rem )) {
+  .game-online__team-logo {
+    height: clamp( 3.75rem , 2.7303172593rem  +  1.6446827407vw , 4.375rem );
+  }
+}
+
+@supports not (height: clamp( 3.75rem , 2.7303172593rem  +  1.6446827407vw , 4.375rem )) {
+  .game-online__team-logo {
+    height: calc(3.75rem + 0.625 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 3.75rem , 2.7303172593rem  +  1.6446827407vw , 4.375rem )) {
+  .game-online__team-logo {
+    width: clamp( 3.75rem , 2.7303172593rem  +  1.6446827407vw , 4.375rem );
+  }
+}
+
+@supports not (width: clamp( 3.75rem , 2.7303172593rem  +  1.6446827407vw , 4.375rem )) {
+  .game-online__team-logo {
+    width: calc(3.75rem + 0.625 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__team-logo-l {
+  left: 0;
+  margin: 0px 0px 0px 10px;
+}
+
+.game-online__team-logo-r {
+  right: 0;
+  margin: 0px 10px 0px 0px;
+}
+
+.game-online__logo-bg {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  border-radius: 100%;
+  overflow: hidden;
+  opacity: 0.1;
+  z-index: 2;
+}
+
+@supports (height: clamp( 4.5rem , 0.5232373113rem  +  6.4142626887vw , 6.9375rem )) {
+  .game-online__logo-bg {
+    height: clamp( 4.5rem , 0.5232373113rem  +  6.4142626887vw , 6.9375rem );
+  }
+}
+
+@supports not (height: clamp( 4.5rem , 0.5232373113rem  +  6.4142626887vw , 6.9375rem )) {
+  .game-online__logo-bg {
+    height: calc(4.5rem + 2.4375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 4.5rem , 0.5232373113rem  +  6.4142626887vw , 6.9375rem )) {
+  .game-online__logo-bg {
+    width: clamp( 4.5rem , 0.5232373113rem  +  6.4142626887vw , 6.9375rem );
+  }
+}
+
+@supports not (width: clamp( 4.5rem , 0.5232373113rem  +  6.4142626887vw , 6.9375rem )) {
+  .game-online__logo-bg {
+    width: calc(4.5rem + 2.4375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__ball {
+  position: absolute;
+  left: 8.125rem;
+  top: 5.625rem;
+  background-color: #ffffff;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+@supports (height: clamp( 1.625rem , 1.2171269037rem  +  0.6578730963vw , 1.875rem )) {
+  .game-online__ball {
+    height: clamp( 1.625rem , 1.2171269037rem  +  0.6578730963vw , 1.875rem );
+  }
+}
+
+@supports not (height: clamp( 1.625rem , 1.2171269037rem  +  0.6578730963vw , 1.875rem )) {
+  .game-online__ball {
+    height: calc(1.625rem + 0.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 1.625rem , 1.2171269037rem  +  0.6578730963vw , 1.875rem )) {
+  .game-online__ball {
+    width: clamp( 1.625rem , 1.2171269037rem  +  0.6578730963vw , 1.875rem );
+  }
+}
+
+@supports not (width: clamp( 1.625rem , 1.2171269037rem  +  0.6578730963vw , 1.875rem )) {
+  .game-online__ball {
+    width: calc(1.625rem + 0.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (height: clamp( 2.5rem , 0.4606345186rem  +  3.2893654814vw , 3.75rem )) {
+  .game-online__arrow {
+    height: clamp( 2.5rem , 0.4606345186rem  +  3.2893654814vw , 3.75rem );
+  }
+}
+
+@supports not (height: clamp( 2.5rem , 0.4606345186rem  +  3.2893654814vw , 3.75rem )) {
+  .game-online__arrow {
+    height: calc(2.5rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (width: clamp( 3.75rem , 0.6909517779rem  +  4.9340482221vw , 5.625rem )) {
+  .game-online__arrow {
+    width: clamp( 3.75rem , 0.6909517779rem  +  4.9340482221vw , 5.625rem );
+  }
+}
+
+@supports not (width: clamp( 3.75rem , 0.6909517779rem  +  4.9340482221vw , 5.625rem )) {
+  .game-online__arrow {
+    width: calc(3.75rem + 1.875 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-online__arrow img {
+  padding: 3px;
+}
+
 .game-online__desc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12786,17 +13282,49 @@ td.table-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+.game-online__team-fouls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-online__team-fouls-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: right;
+}
+
 .game-online__team-foul-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  padding: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 0px 10px 0px;
 }
 
 @supports (gap: clamp( 0.1875rem , 0.1279744189rem  +  0.2976279056vw , 0.3125rem )) {
@@ -12844,6 +13372,51 @@ td.table-footer {
   background-color: #f9d110;
 }
 
+.game-online__team-foul-item-2 {
+  background-color: #f26729;
+  border: 0.125rem solid #ffffff;
+}
+
+.game-online__team-foul-text {
+  width: 100%;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@supports (font-size: clamp( 1rem , 0.7924277649rem  +  0.7380346138vw , 1.25rem )) {
+  .game-online__team-foul-text {
+    font-size: clamp( 1rem , 0.7924277649rem  +  0.7380346138vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7924277649rem  +  0.7380346138vw , 1.25rem )) {
+  .game-online__team-foul-text {
+    font-size: calc(1rem + 0.25 * (100vw - 28.125rem) / 33.87375);
+  }
+}
+
+@supports (line-height: clamp( 1.625rem , 1.4174277649rem  +  0.7380346138vw , 1.875rem )) {
+  .game-online__team-foul-text {
+    line-height: clamp( 1.625rem , 1.4174277649rem  +  0.7380346138vw , 1.875rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.625rem , 1.4174277649rem  +  0.7380346138vw , 1.875rem )) {
+  .game-online__team-foul-text {
+    line-height: calc(1.625rem + 0.25 * (100vw - 28.125rem) / 33.87375);
+  }
+}
+
+.game-online__team-foul-text-l {
+  text-align: left;
+}
+
+.game-online__team-foul-text-r {
+  text-align: right;
+}
+
 .game-online__game-quarter {
   font-weight: 900;
   color: #ffffff;
@@ -12881,27 +13454,27 @@ td.table-footer {
   text-align: center;
 }
 
-@supports (font-size: clamp( 3.75rem , 2.7121388243rem  +  3.6901730691vw , 5rem )) {
+@supports (font-size: clamp( 3.4375rem , 2.3996388243rem  +  3.6901730691vw , 4.6875rem )) {
   .game-online__game-clock {
-    font-size: clamp( 3.75rem , 2.7121388243rem  +  3.6901730691vw , 5rem );
+    font-size: clamp( 3.4375rem , 2.3996388243rem  +  3.6901730691vw , 4.6875rem );
   }
 }
 
-@supports not (font-size: clamp( 3.75rem , 2.7121388243rem  +  3.6901730691vw , 5rem )) {
+@supports not (font-size: clamp( 3.4375rem , 2.3996388243rem  +  3.6901730691vw , 4.6875rem )) {
   .game-online__game-clock {
-    font-size: calc(3.75rem + 1.25 * (100vw - 28.125rem) / 33.87375);
+    font-size: calc(3.4375rem + 1.25 * (100vw - 28.125rem) / 33.87375);
   }
 }
 
-@supports (line-height: clamp( 5rem , 3.9621388243rem  +  3.6901730691vw , 6.25rem )) {
+@supports (line-height: clamp( 4.0625rem , 3.0246388243rem  +  3.6901730691vw , 5.3125rem )) {
   .game-online__game-clock {
-    line-height: clamp( 5rem , 3.9621388243rem  +  3.6901730691vw , 6.25rem );
+    line-height: clamp( 4.0625rem , 3.0246388243rem  +  3.6901730691vw , 5.3125rem );
   }
 }
 
-@supports not (line-height: clamp( 5rem , 3.9621388243rem  +  3.6901730691vw , 6.25rem )) {
+@supports not (line-height: clamp( 4.0625rem , 3.0246388243rem  +  3.6901730691vw , 5.3125rem )) {
   .game-online__game-clock {
-    line-height: calc(5rem + 1.25 * (100vw - 28.125rem) / 33.87375);
+    line-height: calc(4.0625rem + 1.25 * (100vw - 28.125rem) / 33.87375);
   }
 }
 
@@ -19010,8 +19583,40 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     grid-template-columns: 1fr 1fr;
   }
 
+  .game-online__box-1 {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .game-online__players-list {
+    width: 100%;
+  }
+
+  .game-online__players-list-l {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  .game-online__players-list-r {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  .game-online__full-court {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+  }
+
   .game-online__item-court {
-    margin: 10px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
 @supports (height: clamp( 10.25rem , -0.9705720408rem  +  56.1028602042vw , 33.8125rem )) {
@@ -19037,6 +19642,268 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
       width: calc(18.125rem + 41.9375 * (100vw - 20rem) / 41.99875);
     }
 }
+
+@supports (top: clamp( 0.3125rem , 0.0743976755rem  +  1.1905116224vw , 0.8125rem )) {
+    .game-online__score {
+      top: clamp( 0.3125rem , 0.0743976755rem  +  1.1905116224vw , 0.8125rem );
+    }
+}
+
+@supports not (top: clamp( 0.3125rem , 0.0743976755rem  +  1.1905116224vw , 0.8125rem )) {
+    .game-online__score {
+      top: calc(0.3125rem + 0.5 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.4702186077rem  +  3.2739069615vw , 2.5rem )) {
+    .game-online__score-team {
+      font-size: clamp( 1.125rem , 0.4702186077rem  +  3.2739069615vw , 2.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.4702186077rem  +  3.2739069615vw , 2.5rem )) {
+    .game-online__score-team {
+      font-size: calc(1.125rem + 1.375 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 2.25rem , 0.9404372154rem  +  6.547813923vw , 5rem )) {
+    .game-online__score-team-l {
+      width: clamp( 2.25rem , 0.9404372154rem  +  6.547813923vw , 5rem );
+    }
+}
+
+@supports not (width: clamp( 2.25rem , 0.9404372154rem  +  6.547813923vw , 5rem )) {
+    .game-online__score-team-l {
+      width: calc(2.25rem + 2.75 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 0.625rem , 0.3273720944rem  +  1.488139528vw , 1.25rem )) {
+    .game-online__score-team-c {
+      width: clamp( 0.625rem , 0.3273720944rem  +  1.488139528vw , 1.25rem );
+    }
+}
+
+@supports not (width: clamp( 0.625rem , 0.3273720944rem  +  1.488139528vw , 1.25rem )) {
+    .game-online__score-team-c {
+      width: calc(0.625rem + 0.625 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 2.25rem , 0.9404372154rem  +  6.547813923vw , 5rem )) {
+    .game-online__score-team-r {
+      width: clamp( 2.25rem , 0.9404372154rem  +  6.547813923vw , 5rem );
+    }
+}
+
+@supports not (width: clamp( 2.25rem , 0.9404372154rem  +  6.547813923vw , 5rem )) {
+    .game-online__score-team-r {
+      width: calc(2.25rem + 2.75 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (font-size: clamp( 0.625rem , 0.3273720944rem  +  1.488139528vw , 1.25rem )) {
+    .game-online__active-player {
+      font-size: clamp( 0.625rem , 0.3273720944rem  +  1.488139528vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.625rem , 0.3273720944rem  +  1.488139528vw , 1.25rem )) {
+    .game-online__active-player {
+      font-size: calc(0.625rem + 0.625 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (line-height: clamp( 1.25rem , 0.9523720944rem  +  1.488139528vw , 1.875rem )) {
+    .game-online__active-player {
+      line-height: clamp( 1.25rem , 0.9523720944rem  +  1.488139528vw , 1.875rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.25rem , 0.9523720944rem  +  1.488139528vw , 1.875rem )) {
+    .game-online__active-player {
+      line-height: calc(1.25rem + 0.625 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.8273720944rem  +  1.488139528vw , 1.75rem )) {
+    .game-online__active-player-num {
+      font-size: clamp( 1.125rem , 0.8273720944rem  +  1.488139528vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.8273720944rem  +  1.488139528vw , 1.75rem )) {
+    .game-online__active-player-num {
+      font-size: calc(1.125rem + 0.625 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (line-height: clamp( 1.25rem , 0.9523720944rem  +  1.488139528vw , 1.875rem )) {
+    .game-online__active-player-num {
+      line-height: clamp( 1.25rem , 0.9523720944rem  +  1.488139528vw , 1.875rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.25rem , 0.9523720944rem  +  1.488139528vw , 1.875rem )) {
+    .game-online__active-player-num {
+      line-height: calc(1.25rem + 0.625 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (height: clamp( 1.875rem , 1.5773720944rem  +  1.488139528vw , 2.5rem )) {
+    .game-online__active-player-team {
+      height: clamp( 1.875rem , 1.5773720944rem  +  1.488139528vw , 2.5rem );
+    }
+}
+
+@supports not (height: clamp( 1.875rem , 1.5773720944rem  +  1.488139528vw , 2.5rem )) {
+    .game-online__active-player-team {
+      height: calc(1.875rem + 0.625 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 1.875rem , 1.5773720944rem  +  1.488139528vw , 2.5rem )) {
+    .game-online__active-player-team {
+      width: clamp( 1.875rem , 1.5773720944rem  +  1.488139528vw , 2.5rem );
+    }
+}
+
+@supports not (width: clamp( 1.875rem , 1.5773720944rem  +  1.488139528vw , 2.5rem )) {
+    .game-online__active-player-team {
+      width: calc(1.875rem + 0.625 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (height: clamp( 2.75rem , 1.6785395399rem  +  5.3573023007vw , 5rem )) {
+    .game-online__team-logo {
+      height: clamp( 2.75rem , 1.6785395399rem  +  5.3573023007vw , 5rem );
+    }
+}
+
+@supports not (height: clamp( 2.75rem , 1.6785395399rem  +  5.3573023007vw , 5rem )) {
+    .game-online__team-logo {
+      height: calc(2.75rem + 2.25 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 2.75rem , 1.6785395399rem  +  5.3573023007vw , 5rem )) {
+    .game-online__team-logo {
+      width: clamp( 2.75rem , 1.6785395399rem  +  5.3573023007vw , 5rem );
+    }
+}
+
+@supports not (width: clamp( 2.75rem , 1.6785395399rem  +  5.3573023007vw , 5rem )) {
+    .game-online__team-logo {
+      width: calc(2.75rem + 2.25 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (margin-left: clamp( 0.3125rem , 0.1636860472rem  +  0.744069764vw , 0.625rem )) {
+    .game-online__team-logo-l {
+      margin-left: clamp( 0.3125rem , 0.1636860472rem  +  0.744069764vw , 0.625rem );
+    }
+}
+
+@supports not (margin-left: clamp( 0.3125rem , 0.1636860472rem  +  0.744069764vw , 0.625rem )) {
+    .game-online__team-logo-l {
+      margin-left: calc(0.3125rem + 0.3125 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (margin-right: clamp( 0.3125rem , 0.1636860472rem  +  0.744069764vw , 0.625rem )) {
+    .game-online__team-logo-r {
+      margin-right: clamp( 0.3125rem , 0.1636860472rem  +  0.744069764vw , 0.625rem );
+    }
+}
+
+@supports not (margin-right: clamp( 0.3125rem , 0.1636860472rem  +  0.744069764vw , 0.625rem )) {
+    .game-online__team-logo-r {
+      margin-right: calc(0.3125rem + 0.3125 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (height: clamp( 2.875rem , 0.1368232685rem  +  13.6908836573vw , 8.625rem )) {
+    .game-online__logo-bg {
+      height: clamp( 2.875rem , 0.1368232685rem  +  13.6908836573vw , 8.625rem );
+    }
+}
+
+@supports not (height: clamp( 2.875rem , 0.1368232685rem  +  13.6908836573vw , 8.625rem )) {
+    .game-online__logo-bg {
+      height: calc(2.875rem + 5.75 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 2.875rem , 0.1368232685rem  +  13.6908836573vw , 8.625rem )) {
+    .game-online__logo-bg {
+      width: clamp( 2.875rem , 0.1368232685rem  +  13.6908836573vw , 8.625rem );
+    }
+}
+
+@supports not (width: clamp( 2.875rem , 0.1368232685rem  +  13.6908836573vw , 8.625rem )) {
+    .game-online__logo-bg {
+      width: calc(2.875rem + 5.75 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (height: clamp( 1.5rem , 1.2618976755rem  +  1.1905116224vw , 2rem )) {
+    .game-online__ball {
+      height: clamp( 1.5rem , 1.2618976755rem  +  1.1905116224vw , 2rem );
+    }
+}
+
+@supports not (height: clamp( 1.5rem , 1.2618976755rem  +  1.1905116224vw , 2rem )) {
+    .game-online__ball {
+      height: calc(1.5rem + 0.5 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 1.5rem , 1.2618976755rem  +  1.1905116224vw , 2rem )) {
+    .game-online__ball {
+      width: clamp( 1.5rem , 1.2618976755rem  +  1.1905116224vw , 2rem );
+    }
+}
+
+@supports not (width: clamp( 1.5rem , 1.2618976755rem  +  1.1905116224vw , 2rem )) {
+    .game-online__ball {
+      width: calc(1.5rem + 0.5 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (height: clamp( 1.5625rem , 0.5208023304rem  +  5.2084883479vw , 3.75rem )) {
+    .game-online__arrow {
+      height: clamp( 1.5625rem , 0.5208023304rem  +  5.2084883479vw , 3.75rem );
+    }
+}
+
+@supports not (height: clamp( 1.5625rem , 0.5208023304rem  +  5.2084883479vw , 3.75rem )) {
+    .game-online__arrow {
+      height: calc(1.5625rem + 2.1875 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+@supports (width: clamp( 2.34375rem , 0.7812034956rem  +  7.8127325218vw , 5.625rem )) {
+    .game-online__arrow {
+      width: clamp( 2.34375rem , 0.7812034956rem  +  7.8127325218vw , 5.625rem );
+    }
+}
+
+@supports not (width: clamp( 2.34375rem , 0.7812034956rem  +  7.8127325218vw , 5.625rem )) {
+    .game-online__arrow {
+      width: calc(2.34375rem + 3.28125 * (100vw - 20rem) / 41.99875);
+    }
+}
+
+  .game-online__desc {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
 
 @supports (font-size: clamp( 0.875rem , 0.803795215rem  +  0.3164657109vw , 1rem )) {
     .rating-profile__spollers-title {
@@ -19829,15 +20696,39 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     min-width: 8.75rem;
   }
 
-@supports (max-height: clamp( 11.25rem , 10.8035514978rem  +  2.2322425108vw , 11.875rem )) {
+@supports (max-height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem )) {
     .player-card-3 {
-      max-height: clamp( 11.25rem , 10.8035514978rem  +  2.2322425108vw , 11.875rem );
+      max-height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem );
     }
 }
 
-@supports not (max-height: clamp( 11.25rem , 10.8035514978rem  +  2.2322425108vw , 11.875rem )) {
+@supports not (max-height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem )) {
     .player-card-3 {
-      max-height: calc(11.25rem + 0.625 * (100vw - 20rem) / 27.99875);
+      max-height: calc(12.5rem + 0.625 * (100vw - 20rem) / 27.99875);
+    }
+}
+
+@supports (height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem )) {
+    .player-card-3 {
+      height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem );
+    }
+}
+
+@supports not (height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem )) {
+    .player-card-3 {
+      height: calc(12.5rem + 0.625 * (100vw - 20rem) / 27.99875);
+    }
+}
+
+@supports (min-height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem )) {
+    .player-card-3 {
+      min-height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem );
+    }
+}
+
+@supports not (min-height: clamp( 12.5rem , 12.0535514978rem  +  2.2322425108vw , 13.125rem )) {
+    .player-card-3 {
+      min-height: calc(12.5rem + 0.625 * (100vw - 20rem) / 27.99875);
     }
 }
 
@@ -19845,39 +20736,39 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin: 0 auto;
   }
 
-@supports (height: clamp( 6.25rem , 5.6985023776rem  +  2.4511005441vw , 6.875rem )) {
+@supports (height: clamp( 5.625rem , 4.5220047551rem  +  4.9022010883vw , 6.875rem )) {
     .player-card-3__img {
-      height: clamp( 6.25rem , 5.6985023776rem  +  2.4511005441vw , 6.875rem );
+      height: clamp( 5.625rem , 4.5220047551rem  +  4.9022010883vw , 6.875rem );
     }
 }
 
-@supports not (height: clamp( 6.25rem , 5.6985023776rem  +  2.4511005441vw , 6.875rem )) {
+@supports not (height: clamp( 5.625rem , 4.5220047551rem  +  4.9022010883vw , 6.875rem )) {
     .player-card-3__img {
-      height: calc(6.25rem + 0.625 * (100vw - 22.5rem) / 25.49875);
+      height: calc(5.625rem + 1.25 * (100vw - 22.5rem) / 25.49875);
     }
 }
 
-@supports (width: clamp( 6.25rem , 5.6985023776rem  +  2.4511005441vw , 6.875rem )) {
+@supports (width: clamp( 5.625rem , 4.5220047551rem  +  4.9022010883vw , 6.875rem )) {
     .player-card-3__img {
-      width: clamp( 6.25rem , 5.6985023776rem  +  2.4511005441vw , 6.875rem );
+      width: clamp( 5.625rem , 4.5220047551rem  +  4.9022010883vw , 6.875rem );
     }
 }
 
-@supports not (width: clamp( 6.25rem , 5.6985023776rem  +  2.4511005441vw , 6.875rem )) {
+@supports not (width: clamp( 5.625rem , 4.5220047551rem  +  4.9022010883vw , 6.875rem )) {
     .player-card-3__img {
-      width: calc(6.25rem + 0.625 * (100vw - 22.5rem) / 25.49875);
+      width: calc(5.625rem + 1.25 * (100vw - 22.5rem) / 25.49875);
     }
 }
 
-@supports (gap: clamp( 0.625rem , 1.3308985735rem  +  -1.4706603265vw , 1rem )) {
+@supports (gap: clamp( 1.375rem , 2.3161980979rem  +  -1.9608804353vw , 1.875rem )) {
     .player-card-3__main {
-      gap: clamp( 0.625rem , 1.3308985735rem  +  -1.4706603265vw , 1rem );
+      gap: clamp( 1.375rem , 2.3161980979rem  +  -1.9608804353vw , 1.875rem );
     }
 }
 
-@supports not (gap: clamp( 0.625rem , 1.3308985735rem  +  -1.4706603265vw , 1rem )) {
+@supports not (gap: clamp( 1.375rem , 2.3161980979rem  +  -1.9608804353vw , 1.875rem )) {
     .player-card-3__main {
-      gap: calc(1rem + -0.375 * (100vw - 22.5rem) / 25.49875);
+      gap: calc(1.875rem + -0.5 * (100vw - 22.5rem) / 25.49875);
     }
 }
 
@@ -19970,38 +20861,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .player-card-3__info {
+    z-index: 3;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #3a3a3a;
-    opacity: 0.8;
+    opacity: 0.9;
     color: #ffffff;
   }
-
-@supports (bottom: clamp( 2.5rem , 1.8551246098rem  +  2.6456426266vw , 3.125rem )) {
-    .player-card-3__info-left {
-      bottom: clamp( 2.5rem , 1.8551246098rem  +  2.6456426266vw , 3.125rem );
-    }
-}
-
-@supports not (bottom: clamp( 2.5rem , 1.8551246098rem  +  2.6456426266vw , 3.125rem )) {
-    .player-card-3__info-left {
-      bottom: calc(2.5rem + 0.625 * (100vw - 24.375rem) / 23.62375);
-    }
-}
-
-@supports (bottom: clamp( 2.5rem , 1.8551246098rem  +  2.6456426266vw , 3.125rem )) {
-    .player-card-3__info-right {
-      bottom: clamp( 2.5rem , 1.8551246098rem  +  2.6456426266vw , 3.125rem );
-    }
-}
-
-@supports not (bottom: clamp( 2.5rem , 1.8551246098rem  +  2.6456426266vw , 3.125rem )) {
-    .player-card-3__info-right {
-      bottom: calc(2.5rem + 0.625 * (100vw - 24.375rem) / 23.62375);
-    }
-}
 
   .player-card-3__info-box {
     width: 2.375rem;
@@ -20024,19 +20892,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-  .player-card-3__bage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+@supports (font-size: clamp( 1.125rem , 0.7941014265rem  +  1.4706603265vw , 1.5rem )) {
+    .player-card-3__num {
+      font-size: clamp( 1.125rem , 0.7941014265rem  +  1.4706603265vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.7941014265rem  +  1.4706603265vw , 1.5rem )) {
+    .player-card-3__num {
+      font-size: calc(1.125rem + 0.375 * (100vw - 22.5rem) / 25.49875);
+    }
+}
 
   .video-tabs__item {
     height: 21.875rem;
@@ -21859,6 +22725,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 }
 
+@media (max-width: 47.99875em) and (max-width: 47.99875em) {
+@supports (bottom: clamp( 3.75rem , 3.4191014265rem  +  1.4706603265vw , 4.125rem )) {
+    .player-card-3__info {
+      bottom: clamp( 3.75rem , 3.4191014265rem  +  1.4706603265vw , 4.125rem );
+    }
+}
+
+@supports not (bottom: clamp( 3.75rem , 3.4191014265rem  +  1.4706603265vw , 4.125rem )) {
+    .player-card-3__info {
+      bottom: calc(3.75rem + 0.375 * (100vw - 22.5rem) / 25.49875);
+    }
+}
+}
+
 @media (max-width: 47.5rem) {
   .game-progress__tabs-title {
     font-size: 1.125rem;
@@ -22897,6 +23777,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 2.5rem;
   }
 
+  .game-online__active-player-team {
+    display: none;
+  }
+
   .footer__icons-link {
     width: 2.25rem;
     height: 2.25rem;
@@ -23194,10 +24078,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 2.5rem;
     line-height: 2.5rem;
     text-align: start;
-  }
-
-  .player-card-3__desc {
-    font-size: 0.5rem;
   }
 
   .player-card-1__num {
@@ -23808,6 +24688,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .player-card__body:hover {
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .player-card-3:hover .player-card-3__info-box {
     -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   }
