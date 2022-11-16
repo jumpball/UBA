@@ -7,8 +7,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221105022944">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221105022944">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221116034946">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221116034946">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -517,7 +517,6 @@
 								<!-- PROFILE SHOTING MAP -->
 								<div id="tab_2" class="tabs__body tab__body team-roster__tab-body b-tab">
 									<h2 class="section-title-h2w element-animation">Карта бросков</h2>
-
 									<div data-spollers="969.98,max" class="person-stats-chart__spollers">
 										<div class="person-stats-chart__spollers-item">
 											<button type="button" data-spoller class="person-stats-chart__spollers-title">навигация</button>
@@ -612,58 +611,36 @@
 											<img src="img/court/basketball-court-h.svg" alt="">
 										</div>
 
-										<div data-spollers="410,max" class="person-stats-chart__spollers">
-											<div class="person-stats-chart__spollers-item">
-												<button type="button" data-spoller class="person-stats-chart__spollers-title"></button>
-												<div class="person-stats-chart__spollers-body">
-													<div class="person-stats-chart__content">
-														<div class="person-stats-chart__list">
-															<div class="person-stats-chart__item">
-																<canvas id="jsChart1"></canvas>
-																<div class="person-stats-chart__info">
-																	<div class="person-stats-chart__stats-2pt">56.6%</div>
-																</div>
-															</div>
-
-															<div class="person-stats-chart__item">
-																<canvas id="jsChart2"></canvas>
-																<div class="person-stats-chart__info">
-																	<div class="person-stats-chart__stats">
-																		<div class="person-stats-chart__stats-3pt">37.6%</div>
-																	</div>
-																</div>
-															</div>
-
-															<div class="person-stats-chart__item">
-																<canvas id="jsChart3"></canvas>
-																<div class="person-stats-chart__info">
-																	<div class="person-stats-chart__stats-ft">79.5%</div>
-																</div>
-															</div>
-
+										<div class="person-stats-chart__content">
+											<div class="person-stats-chart__list">
+												<div class="person-stats-chart__item">
+													<canvas id="jsChart1"></canvas>
+													<div class="person-stats-chart__info">
+														<div class="person-stats-chart__stats-2pt">56.6%</div>
+													</div>
+												</div>
+												<div class="person-stats-chart__item">
+													<canvas id="jsChart2"></canvas>
+													<div class="person-stats-chart__info">
+														<div class="person-stats-chart__stats">
+															<div class="person-stats-chart__stats-3pt">37.6%</div>
 														</div>
 													</div>
-													<!-- <div class="person-stats-chart__item-1">
-					<canvas id="box" height="230px" width="900px"></canvas>
-				</div> -->
-
+												</div>
+												<div class="person-stats-chart__item">
+													<canvas id="jsChart3"></canvas>
+													<div class="person-stats-chart__info">
+														<div class="person-stats-chart__stats-ft">79.5%</div>
+													</div>
 												</div>
 											</div>
 										</div>
-
-										<div class="person-stats-chart__box">
-
-											<!-- <div class="person-stats-chart__info">
-			<div class="person-stats-chart__stats">
-				<div class="person-stats-chart__stats-3pt">37.6%</div>
-			</div>
-		</div> -->
-										</div>
-
 										<div class="person-stats-chart__bg-logo -ibg">
-											<img src="img/UBA/UBA-transperent-w.svg" alt="">
+											<img src="img/UBA/UBA-white-2.svg" alt="">
 										</div>
 									</div>
+
+									<h2 class="section-title-h2w element-animation">Точность бросков</h2>
 									<div data-spollers="479.98,max" class="person-stats-chart__spollers">
 										<div class="person-stats-chart__spollers-item">
 											<button type="button" data-spoller class="person-stats-chart__spollers-title person-stats-chart__spollers-title-2">сортировка</button>
@@ -676,7 +653,7 @@
 																соперника</label>
 															<select data-label data-scroll data-show name="form[]" id="select-team" class="person-stats__list">
 																<option class="person-stats__item" value="1" selected="selected">все
-																	команды</option>
+																	соперники</option>
 																<option class="person-stats__item" value="2">ЦСКА</option>
 																<option class="person-stats__item" value="3">Локомотив Кубань</option>
 																<option class="person-stats__item" value="4">Уникс</option>
@@ -702,184 +679,198 @@
 											</div>
 										</div>
 									</div>
-									<div data-showmore class="block">
-										<div data-showmore-content="255" class="block__content">
+									<div class="table__wrapper table__wrapper-dark">
+										<div class="table__box">
+											<table class="table-fill">
+												<thead>
+													<tr>
+														<th rowspan="2" class="text-center text-bottom table__col-m-fix">дата</th>
+														<th rowspan="2" class="text-center text-bottom table__col-s">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип турнира">
+															</div>
+														</th>
+														<th rowspan="2" class="text-left text-bottom table__col-s">соперник</th>
+														<th rowspan="2" class="text-center text-bottom table__col-s">мин</th>
+														<th rowspan="2" class="text-center text-bottom table__col-s">очки</th>
+														<th colspan="8" class="text-center table__col-s table__th-colspan">броски</th>
+													</tr>
+													<tr>
+														<th class="text-center table__col-s">2-х</th>
+														<th class="text-center table__col-s">%</th>
+														<th class="text-center table__col-s">3-х</th>
+														<th class="text-center table__col-s">%</th>
+														<th class="text-center table__col-s">с игры</th>
+														<th class="text-center table__col-s">%</th>
+														<th class="text-center table__col-s">шб</th>
+														<th class="text-center table__col-s">%</th>
+													</tr>
+												</thead>
+												<tbody class="table-hover">
+													<tr>
+														<td class="text-center table__col-m-fix">03.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="лого команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s"> <a href="#">БК Московский</a></td>
+														<td class="text-center table__col-s">26:32</td>
+														<td class="text-center table__col-s">18</td>
+														<td class="text-center table__col-s">4/10</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">2/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
 
-											<div class="person-stats-chart__table">
-												<div class="table__box">
-													<table class="table-fill">
-														<thead>
-															<tr>
-																<th class="text-left table__col-sm-fix">дата</th>
-																<th class="text-left table__col-xl table__col-xl-fix">соперник</th>
-																<th class="text-center table__col-s">2-очк</th>
-																<th class="text-center table__col-s">%</th>
-																<th class="text-center table__col-s">3-очк</th>
-																<th class="text-center table__col-s">%</th>
-																<th class="text-center table__col-s">шт</th>
-																<th class="text-center table__col-s">%</th>
-																<th class="text-center table__col-s">мин</th>
-																<th class="text-center table__col-s">очки</th>
-															</tr>
-														</thead>
-														<tbody class="table-hover">
+													</tr>
+													<tr>
+														<td class="text-center table__col-m-fix">03.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="лого команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s"> <a href="#">БК Московский</a></td>
+														<td class="text-center table__col-s">26:32</td>
+														<td class="text-center table__col-s">18</td>
+														<td class="text-center table__col-s">4/10</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">2/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
 
-															<tr>
-																<td class="text-center table__col-sm-fix">02.03.22</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Локомотив Кубань
-																</td>
-																<td class="text-center table__col-s">4/10</td>
-																<td class="text-center table__col-s">40%</td>
-																<td class="text-center table__col-s">3/8</td>
-																<td class="text-center table__col-s">39.8%</td>
-																<td class="text-center table__col-s">6/7</td>
-																<td class="text-center table__col-s">79.6%</td>
-																<td class="text-center table__col-s">26:32</td>
-																<td class="text-center table__col-s">23</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-sm-fix">02.03.22</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Локомотив Кубань
-																</td>
-																<td class="text-center table__col-s">4/10</td>
-																<td class="text-center table__col-s">40%</td>
-																<td class="text-center table__col-s">3/8</td>
-																<td class="text-center table__col-s">39.8%</td>
-																<td class="text-center table__col-s">6/7</td>
-																<td class="text-center table__col-s">79.6%</td>
-																<td class="text-center table__col-s">26:32</td>
-																<td class="text-center table__col-s">23</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-sm-fix">02.03.22</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Локомотив Кубань
-																</td>
-																<td class="text-center table__col-s">4/10</td>
-																<td class="text-center table__col-s">40%</td>
-																<td class="text-center table__col-s">3/8</td>
-																<td class="text-center table__col-s">39.8%</td>
-																<td class="text-center table__col-s">6/7</td>
-																<td class="text-center table__col-s">79.6%</td>
-																<td class="text-center table__col-s">26:32</td>
-																<td class="text-center table__col-s">23</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-sm-fix">02.03.22</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Локомотив Кубань
-																</td>
-																<td class="text-center table__col-s">4/10</td>
-																<td class="text-center table__col-s">40%</td>
-																<td class="text-center table__col-s">3/8</td>
-																<td class="text-center table__col-s">39.8%</td>
-																<td class="text-center table__col-s">6/7</td>
-																<td class="text-center table__col-s">79.6%</td>
-																<td class="text-center table__col-s">26:32</td>
-																<td class="text-center table__col-s">23</td>
-															</tr>
-															<tr>
-																<td class="text-center table__col-sm-fix">02.03.22</td>
-																<td class="text-left table__col-xl table__col-xl-fix">Локомотив Кубань
-																</td>
-																<td class="text-center table__col-s">4/10</td>
-																<td class="text-center table__col-s">40%</td>
-																<td class="text-center table__col-s">3/8</td>
-																<td class="text-center table__col-s">39.8%</td>
-																<td class="text-center table__col-s">6/7</td>
-																<td class="text-center table__col-s">79.6%</td>
-																<td class="text-center table__col-s">26:32</td>
-																<td class="text-center table__col-s">23</td>
-															</tr>
+													</tr>
+													<tr>
+														<td class="text-center table__col-m-fix">03.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="лого команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s"> <a href="#">БК Московский</a></td>
+														<td class="text-center table__col-s">26:32</td>
+														<td class="text-center table__col-s">18</td>
+														<td class="text-center table__col-s">4/10</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">2/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
 
-														</tbody>
-														<tfoot>
-															<tr>
-																<td class="text-left table-footer  table__col-sm-fix"></td>
-																<td class="text-left table-footer table__col-xl table__col-xl-fix"></td>
-																<td class="text-center table-footer table__col-s"></td>
-																<td class="text-center table-footer table__col-s"></td>
-																<td class="text-center table-footer table__col-s"></td>
-																<td class="text-center table-footer table__col-s"></td>
-																<td class="text-center table-footer table__col-s"></td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-m-fix">03.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="лого команды">
+															</div>
+														</td>
+														<td class="text-left table__col-s"> <a href="#">БК Московский</a></td>
+														<td class="text-center table__col-s">26:32</td>
+														<td class="text-center table__col-s">18</td>
+														<td class="text-center table__col-s">4/10</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">2/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
+														<td class="text-center table__col-s">4/5</td>
+														<td class="text-center table__col-s">46.5%</td>
 
-															</tr>
-														</tfoot>
-													</table>
-												</div>
-
-
-												<div class="table__box-1">
-													<table class="table-fill-1">
-														<thead>
-															<tr>
-																<th class="text-left table__col-sm-fix">дата</th>
-																<th class="text-left table__col-xl-fix table__col-hide">соперник</th>
-
-															</tr>
-														</thead>
-														<tbody class="table-hover">
-
-															<tr>
-																<td class="text-center table__col-sm-fix">02.03.22</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Локомотив Кубань
-																</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-m-fix">06.03.22</td>
-																<td class="text-left table__col-xl-fix table__col-hide">ЦСКА</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-sm-fix">11.03.22</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Пари Парма</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-m-fix">17.03.22</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Уникс</td>
-
-															</tr>
-															<tr>
-																<td class="text-center table__col-m-fix">24.03.22</td>
-																<td class="text-left table__col-xl-fix table__col-hide">Самара</td>
-
-															</tr>
-														</tbody>
-														<tfoot>
-															<tr>
-																<td class="text-left table-footer  table__col-sm-fix"></td>
-																<td class="text-left table-footer table__col-xl-fix table__col-hide">
-																</td>
-
-															</tr>
-														</tfoot>
-													</table>
-												</div>
-
-
-
-
-
-
-											</div>
-											<div class="person-stats-chart__item-1">
-												<canvas id="box"></canvas>
-											</div>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2" class="text-center table-footer table__col-s">всего</td>
+														<td class="text-left table-footer table__col-s"></td>
+														<td class="text-center table-footer table__col-s">26:32</td>
+														<td class="text-center table-footer table__col-s">16.7</td>
+														<td class="text-center table-footer table__col-s">103/221</td>
+														<td class="text-center table-footer table__col-s">46.5%</td>
+														<td class="text-center table-footer table__col-s">103/221</td>
+														<td class="text-center table-footer table__col-s">34.7%</td>
+														<td class="text-center table-footer table__col-s">103/221</td>
+														<td class="text-center table-footer table__col-s">42.9%</td>
+														<td class="text-center table-footer table__col-s">103/221</td>
+														<td class="text-center table-footer table__col-s">42.9%</td>
+													</tr>
+												</tfoot>
+											</table>
 										</div>
-										<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
-											<span>Показать еще</span>
-											<span>Скрыть</span></button>
+										<div class="table__box-1">
+											<table class="table-fill-1">
+												<thead>
+													<tr>
+														<th rowspan="2" class="text-center text-bottom table__col-m-fix table__col-h2r">дата</th>
+														<th rowspan="2" class="text-center text-bottom table__col-s table__col-h2r">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/UBA_ball-white.svg" alt="Логотип турнира">
+															</div>
+														</th>
+													</tr>
+												</thead>
+												<tbody class="table-hover">
+													<tr>
+														<td class="text-center table__col-m-fix">03.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="Фото игрока">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-m-fix">08.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/1.png" alt="Фото игрока">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-m-fix">14.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/3.png" alt="Фото игрока">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center table__col-m-fix">21.10.22</td>
+														<td class="table__body-col-1 table__body-col-logo">
+															<div class="table__image -ibg">
+																<img data-src="img/UBA/uba_team-logo/11.png" alt="Фото игрока">
+															</div>
+														</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2" class="text-center table-footer table__col-s">всего</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
 									</div>
+									<!-- <div class="person-stats-chart__item-1">
+										<canvas id="box"></canvas>
+									</div> -->
 								</div>
 								<!-- PROFILE CAREER -->
 								<div id="tab_3" class="tabs__body tab__body team-roster__tab-body b-tab">
 									<h2 class="section-title-h2w element-animation">Карьера</h2>
-
-
 									<div class="timeline">
 										<div class="timeline__box timeline__left-side timeline__box-left">
 											<div class="timeline__content timeline__content-left">
-												<h3 class="timeline__year timeline__year-left element-animation">2021 - 2022</h3>
+												<h3 class="timeline__year timeline__year-left element-animation">21/22</h3>
 												<div class="timeline__logo timeline__logo-left timeline__logo-1  -ibg">
 													<img src="img/UBA/uba_team-logo/1.png" alt="">
 												</div>
@@ -907,12 +898,12 @@
 										</div>
 										<div class="timeline__box timeline__right-side timeline__box-right">
 											<div class="timeline__content timeline__content-right">
-												<h3 class="timeline__year timeline__year-right element-animation">2018 - 2021</h3>
+												<h3 class="timeline__year timeline__year-right element-animation">20/21</h3>
 												<div class="timeline__logo timeline__logo-right timeline__logo-2 -ibg">
-													<img src="img/logo/3.png" alt="">
+													<img src="img/UBA/uba_team-logo/2.png" alt="">
 												</div>
-												<div class="timeline__team-name timeline__team-name-right">Локомотив Кубань</div>
-												<div class="timeline__label timeline__label-right">Краснодар, Россия</div>
+												<div class="timeline__team-name timeline__team-name-right">Take Shot Black</div>
+												<div class="timeline__label timeline__label-right">Москва, Россия</div>
 												<div class="timeline__subtitle timeline__subtitle-right"></div>
 												<div class="timeline__stats timeline__stats-right">
 													<ul class="timeline__stats-list">
@@ -935,12 +926,12 @@
 										</div>
 										<div class="timeline__box timeline__left-side timeline__box-left">
 											<div class="timeline__content timeline__content-left">
-												<h3 class="timeline__year timeline__year-left element-animation">2017 - 2018</h3>
+												<h3 class="timeline__year timeline__year-left element-animation">19/20</h3>
 												<div class="timeline__logo timeline__logo-left timeline__logo-3  -ibg">
-													<img src="img/logo/11.png" alt="">
+													<img src="img/UBA/uba_team-logo/3.png" alt="">
 												</div>
-												<div class="timeline__team-name timeline__team-name-left">Бруклин Нетс</div>
-												<div class="timeline__label timeline__label-left">Нью-Йорк, США</div>
+												<div class="timeline__team-name timeline__team-name-left">AMS</div>
+												<div class="timeline__label timeline__label-left">Москва, Россия</div>
 												<div class="timeline__subtitle timeline__subtitle-left"></div>
 												<div class="timeline__stats timeline__stats-left">
 													<ul class="timeline__stats-list">
@@ -963,11 +954,11 @@
 										</div>
 										<div class="timeline__box timeline__right-side timeline__box-right">
 											<div class="timeline__content timeline__content-right">
-												<h3 class="timeline__year timeline__year-right element-animation">2015 - 2017</h3>
+												<h3 class="timeline__year timeline__year-right element-animation">18/19</h3>
 												<div class="timeline__logo timeline__logo-right timeline__logo-4 -ibg">
 													<img src="img/logo/2.png" alt="">
 												</div>
-												<div class="timeline__team-name timeline__team-name-right">ЦСКА</div>
+												<div class="timeline__team-name timeline__team-name-right">ЦСКА-Юниор</div>
 												<div class="timeline__label timeline__label-right">Москва, Россия</div>
 												<div class="timeline__subtitle timeline__subtitle-right"></div>
 												<div class="timeline__stats timeline__stats-right">
@@ -989,19 +980,7 @@
 												<p class="timeline__text"></p>
 											</div>
 										</div>
-
-
-
-
-
-
-
-
-
 									</div>
-									<!-- <div class="team-box">
-										Карьера и Биография
-									</div> -->
 								</div>
 								<!-- PROFILE ARHIEVEMENTS -->
 								<div id="tab_4" class="tabs__body tab__body team-roster__tab-body b-tab">
@@ -1073,7 +1052,7 @@
 										</div>
 										<div class="timeline__box timeline__right-side timeline__box-right">
 											<div class="timeline__content timeline__content-right">
-												<h3 class="timeline__year timeline__year-right element-animation">11 / 12</h3>
+												<h3 class="timeline__year timeline__year-right element-animation">11/12</h3>
 												<div class="timeline__logo timeline__logo-right timeline__logo-8 -ibg">
 													<img src="img/logo/tournaments/NBA DRAFT.png" alt="">
 												</div>
@@ -1106,68 +1085,57 @@
 								<div id="tab_5" class="tabs__body tab__body team-roster__tab-body b-tab">
 									<h2 class="section-title-h2w element-animation">фото</h2>
 									<!-- PROFILE PHOTO -->
-									<div data-showmore data-showmore-media="560,max" class="block">
-										<div data-showmore-content="460" class="block__content">
-											<div id="person-gallery" class="person-gallery__box">
-
-												<div class="gallery">
-													<div class="person-gallery__item gallery__item gallery__item--1" data-src="img/profile/1.jpg">
-														<a href="#" class="gallery__link">
-															<img src="img/9.jpg" class="gallery__image" />
-															<div class="gallery__overlay">
-																<span>UBA</span>
-															</div>
-														</a>
-													</div>
-													<div class="person-gallery__item gallery__item gallery__item--2" data-src="img/profile/2.jpg">
-														<a href="#" class="gallery__link">
-															<img src="img/12.jpg" class="gallery__image" />
-															<div class="gallery__overlay">
-																<span>UBA</span>
-															</div>
-														</a>
-													</div>
-													<div class="person-gallery__item gallery__item gallery__item--3" data-src="img/profile/3.jpg">
-														<a href="#" class="gallery__link">
-															<img src="img/13.jpg" class="gallery__image" />
-															<div class="gallery__overlay">
-																<span>UBA</span>
-															</div>
-														</a>
-													</div>
-													<div class="person-gallery__item gallery__item gallery__item--4" data-src="img/profile/4.jpg">
-														<a href="#" class="gallery__link">
-															<img src="img/14.jpg" class="gallery__image" />
-															<div class="gallery__overlay">
-																<span>UBA</span>
-															</div>
-														</a>
-													</div>
-													<div class="person-gallery__item gallery__item gallery__item--5" data-src="img/profile/5.jpg">
-														<a href="#" class="gallery__link">
-															<img src="img/8.jpg" class="gallery__image" />
-															<div class="gallery__overlay">
-																<span>UBA</span>
-															</div>
-														</a>
-													</div>
-													<div class="person-gallery__item gallery__item gallery__item--6" data-src="img/profile/6.jpg">
-														<a href="#" class="gallery__link">
-															<img src="img/10.jpg" class="gallery__image" />
-															<div class="gallery__overlay">
-																<span>UBA</span>
-															</div>
-														</a>
-													</div>
+									<div data-gallery class="person-gallery__box gallery">
+										<div class="person-gallery__item gallery__item gallery__item--1" data-src="img/9.jpg">
+											<a href="#" class="gallery__link">
+												<img src="img/9.jpg" class="gallery__image" />
+												<div class="gallery__overlay">
+													<span>UBA</span>
 												</div>
-
-											</div>
+											</a>
 										</div>
-										<button hidden data-showmore-button="1000" type="button" class="block__more publication-selector__btn">
-											<span>Показать еще</span>
-											<span>Скрыть</span>
-										</button>
+										<div class="person-gallery__item gallery__item gallery__item--2" data-src="img/12.jpg">
+											<a href="#" class="gallery__link">
+												<img src="img/12.jpg" class="gallery__image" />
+												<div class="gallery__overlay">
+													<span>UBA</span>
+												</div>
+											</a>
+										</div>
+										<div class="person-gallery__item gallery__item gallery__item--3" data-src="img/13.jpg">
+											<a href="#" class="gallery__link">
+												<img src="img/13.jpg" class="gallery__image" />
+												<div class="gallery__overlay">
+													<span>UBA</span>
+												</div>
+											</a>
+										</div>
+										<div class="person-gallery__item gallery__item gallery__item--4" data-src="img/14.jpg">
+											<a href="#" class="gallery__link">
+												<img src="img/14.jpg" class="gallery__image" />
+												<div class="gallery__overlay">
+													<span>UBA</span>
+												</div>
+											</a>
+										</div>
+										<div class="person-gallery__item gallery__item gallery__item--5" data-src="img/8.jpg">
+											<a href="#" class="gallery__link">
+												<img src="img/8.jpg" class="gallery__image" />
+												<div class="gallery__overlay">
+													<span>UBA</span>
+												</div>
+											</a>
+										</div>
+										<div class="person-gallery__item gallery__item gallery__item--6" data-src="img/10.jpg">
+											<a href="#" class="gallery__link">
+												<img src="img/10.jpg" class="gallery__image" />
+												<div class="gallery__overlay">
+													<span>UBA</span>
+												</div>
+											</a>
+										</div>
 									</div>
+									<button type="button" class="publication-selector__btn">Загрузить больше</button>
 								</div>
 							</div>
 						</div>
@@ -1223,231 +1191,117 @@
 
 
 					</div>
-					<div data-showmore class="block">
-						<div data-showmore-content="460" class="block__content">
-							<!-- ===================== PUBLICATION CARDS =================== -->
-							<ul class="publication-selector__list">
-								<li class="publication-selector__item pub-news">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/2.png" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Новости</a></div>
-											<h5 class="card__title"><a href="#">Сергей Карасев остается в «Зените»</a></h5>
-											<div class="card__subtitle">Единая Лига ВТБ</div>
+					<!-- ===================== PUBLICATION CARDS =================== -->
+					<ul class="publication-selector__list">
+						<li class="publication-selector__item pub-news">
+							<article class="card">
+								<div class="card__thumb">
+									<a href="#"><img data-src="img/profile/2.png" alt=""></a>
+								</div>
+								<div class="card__category-logo -ibg">
+									<img class="thead-cell__img" src="img/logo/1.png" alt="">
+								</div>
+								<div class="card__body">
+									<div class="card__category"><a href="#">Новости</a></div>
+									<h5 class="card__title"><a href="#">Сергей Карасев остается в «Зените»</a></h5>
+									<div class="card__subtitle">Единая Лига ВТБ</div>
 
-											<p class="card__description">Форвард Сергей Карасев (28 лет, 201 см) подписал с нашим
-												клубом новое двухлетнее соглашение.
-												Коренной петербуржец и рекордсмен клуба по числу набранных очков (1965) проведет
-												свой пятый сезон в сине-бело-голубой
-												форме.
-											</p>
+									<p class="card__description">Форвард Сергей Карасев (28 лет, 201 см) подписал с нашим
+										клубом новое двухлетнее соглашение.
+										Коренной петербуржец и рекордсмен клуба по числу набранных очков (1965) проведет
+										свой пятый сезон в сине-бело-голубой
+										форме.
+									</p>
 
-										</div>
-										<footer class="card__footer">
-											<span class="date">23 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-								<li class="publication-selector__item pub-nterview">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/1.jpg" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Интервью</a></div>
-											<h5 class="card__title"><a href="#">Сергей Карасев – MVP первого матча против
-													«Енисея»</a></h5>
-											<div class="card__subtitle">Единая Лига ВТБ</div>
+								</div>
+								<footer class="card__footer">
+									<span class="date">23 февраля 2023</span>
+								</footer>
+							</article>
+						</li>
+						<li class="publication-selector__item pub-nterview">
+							<article class="card">
+								<div class="card__thumb">
+									<a href="#"><img data-src="img/profile/1.jpg" alt=""></a>
+								</div>
+								<div class="card__category-logo -ibg">
+									<img class="thead-cell__img" src="img/logo/1.png" alt="">
+								</div>
+								<div class="card__body">
+									<div class="card__category"><a href="#">Интервью</a></div>
+									<h5 class="card__title"><a href="#">Сергей Карасев – MVP первого матча против
+											«Енисея»</a></h5>
+									<div class="card__subtitle">Единая Лига ВТБ</div>
 
-											<p class="card__description">Сергей Карасев признан лучшим игроком матча «Зенит» –
-												«Енисей» (104-55) по версии болельщиков. В победном матче против
-												красноярцев форвард сине-бело-голубых набрал 19 очков, совершив 5 точных попаданий
-												из-за дуги. Карасев также добавил 2
-												подбора и 1 перехват.
-											</p>
+									<p class="card__description">Сергей Карасев признан лучшим игроком матча «Зенит» –
+										«Енисей» (104-55) по версии болельщиков. В победном матче против
+										красноярцев форвард сине-бело-голубых набрал 19 очков, совершив 5 точных попаданий
+										из-за дуги. Карасев также добавил 2
+										подбора и 1 перехват.
+									</p>
 
-										</div>
-										<footer class="card__footer">
-											<span class="card__pub-date">22 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-								<li class="publication-selector__item pub-news">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/2.jpg" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Новости</a></div>
-											<h5 class="card__title"><a href="#">Комментарии Сергея Карасева после победы над
-													«Пармой»</a>
-											</h5>
-											<div class="card__subtitle">Единая Лига ВТБ</div>
+								</div>
+								<footer class="card__footer">
+									<span class="card__pub-date">22 февраля 2023</span>
+								</footer>
+							</article>
+						</li>
+						<li class="publication-selector__item pub-article">
+							<article class="card">
+								<div class="card__thumb">
+									<a href="#"><img data-src="img/profile/4.jpg" alt=""></a>
+								</div>
+								<div class="card__category-logo -ibg">
+									<img class="thead-cell__img" src="img/logo/1.png" alt="">
+								</div>
+								<div class="card__body">
+									<div class="card__category"><a href="#">Статьи</a></div>
+									<h5 class="card__title"><a href="#">Как Сергей Карасев привел «Зенит» к победе над
+											«Гурой»</a></h5>
+									<div class="card__subtitle">Единая Лига ВТБ</div>
 
-											<p class="card__description">
-												Сергей Карасев: Во-первых, хочется сказать огромное спасибо болельщикам, которые
-												пришли и поддержали нас. У нас была
-												такая нелегкая неделя. У нас много новых ребят: хорошо забытые старые бойцы и
-												молодые парни.
-											</p>
+									<p class="card__description">Новый тренер, обновлённый состав и пока что всего одна
+										победа в Единой Лиги ВТБ в пяти матчах. Голодная до побед «Зелена
+										Гура» прилетела в Петербург. Путь команды Оливера Видина простым не назовёшь — три
+										часа на автобусе до Берлина, прямой
+										рейс до Москвы и только потом в Петербург.
+									</p>
 
-										</div>
-										<footer class="card__footer">
-											<span class="date">22 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-								<li class="publication-selector__item pub-video">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/3.jpg" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Видео</a></div>
-											<h5 class="card__title"><a href="#">Сергей Карасев набрал рекордные в карьере 26
-													очков</a></h5>
-											<div class="card__subtitle">тренировочный лагерь</div>
+								</div>
+								<footer class="card__footer">
+									<span class="date">23 февраля 2023</span>
+								</footer>
+							</article>
+						</li>
+						<li class="publication-selector__item pub-event">
+							<article class="card">
+								<div class="card__thumb">
+									<a href="#"><img data-src="img/profile/4.jpg" alt=""></a>
+								</div>
+								<div class="card__category-logo -ibg">
+									<img class="thead-cell__img" src="img/logo/1.png" alt="">
+								</div>
+								<div class="card__body">
+									<div class="card__category"><a href="#">Статьи</a></div>
+									<h5 class="card__title"><a href="#">Как Сергей Карасев привел «Зенит» к победе над
+											«Гурой»</a></h5>
+									<div class="card__subtitle">Единая Лига ВТБ</div>
 
-											<p class="card__description">Сергей Карасев — Х-фактор вчерашней победы в матче против
-												УНИКСА (80-84). Новый карьер-хай 26 очков (7/10 из-за дуги) за
-												25 минут на паркете.
-											</p>
+									<p class="card__description">Новый тренер, обновлённый состав и пока что всего одна
+										победа в Единой Лиги ВТБ в пяти матчах. Голодная до побед «Зелена
+										Гура» прилетела в Петербург. Путь команды Оливера Видина простым не назовёшь — три
+										часа на автобусе до Берлина, прямой
+										рейс до Москвы и только потом в Петербург.
+									</p>
 
-										</div>
-										<footer class="card__footer">
-											<span class="date">24 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-								<li class="publication-selector__item pub-article">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/4.jpg" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Статьи</a></div>
-											<h5 class="card__title"><a href="#">Как Сергей Карасев привел «Зенит» к победе над
-													«Гурой»</a></h5>
-											<div class="card__subtitle">Единая Лига ВТБ</div>
-
-											<p class="card__description">Новый тренер, обновлённый состав и пока что всего одна
-												победа в Единой Лиги ВТБ в пяти матчах. Голодная до побед «Зелена
-												Гура» прилетела в Петербург. Путь команды Оливера Видина простым не назовёшь — три
-												часа на автобусе до Берлина, прямой
-												рейс до Москвы и только потом в Петербург.
-											</p>
-
-										</div>
-										<footer class="card__footer">
-											<span class="date">23 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-								<li class="publication-selector__item pub-event">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/4.jpg" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Статьи</a></div>
-											<h5 class="card__title"><a href="#">Как Сергей Карасев привел «Зенит» к победе над
-													«Гурой»</a></h5>
-											<div class="card__subtitle">Единая Лига ВТБ</div>
-
-											<p class="card__description">Новый тренер, обновлённый состав и пока что всего одна
-												победа в Единой Лиги ВТБ в пяти матчах. Голодная до побед «Зелена
-												Гура» прилетела в Петербург. Путь команды Оливера Видина простым не назовёшь — три
-												часа на автобусе до Берлина, прямой
-												рейс до Москвы и только потом в Петербург.
-											</p>
-
-										</div>
-										<footer class="card__footer">
-											<span class="date">23 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-								<li class="publication-selector__item pub-nterview">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/1.jpg" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Интервью</a></div>
-											<h5 class="card__title"><a href="#">Сергей Карасев – MVP первого матча против
-													«Енисея»</a></h5>
-											<div class="card__subtitle">Единая Лига ВТБ</div>
-
-											<p class="card__description">Сергей Карасев признан лучшим игроком матча «Зенит» –
-												«Енисей» (104-55) по версии болельщиков. В победном матче против
-												красноярцев форвард сине-бело-голубых набрал 19 очков, совершив 5 точных попаданий
-												из-за дуги. Карасев также добавил 2
-												подбора и 1 перехват.
-											</p>
-
-										</div>
-										<footer class="card__footer">
-											<span class="card__pub-date">22 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-								<li class="publication-selector__item pub-news">
-									<article class="card">
-										<div class="card__thumb">
-											<a href="#"><img data-src="img/profile/2.jpg" alt=""></a>
-										</div>
-										<div class="card__category-logo -ibg">
-											<img class="thead-cell__img" src="img/logo/1.png" alt="">
-										</div>
-										<div class="card__body">
-											<div class="card__category"><a href="#">Новости</a></div>
-											<h5 class="card__title"><a href="#">Комментарии Сергея Карасева после победы над
-													«Пармой»</a>
-											</h5>
-											<div class="card__subtitle">Единая Лига ВТБ</div>
-
-											<p class="card__description">
-												Сергей Карасев: Во-первых, хочется сказать огромное спасибо болельщикам, которые
-												пришли и поддержали нас. У нас была
-												такая нелегкая неделя. У нас много новых ребят: хорошо забытые старые бойцы и
-												молодые парни.
-											</p>
-
-										</div>
-										<footer class="card__footer">
-											<span class="date">22 февраля 2023</span>
-										</footer>
-									</article>
-								</li>
-							</ul>
-						</div>
-						<button hidden data-showmore-button type="button" class="block__more publication-selector__btn">
-							<span>Показать еще</span>
-							<span>Скрыть</span></button>
-					</div>
+								</div>
+								<footer class="card__footer">
+									<span class="date">23 февраля 2023</span>
+								</footer>
+							</article>
+						</li>
+					</ul>
+					<button type="button" class="publication-selector__btn">Загрузить больше</button>
 				</div>
 			</section>
 
@@ -1841,9 +1695,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221105022944"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221105022944"></script>
-	<script src="js/app.min.js?_v=20221105022944"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221116034946"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221116034946"></script>
+	<script src="js/app.min.js?_v=20221116034946"></script>
 </body>
 
 </html>

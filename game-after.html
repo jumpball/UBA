@@ -7,8 +7,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221105022944">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221105022944">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221116034946">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221116034946">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -174,10 +174,19 @@
 								<!-- <p>Вторник / 11 октября / 18:30</p> -->
 								<p>Playground Савеловская</p>
 								<p>Москва, Россия</p>
-								<button data-popup="#go-to-video" type="button" class="game-card__btn">видео</button>
+								<!-- <button data-popup="#go-to-video" type="button" class="game-card__btn">видео</button> -->
 							</div>
-
-							<div class="game-profile-header__row">
+							<div data-spollers class="game-video__spollers ">
+								<div class="game-video__spollers-item">
+									<button type="button" data-spoller class="game-video__spollers-btn _spoller-active">видео</button>
+									<div class="game-video__spollers-body">
+										<div class="game-video__video">
+											<iframe src="https://www.youtube.com/embed/kUdXTsDdQBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="game-profile-header__row">
 								<ul class="game-profile-header__list">
 									<li class="game-profile-header__bage">
 										<span class="game-profile-header__name">Position</span>
@@ -214,7 +223,7 @@
 									</li>
 
 								</ul>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -2603,9 +2612,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221105022944"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221105022944"></script>
-	<script src="js/app.min.js?_v=20221105022944"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221116034946"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20221116034946"></script>
+	<script src="js/app.min.js?_v=20221116034946"></script>
 </body>
 
 </html>
